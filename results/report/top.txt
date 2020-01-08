@@ -1,0 +1,505 @@
+[?25l[0m[H[J[s[999C[999B[6n[uTasks: 531 total,   2 running, 491 sleeping,   0 stopped,   0 zombie            
+Mem:   3809016k total,  3672796k used,   136220k free,     6580k buffers        
+Swap:  2293756k total,   339580k used,  1954176k free,  1280684k cached         
+800%cpu 256%user  31%nice 147%sys 359%idle   0%iow   0%irq   6%sirq   0%host    
+[7m  PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS            [0m
+15554 shell        20   0  23M 3.6M 2.9M R 96.8   0.0   0:00.02 app_process /sy+
+15021 u0_a837      10 -10 3.3G 400M 211M S 90.6  10.7   0:09.94 com.tvunetworks+
+ 1118 system       18  -2 2.9G 252M 173M S 59.3   6.7  12:41.21 system_server
+  676 media        20   0 496M  28M  11M S 59.3   0.7   9:37.57 CameraDaemon hi+
+ 3314 u0_a12       20   0 2.5G 113M  76M S 28.1   3.0   0:40.21 com.google.andr+
+15549 shell        20   0  10M 2.2M 1.4M R 15.6   0.0   0:00.09 top -d 2
+  672 mediacodec   20   0 109M  11M 9.1M S 12.5   0.3   3:03.23 media.codec hw/+
+  653 cameraserver 20   0 112M  16M  14M S 12.5   0.4   1:47.93 cameraserver
+  695 shell        20   0  21M 1.0M 724K S  9.3   0.0   1:56.41 adbd --root_sec+
+  589 system       -2  -8 446M  20M  16M S  9.3   0.5   4:48.45 surfaceflinger
+  582 system       20   0  18M 2.4M 1.9M S  9.3   0.0   1:26.87 vendor.huawei.h+
+  576 system       20   0  13M 2.0M 1.8M S  6.2   0.0   0:12.84 vendor.huawei.h+
+  434 logd         30  10  22M 4.6M 1.2M S  6.2   0.1   1:18.70 logd
+30216 root         20   0    0    0    0 S  3.1   0.0   0:05.50 [kworker/u16:2]
+  648 audioserver  20   0  65M  10M 7.2M S  3.1   0.2   0:14.81 audioserver
+  561 audioserver  20   0  49M 5.2M 3.8M S  3.1   0.1   0:16.95 vendor.huawei.h+
+  553 system       -3  -3 106M 4.3M 3.7M S  3.1   0.1   1:29.89 android.hardwar+
+  516 root         20   0  30M 2.6M 2.1M S  3.1   0.0   0:04.30 netd
+  312 root          0 -20    0    0    0 S  3.1   0.0   0:00.17 [kworker/7:1H]
+15513 root         20   0    0    0    0 S  0.0   0.0   0:00.00 [kworker/3:2][?25h[0m[1000;1H[K[?25h[0m[1000;1H[K[?25l[0m[H[J[s[999C[999B[6n[uTasks: 534 total,   4 running, 491 sleeping,   0 stopped,   0 zombie            
+Mem:   3809016k total,  3670888k used,   138128k free,     4880k buffers        
+Swap:  2293756k total,   341524k used,  1952232k free,  1264084k cached         
+800%cpu 269%user  50%nice 159%sys 309%idle   0%iow   0%irq  13%sirq   0%host    
+[7m  PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS            [0m
+ 1118 system       18  -2 2.9G 264M 171M S  106   7.0  13:11.74 system_server
+16646 shell        20   0 7.8M 2.7M 2.3M R 96.8   0.0   0:00.02 app_process /sy+
+16156 u0_a839      10 -10 3.3G 400M 211M S 96.8  10.7   0:08.10 com.tvunetworks+
+  676 media        20   0 496M  28M  11M S 62.5   0.7   9:39.71 CameraDaemon hi+
+16641 shell        20   0  10M 2.2M 1.4M R 18.7   0.0   0:00.08 top -d 2
+  672 mediacodec   20   0 109M  11M 9.1M S 12.5   0.3   3:03.57 media.codec hw/+
+  653 cameraserver 20   0 112M  16M  13M S 12.5   0.4   1:48.33 cameraserver
+  589 system       -2  -8 605M  21M  17M S 12.5   0.5   4:52.54 surfaceflinger
+15201 u0_a34       20   0 2.5G  73M  57M S  9.3   1.9   0:04.24 com.android.pac+
+  695 shell        20   0  21M 1.0M 724K S  9.3   0.0   2:03.75 adbd --root_sec+
+  561 audioserver  20   0  49M 5.2M 3.8M S  9.3   0.1   0:17.09 vendor.huawei.h+
+  434 logd         30  10  22M 4.7M 1.2M S  9.3   0.1   1:20.65 logd
+  582 system       20   0  18M 2.4M 1.9M S  6.2   0.0   1:27.23 vendor.huawei.h+
+  553 system       -3  -3 106M 4.3M 3.7M S  6.2   0.1   1:31.65 android.hardwar+
+16604 root         20   0    0    0    0 S  3.1   0.0   0:00.01 [HI_VENC_FrameT+
+16098 u0_a778      20   0 2.2G  64M  40M S  3.1   1.7   0:04.41 io.appium.uiaut+
+16044 shell        20   0  11M 2.2M 1.4M S  3.1   0.0   0:00.64 logcat -v threa+
+ 9888 root         20   0    0    0    0 R  3.1   0.0   0:02.70 [kworker/u16:7]
+28522 root          0 -20    0    0    0 S  3.1   0.0   0:03.77 [kworker/u17:1]
+ 1645 u0_a46       20   0 3.8G 243M 139M R  3.1   6.5   4:46.79 com.android.sys+[?25h[0m[1000;1H[K[?25h[0m[1000;1H[K[?25l[0m[H[J[s[999C[999B[6n[uTasks: 536 total,   4 running, 493 sleeping,   0 stopped,   0 zombie            
+Mem:   3809016k total,  3681628k used,   127388k free,     4768k buffers        
+Swap:  2293756k total,   344868k used,  1948888k free,  1289032k cached         
+800%cpu 290%user  24%nice 148%sys 328%idle   0%iow   0%irq  10%sirq   0%host    
+[7m  PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS            [0m
+17270 u0_a841      10 -10 3.3G 398M 210M R  103  10.6   0:08.05 com.tvunetworks+
+ 1118 system       18  -2 2.9G 250M 171M S 65.5   6.7  13:42.78 system_server
+  676 media        20   0 496M  28M  11M S 55.1   0.7   9:41.85 CameraDaemon hi+
+17757 shell        20   0  10M 2.2M 1.4M R 24.1   0.0   0:00.04 top -d 2
+  672 mediacodec   20   0 109M  11M 9.1M S 13.7   0.3   3:03.95 media.codec hw/+
+  695 shell        20   0  20M 932K 724K S 10.3   0.0   2:10.80 adbd --root_sec+
+  653 cameraserver 20   0 112M  17M  14M S 10.3   0.4   1:48.68 cameraserver
+  589 system       -2  -8 574M  21M  17M R 10.3   0.5   4:56.63 surfaceflinger
+ 2506 u0_a12       20   0 2.3G 102M  68M S  6.8   2.7   0:29.27 com.google.andr+
+  582 system       RT   0  18M 2.4M 1.9M S  6.8   0.0   1:27.58 vendor.huawei.h+
+  561 audioserver  20   0  49M 5.2M 3.8M S  6.8   0.1   0:17.24 vendor.huawei.h+
+  553 system       -3  -3 106M 4.3M 3.7M S  6.8   0.1   1:33.37 android.hardwar+
+  434 logd         30  10  22M 4.7M 1.2M S  6.8   0.1   1:22.52 logd
+17728 root         20   0    0    0    0 R  3.4   0.0   0:00.01 [HI_VENC_FrameT+
+17212 u0_a778      20   0 2.2G  64M  40M S  3.4   1.7   0:04.68 io.appium.uiaut+
+17161 shell        20   0  11M 2.2M 1.4M S  3.4   0.0   0:00.61 logcat -v threa+
+15201 u0_a34       20   0 2.5G  74M  57M S  3.4   1.9   0:06.21 com.android.pac+
+ 8171 root         20   0    0    0    0 D  3.4   0.0   0:01.23 [cabc_pwm_task]
+ 3314 u0_a12       20   0 2.5G 116M  76M S  3.4   3.1   0:46.95 com.google.andr+
+ 2063 system       20   0 2.2G  65M  50M S  3.4   1.7   0:23.19 com.huawei.powe+[?25h[0m[1000;1H[K[?25h[0m[1000;1H[K[?25l[0m[H[J[s[999C[999B[6n[uTasks: 538 total,   5 running, 494 sleeping,   0 stopped,   0 zombie            
+Mem:   3809016k total,  3487268k used,   321748k free,     4768k buffers        
+Swap:  2293756k total,   345924k used,  1947832k free,  1060476k cached         
+800%cpu 258%user  13%nice 168%sys 352%idle   3%iow   0%irq   6%sirq   0%host    
+[7m  PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS            [0m
+18392 u0_a843      10 -10 3.3G 396M 207M S 96.7  10.6   0:08.37 com.tvunetworks+
+18940 shell        20   0 1.9M 472K 284K R 93.5   0.0   0:00.01 app_process /sy+
+ 1118 system       18  -2 2.9G 253M 171M R 64.5   6.8  14:13.35 system_server
+  676 media        20   0 496M  28M  11M S 54.8   0.7   9:43.70 CameraDaemon hi+
+ 1645 u0_a46       20   0 3.8G 215M 125M S 25.8   5.7   5:03.70 com.android.sys+
+18933 shell        20   0  10M 2.2M 1.4M R 12.9   0.0   0:00.08 top -d 2
+  695 shell        20   0  21M 0.9M 724K R 12.9   0.0   2:18.23 adbd --root_sec+
+  672 mediacodec   20   0 109M  11M 9.1M S 12.9   0.3   3:04.27 media.codec hw/+
+  653 cameraserver 20   0 112M  17M  14M S 12.9   0.4   1:49.08 cameraserver
+  589 system       -2  -8 574M  21M  17M S 12.9   0.5   5:00.76 surfaceflinger
+18331 u0_a778      20   0 2.2G  64M  40M S  6.4   1.7   0:04.70 io.appium.uiaut+
+15201 u0_a34       20   0 2.5G  74M  57M S  6.4   1.9   0:08.09 com.android.pac+
+  582 system       20   0  18M 2.4M 1.9M S  6.4   0.0   1:27.90 vendor.huawei.h+
+  561 audioserver  20   0  49M 5.2M 3.8M S  6.4   0.1   0:17.40 vendor.huawei.h+
+  434 logd         30  10  22M 4.8M 1.2M S  6.4   0.1   1:24.60 logd
+18903 root         20   0    0    0    0 S  3.2   0.0   0:00.01 [HI_VENC_FrameT+
+18282 shell        20   0  11M 2.2M 1.4M S  3.2   0.0   0:00.69 logcat -v threa+
+ 3782 root         20   0    0    0    0 S  3.2   0.0   0:02.07 [kworker/u16:8]
+ 1978 system       20   0 2.4G  98M  63M S  3.2   2.6   0:31.40 com.huawei.syst+
+  576 system       20   0  13M 2.0M 1.8M S  3.2   0.0   0:14.15 vendor.huawei.h+[?25h[0m[1000;1H[K[?25h[0m[1000;1H[K[?25l[0m[H[J[s[999C[999B[6n[uTasks: 538 total,   7 running, 492 sleeping,   0 stopped,   0 zombie            
+Mem:   3809016k total,  3434384k used,   374632k free,     4748k buffers        
+Swap:  2293756k total,   347452k used,  1946304k free,  1048792k cached         
+800%cpu 252%user  42%nice 194%sys 303%idle   6%iow   0%irq   3%sirq   0%host    
+[7m  PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS            [0m
+19559 u0_a845      10 -10 3.3G 393M 204M S  103  10.5   0:08.53 com.tvunetworks+
+ 1118 system       18  -2 2.9G 264M 171M R  103   7.1  14:43.98 system_server
+20052 shell        20   0 2.6M 740K 524K R 93.5   0.0   0:00.00 app_process /sy+
+  676 media        20   0 496M  28M  11M S 58.0   0.7   9:45.67 CameraDaemon hi+
+  589 system       -2  -8 574M  21M  17M S 16.1   0.5   5:05.09 surfaceflinger
+20048 shell        20   0  10M 2.2M 1.4M R 12.9   0.0   0:00.08 top -d 2
+  672 mediacodec   20   0 109M  11M 9.0M S 12.9   0.3   3:04.63 media.codec hw/+
+  695 shell        20   0  21M 1.0M 724K R  9.6   0.0   2:25.50 adbd --root_sec+
+  653 cameraserver 20   0 112M  17M  14M S  9.6   0.4   1:49.45 cameraserver
+  582 system       RT   0  18M 2.4M 1.9M S  9.6   0.0   1:28.25 vendor.huawei.h+
+  553 system       -3  -3 106M 4.3M 3.7M S  9.6   0.1   1:36.94 android.hardwar+
+15201 u0_a34       20   0 2.5G  74M  57M S  6.4   1.9   0:10.08 com.android.pac+
+ 3314 u0_a12       20   0 2.5G 119M  77M S  6.4   3.1   0:53.63 com.google.andr+
+ 1645 u0_a46       20   0 3.8G 213M 125M R  6.4   5.7   5:12.03 com.android.sys+
+  561 audioserver  20   0  49M 5.3M 3.8M S  6.4   0.1   0:17.56 vendor.huawei.h+
+  434 logd         30  10  22M 4.8M 1.2M S  6.4   0.1   1:26.54 logd
+20012 root         20   0    0    0    0 S  3.2   0.0   0:00.01 [HI_VENC_FrameT+
+19440 shell        20   0  11M 2.2M 1.4M S  3.2   0.0   0:00.61 logcat -v threa+
+ 9888 root         20   0    0    0    0 S  3.2   0.0   0:03.40 [kworker/u16:7]
+28522 root          0 -20    0    0    0 S  3.2   0.0   0:04.42 [kworker/u17:1][?25h[0m[1000;1H[K[?25h[0m[1000;1H[K[?25l[0m[H[J[s[999C[999B[6n[uTasks: 533 total,   1 running, 494 sleeping,   0 stopped,   0 zombie            
+Mem:   3809016k total,  3555664k used,   253352k free,     4788k buffers        
+Swap:  2293756k total,   351224k used,  1942532k free,  1142684k cached         
+800%cpu 276%user   0%nice 155%sys 362%idle   0%iow   0%irq   7%sirq   0%host    
+[7m  PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS            [0m
+20686 u0_a847      10 -10 3.4G 401M 212M S  100  10.7   0:09.25 com.tvunetworks+
+  676 media        20   0 496M  28M  11M S 58.6   0.7   9:48.36 CameraDaemon hi+
+ 1118 system       18  -2 2.9G 247M 170M S 55.1   6.6  15:21.30 system_server
+21184 shell        20   0  10M 2.2M 1.4M R 20.6   0.0   0:00.04 top -d 2
+  589 system       -2  -8 607M  21M  17M S 17.2   0.5   5:15.80 surfaceflinger
+  672 mediacodec   20   0 109M  11M 9.0M S 10.3   0.3   3:05.13 media.codec hw/+
+  653 cameraserver 20   0 112M  17M  14M S 10.3   0.4   1:49.88 cameraserver
+  695 shell        20   0  20M 980K 724K S  6.8   0.0   2:32.25 adbd --root_sec+
+  582 system       20   0  18M 2.4M 1.9M S  6.8   0.0   1:28.68 vendor.huawei.h+
+  553 system       -3  -3 106M 4.3M 3.7M S  6.8   0.1   1:43.75 android.hardwar+
+20624 u0_a778      20   0 2.2G  67M  40M S  3.4   1.7   0:05.10 io.appium.uiaut+
+14096 root         20   0    0    0    0 S  3.4   0.0   0:02.82 [kworker/u16:0]
+  664 media        20   0 116M 7.2M 4.7M S  3.4   0.1   0:03.91 mediaserver
+  648 audioserver  20   0  67M  10M 7.3M S  3.4   0.2   0:16.18 audioserver
+  590 system       20   0 7.4M 868K 104K S  3.4   0.0   0:07.02 powerlogd
+  584 wifi         20   0  21M 2.8M 2.4M S  3.4   0.0   0:13.74 vendor.huawei.h+
+  576 system       20   0  13M 2.0M 1.8M S  3.4   0.0   0:15.08 vendor.huawei.h+
+  569 system       20   0  16M 2.3M 2.0M S  3.4   0.0   0:08.25 vendor.huawei.h+
+  219 root         RT   0    0    0    0 S  3.4   0.0   0:05.12 [rpmsg_tx_tsk]
+   53 root         RT   0    0    0    0 S  3.4   0.0   0:02.03 [mailbox-23][?25h[0m[1000;1H[K[?25h[0m[1000;1H[K[?25l[0m[H[J[s[999C[999B[6n[uTasks: 526 total,   1 running, 487 sleeping,   0 stopped,   0 zombie            
+Mem:   3809016k total,  3637828k used,   171188k free,     4800k buffers        
+Swap:  2293756k total,   350420k used,  1943336k free,  1214652k cached         
+800%cpu 258%user   6%nice 129%sys 403%idle   0%iow   0%irq   3%sirq   0%host    
+[7m  PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS            [0m
+24051 u0_a850      10 -10 3.3G 402M 212M S 93.5  10.8   0:09.09 com.tvunetworks+
+ 1118 system       18  -2 2.9G 263M 171M S 64.5   7.0  17:06.88 system_server
+  676 media        20   0 496M  28M  11M S 58.0   0.7   9:51.02 CameraDaemon hi+
+24543 shell        20   0  10M 2.2M 1.4M R 12.9   0.0   0:00.08 top -d 2
+  672 mediacodec   20   0 109M  11M 9.0M S 12.9   0.3   3:05.63 media.codec hw/+
+  653 cameraserver 20   0 112M  17M  14M S 12.9   0.4   1:50.37 cameraserver
+  589 system       -2  -8 734M  22M  18M S 12.9   0.5   5:42.93 surfaceflinger
+  582 system       RT   0  18M 2.4M 1.9M S  9.6   0.0   1:30.26 vendor.huawei.h+
+  695 shell        20   0  21M 1.0M 724K S  6.4   0.0   2:45.47 adbd --root_sec+
+  576 system       20   0  13M 2.0M 1.8M S  6.4   0.0   0:15.84 vendor.huawei.h+
+23987 u0_a778      20   0 2.2G  64M  40M S  3.2   1.7   0:04.28 io.appium.uiaut+
+22965 root          0 -20    0    0    0 S  3.2   0.0   0:00.47 [kworker/u17:0]
+30216 root         20   0    0    0    0 S  3.2   0.0   0:08.08 [kworker/u16:2]
+ 1645 u0_a46       20   0 3.8G 245M 139M S  3.2   6.5   6:28.17 com.android.sys+
+  648 audioserver  20   0  67M  10M 7.3M S  3.2   0.2   0:16.48 audioserver
+  561 audioserver  20   0  49M 5.3M 3.8M S  3.2   0.1   0:17.92 vendor.huawei.h+
+  553 system       -3  -3 106M 4.3M 3.7M S  3.2   0.1   1:53.81 android.hardwar+
+  434 logd         30  10  22M 4.7M 1.2M S  3.2   0.1   1:33.89 logd
+24509 root         20   0    0    0    0 S  0.0   0.0   0:00.02 [HI_VENC_FrameT+
+24490 root         20   0    0    0    0 S  0.0   0.0   0:00.00 [kworker/3:1][?25h[0m[1000;1H[K[?25h[0m[1000;1H[K[?25l[0m[H[J[s[999C[999B[6n[uTasks: 529 total,   3 running, 488 sleeping,   0 stopped,   0 zombie            
+Mem:   3809016k total,  3591168k used,   217848k free,     4800k buffers        
+Swap:  2293756k total,   352468k used,  1941288k free,  1216332k cached         
+800%cpu 265%user  10%nice 135%sys 387%idle   0%iow   0%irq   3%sirq   0%host    
+[7m  PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS            [0m
+25152 u0_a852      10 -10 3.4G 400M 211M S 96.7  10.7   0:09.70 com.tvunetworks+
+25654 shell        20   0 4.2M 1.1M 960K R 93.5   0.0   0:00.01 app_process /sy+
+ 1118 system       18  -2 2.9G 251M 171M S 64.5   6.7  17:38.12 system_server
+  676 media        20   0 496M  28M  11M S 51.6   0.7   9:53.95 CameraDaemon hi+
+ 1645 u0_a46       20   0 3.8G 222M 139M S 16.1   5.9   6:36.78 com.android.sys+
+  589 system       -2  -8 702M  22M  18M S 12.9   0.5   5:47.44 surfaceflinger
+25649 shell        20   0  10M 2.2M 1.4M R  9.6   0.0   0:00.08 top -d 2
+  695 shell        20   0  21M 976K 724K S  9.6   0.0   2:52.66 adbd --root_sec+
+  672 mediacodec   20   0 109M  11M 9.0M S  9.6   0.3   3:06.20 media.codec hw/+
+  653 cameraserver 20   0 112M  17M  14M S  9.6   0.4   1:50.89 cameraserver
+  582 system       20   0  18M 2.4M 1.9M S  6.4   0.0   1:30.70 vendor.huawei.h+
+25090 u0_a778      20   0 2.2G  62M  40M S  3.2   1.6   0:03.53 io.appium.uiaut+
+ 3782 root         20   0    0    0    0 S  3.2   0.0   0:05.44 [kworker/u16:8]
+  648 audioserver  20   0  67M  10M 7.3M S  3.2   0.2   0:16.77 audioserver
+  576 system       20   0  13M 2.0M 1.8M S  3.2   0.0   0:16.28 vendor.huawei.h+
+  569 system       20   0  16M 2.3M 2.0M S  3.2   0.0   0:08.89 vendor.huawei.h+
+  561 audioserver  20   0  49M 5.2M 3.8M S  3.2   0.1   0:18.10 vendor.huawei.h+
+  553 system       -3  -3 106M 4.3M 3.7M S  3.2   0.1   1:55.78 android.hardwar+
+  434 logd         30  10  22M 4.8M 1.2M S  3.2   0.1   1:35.87 logd
+   58 root         20   0    0    0    0 S  3.2   0.0   0:08.53 [khungtaskd][?25h[0m[1000;1H[K[?25h[0m[1000;1H[K[?25l[0m[H[J[s[999C[999B[6n[uTasks: 529 total,   2 running, 489 sleeping,   0 stopped,   0 zombie            
+Mem:   3809016k total,  3517816k used,   291200k free,     4800k buffers        
+Swap:  2293756k total,   354160k used,  1939596k free,  1132768k cached         
+800%cpu 274%user   6%nice 161%sys 358%idle   0%iow   0%irq   0%sirq   0%host    
+[7m  PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS            [0m
+26240 u0_a854      10 -10 3.2G 395M 206M S  100  10.6   0:09.56 com.tvunetworks+
+ 1118 system       18  -2 2.9G 245M 170M S 61.2   6.5  18:08.74 system_server
+  676 media        20   0 498M  28M  11M S 58.0   0.7   9:56.68 CameraDaemon hi+
+26729 shell        20   0  10M 2.2M 1.4M R 19.3   0.0   0:00.08 top -d 2
+  672 mediacodec   20   0 109M  11M 9.0M S 16.1   0.3   3:06.72 media.codec hw/+
+  589 system       -2  -8 735M  22M  18M R 12.9   0.5   5:51.94 surfaceflinger
+  653 cameraserver 20   0 112M  16M  14M S  9.6   0.4   1:51.36 cameraserver
+  582 system       20   0  18M 2.4M 1.9M S  9.6   0.0   1:31.15 vendor.huawei.h+
+  695 shell        20   0  20M 956K 724K S  6.4   0.0   2:59.69 adbd --root_sec+
+  553 system       -3  -3 106M 4.3M 3.7M S  6.4   0.1   1:57.70 android.hardwar+
+ 8171 root         20   0    0    0    0 S  3.2   0.0   0:01.64 [cabc_pwm_task]
+ 3314 u0_a12       20   0 2.5G 116M  77M S  3.2   3.1   1:13.45 com.google.andr+
+  648 audioserver  20   0  67M  10M 7.3M S  3.2   0.2   0:17.05 audioserver
+  576 system       20   0  13M 2.0M 1.8M S  3.2   0.0   0:16.70 vendor.huawei.h+
+  569 system       20   0  16M 2.3M 2.0M S  3.2   0.0   0:09.11 vendor.huawei.h+
+  516 root         20   0  30M 2.6M 2.1M S  3.2   0.0   0:06.10 netd
+  434 logd         30  10  22M 4.8M 1.2M S  3.2   0.1   1:37.78 logd
+  214 root         RT   0    0    0    0 S  3.2   0.0   0:09.34 [cfinteractive]
+26690 root         20   0    0    0    0 S  0.0   0.0   0:00.02 [HI_VENC_FrameT+
+26622 root         20   0    0    0    0 S  0.0   0.0   0:00.00 [kworker/2:3][?25h[0m[1000;1H[K[?25h[0m[1000;1H[K[?25l[0m[H[J[s[999C[999B[6n[uTasks: 530 total,   2 running, 490 sleeping,   0 stopped,   0 zombie            
+Mem:   3809016k total,  3550996k used,   258020k free,     4800k buffers        
+Swap:  2293756k total,   354048k used,  1939708k free,  1179136k cached         
+800%cpu 284%user   6%nice 174%sys 332%idle   0%iow   0%irq   3%sirq   0%host    
+[7m  PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS            [0m
+27336 u0_a856      10 -10 3.3G 401M 211M S  112  10.7   0:10.46 com.tvunetworks+
+ 1118 system       18  -2 2.9G 251M 171M S 80.6   6.7  18:40.33 system_server
+  676 media        20   0 498M  28M  11M S 64.5   0.7  10:00.23 CameraDaemon hi+
+27838 shell        20   0  10M 2.2M 1.4M R 16.1   0.0   0:00.07 top -d 2
+  672 mediacodec   20   0 109M  12M 9.0M S 16.1   0.3   3:07.40 media.codec hw/+
+  589 system       -2  -8 702M  22M  18M S 16.1   0.5   5:56.43 surfaceflinger
+  695 shell        20   0  20M 1.0M 724K S 12.9   0.0   3:06.94 adbd --root_sec+
+  653 cameraserver 20   0 112M  17M  14M S  9.6   0.4   1:52.00 cameraserver
+ 1645 u0_a46       20   0 3.8G 203M 125M S  6.4   5.4   6:54.02 com.android.sys+
+  582 system       RT   0  18M 2.4M 1.9M S  6.4   0.0   1:31.64 vendor.huawei.h+
+  553 system       -3  -3 106M 4.3M 3.7M S  6.4   0.1   1:59.64 android.hardwar+
+27798 root         20   0    0    0    0 S  3.2   0.0   0:00.03 [HI_VENC_FrameT+
+27270 u0_a778      20   0 2.2G  66M  40M S  3.2   1.7   0:04.35 io.appium.uiaut+
+27219 shell        20   0  11M 2.2M 1.4M S  3.2   0.0   0:00.68 logcat -v threa+
+12863 u0_a93       20   0 2.2G  75M  55M S  3.2   2.0   0:12.27 com.huawei.appm+
+ 3782 root         20   0    0    0    0 R  3.2   0.0   0:06.82 [kworker/u16:8]
+  576 system       20   0  13M 2.0M 1.8M S  3.2   0.0   0:17.18 vendor.huawei.h+
+  569 system       20   0  16M 2.3M 2.0M S  3.2   0.0   0:09.36 vendor.huawei.h+
+  561 audioserver  20   0  49M 5.2M 3.8M S  3.2   0.1   0:18.44 vendor.huawei.h+
+   53 root         RT   0    0    0    0 S  3.2   0.0   0:02.08 [mailbox-23][?25h[0m[1000;1H[K[?25h[0m[1000;1H[K[?25l[0m[H[J[s[999C[999B[6n[uTasks: 529 total,   2 running, 488 sleeping,   0 stopped,   0 zombie            
+Mem:   3809016k total,  3501852k used,   307164k free,     4800k buffers        
+Swap:  2293756k total,   353192k used,  1940564k free,  1123192k cached         
+800%cpu 229%user  16%nice 135%sys 413%idle   0%iow   0%irq   6%sirq   0%host    
+[7m  PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS            [0m
+28451 u0_a858      10 -10 3.2G 395M 206M S 93.5  10.6   0:08.02 com.tvunetworks+
+ 1118 system       18  -2 2.9G 264M 171M S 58.0   7.0  19:13.32 system_server
+  676 media        20   0 498M  28M  11M S 54.8   0.7  10:02.34 CameraDaemon hi+
+28941 shell        20   0  10M 2.2M 1.4M R 16.1   0.0   0:00.07 top -d 2
+  672 mediacodec   20   0 109M  12M 9.0M S 12.9   0.3   3:07.77 media.codec hw/+
+  653 cameraserver 20   0 112M  16M  14M S 12.9   0.4   1:52.38 cameraserver
+  589 system       -2  -8 702M  22M  18M R  9.6   0.5   6:00.51 surfaceflinger
+  582 system       20   0  18M 2.4M 1.9M S  9.6   0.0   1:31.98 vendor.huawei.h+
+15201 u0_a34       20   0 2.5G  74M  58M S  6.4   2.0   0:21.67 com.android.pac+
+  695 shell        20   0  20M 932K 724K S  6.4   0.0   3:14.31 adbd --root_sec+
+  561 audioserver  20   0  49M 5.2M 3.8M S  6.4   0.1   0:18.58 vendor.huawei.h+
+  553 system       -3  -3 106M 4.3M 3.7M S  6.4   0.1   2:01.32 android.hardwar+
+  434 logd         30  10  22M 4.8M 1.2M S  6.4   0.1   1:41.78 logd
+28907 root         20   0    0    0    0 S  3.2   0.0   0:00.01 [HI_VENC_FrameT+
+24462 root         20   0    0    0    0 S  3.2   0.0   0:03.13 [kworker/u16:0]
+28522 root          0 -20    0    0    0 S  3.2   0.0   0:06.37 [kworker/u17:1]
+ 1645 u0_a46       20   0 3.8G 215M 126M S  3.2   5.7   7:03.19 com.android.sys+
+  648 audioserver  20   0  67M  10M 7.3M S  3.2   0.2   0:17.61 audioserver
+  576 system       20   0  13M 2.0M 1.8M S  3.2   0.0   0:17.55 vendor.huawei.h+
+  569 system       20   0  16M 2.3M 2.0M S  3.2   0.0   0:09.56 vendor.huawei.h+[?25h[0m[1000;1H[K[?25h[0m[1000;1H[K[?25l[0m[H[J[s[999C[999B[6n[uTasks: 527 total,   2 running, 486 sleeping,   0 stopped,   0 zombie            
+Mem:   3809016k total,  3543392k used,   265624k free,     4800k buffers        
+Swap:  2293756k total,   353824k used,  1939932k free,  1172888k cached         
+800%cpu 250%user  10%nice 150%sys 390%idle   0%iow   0%irq   0%sirq   0%host    
+[7m  PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS            [0m
+29567 u0_a860      10 -10 3.4G 401M 212M S  113  10.7   0:09.22 com.tvunetworks+
+  676 media        20   0 498M  28M  11M S 53.3   0.7  10:04.63 CameraDaemon hi+
+ 1118 system       18  -2 2.9G 249M 171M S 50.0   6.7  19:48.19 system_server
+30065 shell        20   0  10M 2.2M 1.4M R 26.6   0.0   0:00.06 top -d 2
+  672 mediacodec   20   0 109M  12M 9.0M S 13.3   0.3   3:08.21 media.codec hw/+
+  589 system       -2  -8 702M  22M  18M S 13.3   0.5   6:04.87 surfaceflinger
+  653 cameraserver 20   0 112M  17M  14M S 10.0   0.4   1:52.88 cameraserver
+  695 shell        20   0  20M 1.0M 724K S  6.6   0.0   3:21.89 adbd --root_sec+
+  553 system       -3  -3 106M 4.3M 3.7M S  6.6   0.1   2:03.15 android.hardwar+
+  434 logd         30  10  22M 4.9M 1.2M S  6.6   0.1   1:43.84 logd
+29725 root          0 -20    0    0    0 S  3.3   0.0   0:00.13 [kworker/u17:2]
+29438 shell        20   0  11M 2.2M 1.4M S  3.3   0.0   0:00.65 logcat -v threa+
+30216 root         20   0    0    0    0 R  3.3   0.0   0:10.42 [kworker/u16:2]
+ 1645 u0_a46       20   0 3.8G 209M 125M S  3.3   5.6   7:11.51 com.android.sys+
+  648 audioserver  20   0  67M  10M 7.3M S  3.3   0.2   0:17.90 audioserver
+  582 system       20   0  18M 2.4M 1.9M S  3.3   0.0   1:32.36 vendor.huawei.h+
+  576 system       20   0  13M 2.0M 1.8M S  3.3   0.0   0:18.01 vendor.huawei.h+
+  561 audioserver  20   0  49M 5.2M 3.8M S  3.3   0.1   0:18.75 vendor.huawei.h+
+    8 root         20   0    0    0    0 S  3.3   0.0   0:04.34 [rcu_sched]
+30022 root         20   0    0    0    0 S  0.0   0.0   0:00.02 [HI_VENC_FrameT+[?25h[0m[1000;1H[K[?25h[0m[1000;1H[K[?25l[0m[H[J[s[999C[999B[6n[uTasks: 530 total,   4 running, 487 sleeping,   0 stopped,   0 zombie            
+Mem:   3809016k total,  3641440k used,   167576k free,     4808k buffers        
+Swap:  2293756k total,   354408k used,  1939348k free,  1248008k cached         
+800%cpu 313%user  16%nice 139%sys 329%idle   0%iow   0%irq   3%sirq   0%host    
+[7m  PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS            [0m
+30676 u0_a862      10 -10 3.2G 399M 211M S  112  10.7   0:08.64 com.tvunetworks+
+31171 shell        20   0 6.9M 2.3M 1.9M R 96.7   0.0   0:00.02 app_process /sy+
+ 1118 system       18  -2 2.9G 249M 171M S 67.7   6.6  20:23.43 system_server
+  676 media        20   0 498M  28M  11M S 64.5   0.7  10:06.49 CameraDaemon hi+
+ 1645 u0_a46       20   0 3.8G 239M 139M S 22.5   6.4   7:21.36 com.android.sys+
+31166 shell        20   0  10M 2.2M 1.4M R 16.1   0.0   0:00.08 top -d 2
+  672 mediacodec   20   0 109M  12M 9.0M S 16.1   0.3   3:08.54 media.codec hw/+
+  653 cameraserver 20   0 112M  16M  13M S 12.9   0.4   1:53.25 cameraserver
+  589 system       -2  -8 734M  22M  18M S 12.9   0.5   6:09.32 surfaceflinger
+  695 shell        20   0  21M 1.0M 724K S  9.6   0.0   3:29.45 adbd --root_sec+
+15201 u0_a34       20   0 2.5G  75M  58M S  6.4   2.0   0:25.36 com.android.pac+
+  582 system       20   0  18M 2.4M 1.9M R  6.4   0.0   1:32.68 vendor.huawei.h+
+  561 audioserver  20   0  49M 5.3M 3.8M S  6.4   0.1   0:18.89 vendor.huawei.h+
+  553 system       -3  -3 106M 4.3M 3.7M S  6.4   0.1   2:05.04 android.hardwar+
+  434 logd         30  10  22M 4.9M 1.2M S  6.4   0.1   1:45.92 logd
+31128 root         20   0    0    0    0 S  3.2   0.0   0:00.01 [HI_VENC_FrameT+
+30617 u0_a778      20   0 2.2G  64M  40M S  3.2   1.7   0:05.87 io.appium.uiaut+
+30559 shell        20   0  11M 2.2M 1.4M S  3.2   0.0   0:00.68 logcat -v threa+
+29725 root          0 -20    0    0    0 S  3.2   0.0   0:00.33 [kworker/u17:2]
+ 3613 root         20   0    0    0    0 S  3.2   0.0   0:08.03 [kworker/u16:6][?25h[0m[1000;1H[K[?25h[0m[1000;1H[K[?25l[0m[H[J[s[999C[999B[6n[uTasks: 529 total,   4 running, 485 sleeping,   0 stopped,   0 zombie            
+Mem:   3809016k total,  3577384k used,   231632k free,     4808k buffers        
+Swap:  2293756k total,   354520k used,  1939236k free,  1197892k cached         
+800%cpu 256%user  13%nice 138%sys 388%idle   0%iow   0%irq   6%sirq   0%host    
+[7m  PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS            [0m
+32325 shell        20   0 7.5M 2.5M 2.2M R  100   0.0   0:00.01 app_process /sy+
+31821 u0_a864      10 -10 3.3G 398M 208M S 96.8  10.6   0:08.53 com.tvunetworks+
+ 1118 system       18  -2 2.9G 250M 171M S 68.7   6.7  21:02.16 system_server
+  676 media        20   0 498M  28M  11M S 68.7   0.7  10:08.77 CameraDaemon hi+
+32318 shell        20   0  10M 2.2M 1.4M R 18.7   0.0   0:00.08 top -d 2
+  672 mediacodec   20   0 109M  12M 9.0M S 15.6   0.3   3:08.92 media.codec hw/+
+  695 shell        20   0  21M 1.1M 724K S 12.5   0.0   3:36.88 adbd --root_sec+
+  589 system       -2  -8 735M  22M  18M S 12.5   0.5   6:13.66 surfaceflinger
+ 1645 u0_a46       20   0 3.9G 237M 140M R  9.3   6.3   7:31.25 com.android.sys+
+  653 cameraserver 20   0 112M  17M  14M S  9.3   0.4   1:53.68 cameraserver
+31711 shell        20   0  11M 2.2M 1.4M S  6.2   0.0   0:00.68 logcat -v threa+
+ 2506 u0_a12       20   0 2.3G 102M  68M S  6.2   2.7   0:38.03 com.google.andr+
+  582 system       20   0  18M 2.4M 1.9M S  6.2   0.0   1:33.03 vendor.huawei.h+
+  553 system       -3  -3 106M 4.3M 3.7M S  6.2   0.1   2:06.93 android.hardwar+
+  434 logd         30  10  22M 4.9M 1.2M S  6.2   0.1   1:48.13 logd
+30402 root         20   0    0    0    0 S  3.1   0.0   0:01.25 [kworker/u16:1]
+24462 root         20   0    0    0    0 S  3.1   0.0   0:05.30 [kworker/u16:0]
+ 2097 u0_a66       20   0 3.0G 110M  75M S  3.1   2.9   0:43.16 com.huawei.andr+
+ 2076 radio        20   0 2.3G  66M  53M S  3.1   1.7   0:27.94 com.android.pho+
+  667 wifi         20   0  13M 2.3M 2.0M S  3.1   0.0   0:17.71 wificond[?25h[0m[1000;1H[K[?25h[0m[1000;1H[K[?25l[0m[H[J[s[999C[999B[6n[uTasks: 531 total,   3 running, 489 sleeping,   0 stopped,   0 zombie            
+Mem:   3809016k total,  3562276k used,   246740k free,     4808k buffers        
+Swap:  2293756k total,   354776k used,  1938980k free,  1187568k cached         
+800%cpu 272%user   6%nice 141%sys 366%idle   0%iow   0%irq  16%sirq   0%host    
+[7m  PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS            [0m
+  882 u0_a866      10 -10 3.2G 400M 211M S 96.8  10.7   0:09.03 com.tvunetworks+
+ 1712 shell        20   0 8.6M 1.3M 968K R 93.7   0.0   0:00.00 sh /system/bin/+
+ 1118 system       18  -2 2.9G 248M 171M S 56.2   6.6  21:37.00 system_server
+  676 media        20   0 498M  28M  11M S 56.2   0.7  10:10.83 CameraDaemon hi+
+ 1707 shell        20   0  10M 2.2M 1.4M R 15.6   0.0   0:00.07 top -d 2
+ 1645 u0_a46       20   0 3.8G 208M 125M S 15.6   5.5   7:40.55 com.android.sys+
+  653 cameraserver 20   0 112M  17M  13M S 12.5   0.4   1:54.07 cameraserver
+  589 system       -2  -8 702M  22M  18M S 12.5   0.5   6:18.23 surfaceflinger
+  695 shell        20   0  21M 976K 724K S  9.3   0.0   3:44.57 adbd --root_sec+
+  672 mediacodec   20   0 109M  12M 9.0M S  9.3   0.3   3:09.27 media.codec hw/+
+  582 system       20   0  18M 2.4M 1.9M S  9.3   0.0   1:33.36 vendor.huawei.h+
+  688 u0_a778      20   0 2.2G  65M  40M S  6.2   1.7   0:05.17 io.appium.uiaut+
+  434 logd         30  10  22M 4.9M 1.2M S  6.2   0.1   1:50.22 logd
+ 1665 root         20   0    0    0    0 S  3.1   0.0   0:00.01 [HI_VENC_FrameT+
+  504 shell        20   0  11M 2.2M 1.4M S  3.1   0.0   0:00.68 logcat -v threa+
+ 3782 root         20   0    0    0    0 S  3.1   0.0   0:09.23 [kworker/u16:8]
+ 1978 system       20   0 2.4G 102M  64M S  3.1   2.7   1:13.59 com.huawei.syst+
+  576 system       20   0  13M 2.0M 1.8M S  3.1   0.0   0:19.39 vendor.huawei.h+
+  569 system       20   0  16M 2.3M 2.0M S  3.1   0.0   0:10.56 vendor.huawei.h+
+  561 audioserver  20   0  49M 5.3M 3.8M S  3.1   0.1   0:19.21 vendor.huawei.h+[?25h[0m[1000;1H[K[?25h[0m[1000;1H[K[?25l[0m[H[J[s[999C[999B[6n[uTasks: 530 total,   1 running, 489 sleeping,   0 stopped,   0 zombie            
+Mem:   3809016k total,  3567292k used,   241724k free,     4816k buffers        
+Swap:  2293756k total,   357364k used,  1936392k free,  1193572k cached         
+800%cpu 257%user  10%nice 127%sys 400%idle   0%iow   0%irq   7%sirq   0%host    
+[7m  PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS            [0m
+ 2838 u0_a868      10 -10 3.4G 398M 210M S  100  10.6   0:08.99 com.tvunetworks+
+ 1118 system       18  -2 2.9G 249M 171M S 53.3   6.6  22:12.37 system_server
+  676 media        20   0 499M  28M  11M S 53.3   0.7  10:12.88 CameraDaemon hi+
+ 3610 shell        20   0  10M 2.2M 1.4M R 16.6   0.0   0:00.05 top -d 2
+  672 mediacodec   20   0 109M  12M 9.0M S 16.6   0.3   3:09.63 media.codec hw/+
+  653 cameraserver 20   0 112M  17M  14M S 13.3   0.4   1:54.52 cameraserver
+  589 system       -2  -8 703M  22M  18M S 10.0   0.5   6:22.97 surfaceflinger
+  582 system       20   0  18M 2.4M 1.9M S 10.0   0.0   1:33.70 vendor.huawei.h+
+  695 shell        20   0  20M 944K 724K S  6.6   0.0   3:52.20 adbd --root_sec+
+  576 system       20   0  13M 2.0M 1.8M S  6.6   0.0   0:19.86 vendor.huawei.h+
+  434 logd         30  10  22M 4.9M 1.2M S  6.6   0.1   1:52.39 logd
+ 3564 root         20   0    0    0    0 S  3.3   0.0   0:00.01 [HI_VENC_FrameT+
+ 2683 shell        20   0  11M 2.2M 1.4M S  3.3   0.0   0:00.71 logcat -v threa+
+15201 u0_a34       20   0 2.5G  75M  58M S  3.3   2.0   0:31.00 com.android.pac+
+ 3609 root         20   0    0    0    0 S  3.3   0.0   0:08.38 [kworker/u16:4]
+ 1645 u0_a46       20   0 3.8G 214M 126M S  3.3   5.7   7:49.70 com.android.sys+
+  561 audioserver   1 -19  49M 5.4M 3.8M D  3.3   0.1   0:19.36 vendor.huawei.h+
+  553 system       -3  -3 106M 4.3M 3.7M S  3.3   0.1   2:10.91 android.hardwar+
+  219 root         RT   0    0    0    0 S  3.3   0.0   0:05.37 [rpmsg_tx_tsk]
+    3 root         20   0    0    0    0 S  3.3   0.0   0:07.72 [ksoftirqd/0][?25h[0m[1000;1H[K[?25h[0m[1000;1H[K[?25l[0m[H[J[s[999C[999B[6n[uTasks: 526 total,   5 running, 483 sleeping,   0 stopped,   0 zombie            
+Mem:   3809016k total,  3606212k used,   202804k free,     4756k buffers        
+Swap:  2293756k total,   337444k used,  1956312k free,  1194444k cached         
+800%cpu 261%user  19%nice 135%sys 381%idle   0%iow   0%irq   3%sirq   0%host    
+[7m  PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS            [0m
+19113 u0_a870      10 -10 3.2G 400M 211M S  100  10.7   0:08.62 com.tvunetworks+
+19695 shell        20   0 4.6M 1.2M 1.0M R 93.5   0.0   0:00.01 app_process /sy+
+ 1118 system       18  -2 2.9G 253M 172M S 54.8   6.7  30:01.19 system_server
+  676 media        20   0 499M  29M  11M S 54.8   0.7  10:14.82 CameraDaemon hi+
+19690 shell        20   0  10M 2.2M 1.4M R 12.9   0.0   0:00.08 top -d 2
+  672 mediacodec   20   0 109M  12M 9.0M S 12.9   0.3   3:09.99 media.codec hw/+
+  653 cameraserver 20   0 112M  17M  14M S 12.9   0.4   1:54.87 cameraserver
+  589 system       -2  -8 735M  22M  18M S 12.9   0.5   8:32.79 surfaceflinger
+ 1645 u0_a46       20   0 3.9G 297M 142M R  9.6   7.9  15:50.44 com.android.sys+
+  695 shell        20   0  21M 1.1M 724K S  9.6   0.0   4:21.32 adbd --root_sec+
+  553 system       -3  -3 106M 4.3M 3.7M S  9.6   0.1   2:36.15 android.hardwar+
+19306 u0_a34       20   0 2.5G  72M  57M S  6.4   1.9   0:02.43 com.android.pac+
+  582 system       RT   0  18M 2.4M 1.9M S  6.4   0.0   1:44.38 vendor.huawei.h+
+  434 logd         30  10  22M 4.9M 1.2M S  6.4   0.1   2:14.82 logd
+19632 root         20   0    0    0    0 S  3.2   0.0   0:00.01 [HI_VENC_FrameT+
+19054 u0_a778      20   0 2.2G  65M  40M S  3.2   1.7   0:04.59 io.appium.uiaut+
+18970 shell        20   0  11M 2.2M 1.4M S  3.2   0.0   0:00.71 logcat -v threa+
+  648 audioserver  20   0  67M  10M 7.3M S  3.2   0.2   0:19.29 audioserver
+  576 system       20   0  13M 2.0M 1.8M S  3.2   0.0   0:20.32 vendor.huawei.h+
+   17 root         20   0    0    0    0 S  3.2   0.0   0:03.96 [ksoftirqd/2][?25h[0m[1000;1H[K[?25h[0m[1000;1H[K[?25l[0m[H[J[s[999C[999B[6n[uTasks: 529 total,   8 running, 483 sleeping,   0 stopped,   0 zombie            
+Mem:   3809016k total,  3603232k used,   205784k free,     4740k buffers        
+Swap:  2293756k total,   338492k used,  1955264k free,  1195300k cached         
+800%cpu 290%user   0%nice 139%sys 358%idle   0%iow   0%irq  13%sirq   0%host    
+[7m  PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS            [0m
+20818 shell        20   0 4.5M 1.2M 1.0M R  109   0.0   0:00.01 app_process /sy+
+20318 u0_a872      10 -10 3.4G 402M 212M S 93.5  10.8   0:08.96 com.tvunetworks+
+ 1118 system       18  -2 2.9G 251M 172M R 67.7   6.7  30:32.42 system_server
+  676 media        20   0 499M  28M  11M S 61.2   0.7  10:17.83 CameraDaemon hi+
+20813 shell        20   0  10M 2.2M 1.4M R 22.5   0.0   0:00.08 top -d 2
+ 1645 u0_a46       20   0 3.9G 260M 126M R 22.5   6.9  15:58.87 com.android.sys+
+  653 cameraserver 20   0 112M  17M  13M S 12.9   0.4   1:55.36 cameraserver
+  695 shell        20   0  21M 1.0M 724K S  9.6   0.0   4:28.59 adbd --root_sec+
+  672 mediacodec   20   0 109M  12M 8.9M S  9.6   0.3   3:10.55 media.codec hw/+
+  589 system       -2  -8 702M  22M  18M S  9.6   0.5   8:36.93 surfaceflinger
+  434 logd         30  10  22M 4.8M 1.2M S  9.6   0.1   2:16.70 logd
+  582 system       20   0  18M 2.3M 1.9M S  6.4   0.0   1:44.78 vendor.huawei.h+
+  576 system       20   0  13M 2.0M 1.7M S  6.4   0.0   0:20.80 vendor.huawei.h+
+  553 system       -3  -3 106M 4.2M 3.6M S  6.4   0.1   2:37.90 android.hardwar+
+20765 root         20   0    0    0    0 S  3.2   0.0   0:00.02 [HI_VENC_FrameT+
+20260 u0_a778      20   0 2.2G  67M  40M S  3.2   1.8   0:04.92 io.appium.uiaut+
+20210 shell        20   0  11M 2.3M 1.4M S  3.2   0.0   0:00.64 logcat -v threa+
+18019 root         20   0    0    0    0 S  3.2   0.0   0:00.26 [kworker/0:2]
+ 2097 u0_a66       20   0 3.0G 112M  75M S  3.2   2.9   1:13.77 com.huawei.andr+
+ 2076 radio        20   0 2.3G  66M  53M R  3.2   1.7   0:37.84 com.android.pho+[?25h[0m[1000;1H[K[?25h[0m[1000;1H[K[?25l[0m[H[J[s[999C[999B[6n[uTasks: 530 total,   3 running, 489 sleeping,   0 stopped,   0 zombie            
+Mem:   3809016k total,  3583052k used,   225964k free,     4744k buffers        
+Swap:  2293756k total,   349996k used,  1943760k free,  1153640k cached         
+800%cpu 290%user  17%nice 160%sys 323%idle   0%iow   0%irq  10%sirq   0%host    
+[7m  PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS            [0m
+21436 u0_a874      10 -10 3.3G 399M 210M S  110  10.7   0:08.17 com.tvunetworks+
+ 1118 system       18  -2 2.9G 250M 171M S 66.6   6.7  31:03.67 system_server
+  676 media        20   0 499M  28M  11M S 56.6   0.7  10:20.55 CameraDaemon hi+
+21924 shell        20   0  10M 2.2M 1.4M R 23.3   0.0   0:00.06 top -d 2
+  695 shell        20   0  20M 0.9M 724K S 10.0   0.0   4:35.87 adbd --root_sec+
+  672 mediacodec   20   0 109M  12M 9.0M S 10.0   0.3   3:11.07 media.codec hw/+
+  653 cameraserver 20   0 112M  16M  14M S 10.0   0.4   1:55.88 cameraserver
+  589 system       -2  -8 734M  22M  18M S 10.0   0.5   8:40.82 surfaceflinger
+ 3314 u0_a12       20   0 2.5G 117M  77M S  6.6   3.1   2:14.15 com.google.andr+
+  582 system       RT   0  18M 2.3M 1.9M S  6.6   0.0   1:45.18 vendor.huawei.h+
+  553 system       -3  -3 106M 4.2M 3.6M S  6.6   0.1   2:39.53 android.hardwar+
+21376 u0_a778      20   0 2.2G  64M  40M S  3.3   1.7   0:04.54 io.appium.uiaut+
+21323 shell        20   0  11M 2.2M 1.4M S  3.3   0.0   0:00.63 logcat -v threa+
+18565 u0_a25       20   0 1.8G  69M  54M S  3.3   1.8   0:04.21 com.android.ven+
+18433 root         20   0    0    0    0 S  3.3   0.0   0:01.39 [kworker/u16:5]
+17899 root         20   0    0    0    0 R  3.3   0.0   0:01.42 [kworker/u16:2]
+ 2506 u0_a12       20   0 2.3G 103M  67M S  3.3   2.7   0:45.40 com.google.andr+
+ 1645 u0_a46       20   0 3.9G 286M 140M R  3.3   7.6  16:07.33 com.android.sys+
+  576 system       20   0  13M 2.0M 1.7M S  3.3   0.0   0:21.22 vendor.huawei.h+
+  569 system       20   0  16M 2.2M 2.0M S  3.3   0.0   0:11.55 vendor.huawei.h+[?25h[0m[1000;1H[K[?25h[0m[1000;1H[K[?25l[0m[H[J[s[999C[999B[6n[uTasks: 530 total,   1 running, 491 sleeping,   0 stopped,   0 zombie            
+Mem:   3809016k total,  3600484k used,   208532k free,     4672k buffers        
+Swap:  2293756k total,   357988k used,  1935768k free,  1173292k cached         
+800%cpu 230%user   3%nice 127%sys 430%idle   0%iow   0%irq  10%sirq   0%host    
+[7m  PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS            [0m
+22531 u0_a876      10 -10 3.2G 400M 211M S 80.0  10.7   0:09.31 com.tvunetworks+
+  676 media        20   0 499M  28M  11M S 50.0   0.7  10:23.20 CameraDaemon hi+
+ 1118 system       18  -2 2.9G 267M 171M S 46.6   7.1  31:34.49 system_server
+23030 shell        20   0  10M 2.2M 1.4M R 13.3   0.0   0:00.06 top -d 2
+  672 mediacodec   20   0 109M  12M 9.0M S 13.3   0.3   3:11.58 media.codec hw/+
+  695 shell        20   0  20M 980K 724K S 10.0   0.0   4:43.21 adbd --root_sec+
+  653 cameraserver 20   0 112M  17M  14M S 10.0   0.4   1:56.36 cameraserver
+  589 system       -2  -8 735M  22M  18M S 10.0   0.5   8:44.94 surfaceflinger
+  582 system       RT   0  18M 2.3M 1.9M S  6.6   0.0   1:45.61 vendor.huawei.h+
+  553 system       -3  -3 106M 4.2M 3.6M S  6.6   0.1   2:41.24 android.hardwar+
+22474 u0_a778      20   0 2.2G  64M  40M S  3.3   1.7   0:04.97 io.appium.uiaut+
+14396 root          0 -20    0    0    0 S  3.3   0.0   0:01.86 [kworker/u17:0]
+  576 system       20   0  13M 2.0M 1.7M S  3.3   0.0   0:21.66 vendor.huawei.h+
+  561 audioserver  20   0  49M 5.0M 3.5M S  3.3   0.1   0:20.10 vendor.huawei.h+
+  434 logd         30  10  22M 4.8M 1.2M S  3.3   0.1   2:20.58 logd
+    7 root         20   0    0    0    0 S  3.3   0.0   1:01.97 [rcu_preempt]
+22984 root         20   0    0    0    0 S  0.0   0.0   0:00.02 [HI_VENC_FrameT+
+22626 root          0 -20    0    0    0 S  0.0   0.0   0:00.00 [kbase_event]
+22461 shell        20   0 1.9G  42M  34M S  0.0   1.1   0:00.38 app_process /sy+
+22422 shell        20   0  11M 2.2M 1.4M S  0.0   0.0   0:00.68 logcat -v threa+[?25h[0m[1000;1H[K[?25h[0m[1000;1H[K[?25l[0m[H[J[s[999C[999B[6n[uTasks: 528 total,   5 running, 483 sleeping,   0 stopped,   0 zombie            
+Mem:   3809016k total,  3608816k used,   200200k free,     4672k buffers        
+Swap:  2293756k total,   359224k used,  1934532k free,  1192664k cached         
+800%cpu 265%user   6%nice 155%sys 355%idle   0%iow   0%irq  19%sirq   0%host    
+[7m  PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS            [0m
+24152 shell        20   0 1.9M 460K 280K R  100   0.0   0:00.01 app_process /sy+
+23656 u0_a878      10 -10 3.4G 401M 211M S  100  10.7   0:07.50 com.tvunetworks+
+ 1118 system       18  -2 2.9G 252M 171M R 58.0   6.7  32:05.16 system_server
+  676 media        20   0 499M  28M  11M S 54.8   0.7  10:25.12 CameraDaemon hi+
+24147 shell        20   0  10M 2.2M 1.4M R 19.3   0.0   0:00.08 top -d 2
+  589 system       -2  -8 735M  22M  18M S 19.3   0.5   8:48.74 surfaceflinger
+  672 mediacodec   20   0 109M  12M 8.9M S 12.9   0.3   3:11.92 media.codec hw/+
+  653 cameraserver 20   0 112M  16M  13M S 12.9   0.4   1:56.71 cameraserver
+  561 audioserver  20   0  49M 5.0M 3.5M S  9.6   0.1   0:20.24 vendor.huawei.h+
+19306 u0_a34       20   0 2.5G  75M  58M S  6.4   2.0   0:10.15 com.android.pac+
+  695 shell        20   0  21M 1.1M 724K R  6.4   0.0   4:50.16 adbd --root_sec+
+  582 system       RT   0  18M 2.3M 1.9M S  6.4   0.0   1:45.96 vendor.huawei.h+
+  434 logd         30  10  22M 4.8M 1.2M S  6.4   0.1   2:22.38 logd
+24113 root         20   0    0    0    0 S  3.2   0.0   0:00.01 [HI_VENC_FrameT+
+23596 u0_a778      20   0 2.2G  64M  40M S  3.2   1.7   0:04.37 io.appium.uiaut+
+ 1645 u0_a46       20   0 3.9G 293M 140M S  3.2   7.8  16:24.52 com.android.sys+
+  648 audioserver  20   0  67M  10M 7.3M S  3.2   0.2   0:20.46 audioserver
+  576 system       20   0  13M 2.0M 1.7M R  3.2   0.0   0:22.06 vendor.huawei.h+
+  569 system       20   0  16M 2.2M 2.0M S  3.2   0.0   0:11.99 vendor.huawei.h+
+  553 system       -3  -3 106M 4.2M 3.6M S  3.2   0.1   2:42.80 android.hardwar+[?25h[0m[1000;1H[K[?25h[0m[1000;1H[K

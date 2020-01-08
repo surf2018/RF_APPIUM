@@ -1,0 +1,2 @@
+*** Settings ***
+Documentation     Tools：创建 apk 文件夹，存放 被测 APP 的 apk。

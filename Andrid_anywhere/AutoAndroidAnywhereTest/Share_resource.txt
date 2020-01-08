@@ -1,0 +1,73 @@
+*** Settings ***
+Documentation     用例公共的Test Setup & Teardown
+...               目的：对所有用例作公共资源的初始化、现场保存和垃圾回收
+Library           myTestLibrary
+Library           AppiumLibrary    run_on_failure=AppiumLibrary.CapturePageScreenshot
+Library           Screenshot
+Library           OperatingSystem
+Resource          ./MainKeys.txt
+Library           String
+Library           Collections
+Library           Common/Library/main.py
+
+*** Keywords ***
+Common_Test_Setup
+    [Arguments]    ${TEST_NAME}    ${OUTPUT_DIR}
+    [Documentation]    A. 改变日志等级：Set Log Level Trace
+    ...    Trace会返回详细日志，追踪错误原因；
+    ...
+    ...    B. 关闭所有App：减少因未能正常关闭浏览器而致使RIDE软件死掉的问题；
+    ...
+    ...    C. 新建日志目录：Create Log Path
+    ...    RIDE默认日志目录是在C盘临时目录，不易管理；
+    ...    改变目录到G_LOG，并在logs下以用例名为每个用例建立单独目录；
+    ...
+    ...    D. 改变截屏存储路径：Capture Page Screenshot
+    ...    保存截屏存储路径到用例目录G_CURRENT，便于查找与分析错误。
+    [Timeout]
+    #Change log Level for Debug
+    log    "run Common_Test_Setup"
+    Set Log Level    TRACE
+    #Close Application
+    #Set Log to Custome Path
+    Create Log Path    ${TEST_NAME}    ${OUTPUT_DIR}
+    #Save ScreebShort to Current Directory
+    Capture Page Screenshot    %{G_CURRENTLOG}
+
+Common_Test_Teardown
+    [Documentation]    A. 存储测试结果到指定文件： Run echo “${TEST_NAME}:${TEST_STATUS}:${TEST MESSAGE}” >> %{G_TOTAL_RESULT}
+    ...    把结果存储单独的文件，用于发报告；
+    ...    B. 多浏览器兼容性测试后，设置回初始浏览器；
+    ...    C. 关闭webdriver：减少因未能正常关闭webdriver而致使RIDE软件无法运行的问题。
+    ...    D. Teardown中关闭所有浏览器：如果前面有些关键字未能成功执行，Teardown能保证即使失败也会执行。
+    [Timeout]    15 minutes
+    #Set \ test resut to file
+    log    "run Common_Test_Teardown"
+    OperatingSystem.Run    echo"${TEST_NAME}:${TEST_STATUS}:${TEST_MESSAGE}">>%{G_TOTAL_RESULT}
+    [Teardown]    Close Application
+
+Stress_Test_Setup
+    [Arguments]    ${TEST_NAME}    ${OUTPUT_DIR}
+    [Documentation]    05StressTest使用的setup
+    #Change log Level for Debug
+    log    "run Stress_Test_Setup"
+    Set Log Level    TRACE
+    #Close Application
+    #Set Log to Custome Path
+    Create Log Path    ${TEST_NAME}    ${OUTPUT_DIR}
+    #Save ScreebShort to Current Directory
+    #Capture Page Screenshot    %{G_CURRENTLOG}
+    #Setup Record Android : log enabled
+    Set Environment Variable    U_ANDROID_LOG_RECORD    True
+    #Record Android Log
+    #Run Keyword If    '%{U_ANDROID_LOG_RECORD}'.lower()=='true'    log    "记入logcat.txt"
+    #Record CPU & Memory Log
+    #log    "Record CPU & Memory Log"
+    #top    2
+
+Stress_Suit_Teardown
+    [Documentation]    05StressTest 中teardown使用
+    log    "run Stress_Suit_Teardown"
+    Run keyword If    '%{U_SAVE_APP_TOP_MEM_REPORT}'=='True'    Create CPU And Mem Report    mem_detail=MemoryDetail
+    log    “设置u_android_log_record为false"
+    Set Environment Variable    U_ANDROID_LOG_RECORD    False

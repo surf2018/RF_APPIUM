@@ -1,0 +1,1123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20200108 09:28:59.725" generator="Robot 3.1.2 (Python 2.7.17rc1 on win32)">
+<suite source="D:\COM_DOC\robotframwork\Andrid_anywhere\AutoAndroidAnywhereTest" id="s1" name="AutoAndroidAnywhereTest">
+<kw type="setup" name="Setup_Pre_Condition" library="EnvironmentKey">
+<doc>A. Setup_Testbed_Variable：测试机相关预设；</doc>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>"执行setup_pre_condition"</arg>
+</arguments>
+<msg timestamp="20200108 09:29:02.563" level="INFO">"执行setup_pre_condition"</msg>
+<status status="PASS" endtime="20200108 09:29:02.563" starttime="20200108 09:29:02.563"></status>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>datetime.datetime.now()</arg>
+<arg>datetime</arg>
+</arguments>
+<assign>
+<var>${time}</var>
+</assign>
+<msg timestamp="20200108 09:29:02.564" level="INFO">${time} = 2020-01-08 09:29:02.564000</msg>
+<status status="PASS" endtime="20200108 09:29:02.564" starttime="20200108 09:29:02.564"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>"导入环境变量"</arg>
+</arguments>
+<msg timestamp="20200108 09:29:02.565" level="INFO">"导入环境变量"</msg>
+<status status="PASS" endtime="20200108 09:29:02.565" starttime="20200108 09:29:02.565"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_CUSTOM_TEST_TASK_START_TIME</arg>
+<arg>${time}</arg>
+</arguments>
+<msg timestamp="20200108 09:29:02.566" level="INFO">Environment variable 'U_CUSTOM_TEST_TASK_START_TIME' set to value '2020-01-08 09:29:02.564000'.</msg>
+<status status="PASS" endtime="20200108 09:29:02.567" starttime="20200108 09:29:02.566"></status>
+</kw>
+<kw name="Setup_APP_Variable" library="EnvironmentKey">
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>G_APPIUM_APK_NAME</arg>
+<arg>TVUAnywhere_V8.0.6.281_1912201536_release.apk</arg>
+</arguments>
+<msg timestamp="20200108 09:29:02.568" level="INFO">Environment variable 'G_APPIUM_APK_NAME' set to value 'TVUAnywhere_V8.0.6.281_1912201536_release.apk'.</msg>
+<status status="PASS" endtime="20200108 09:29:02.568" starttime="20200108 09:29:02.567"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>G_APPIUM_APP_DIR</arg>
+<arg>D:\\AutoTest\\androidApk</arg>
+</arguments>
+<msg timestamp="20200108 09:29:02.569" level="INFO">Environment variable 'G_APPIUM_APP_DIR' set to value 'D:\AutoTest\androidApk'.</msg>
+<status status="PASS" endtime="20200108 09:29:02.569" starttime="20200108 09:29:02.568"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>G_APPIUM_APP_APK</arg>
+<arg>%{G_APPIUM_APP_DIR}\\%{G_APPIUM_APK_NAME}</arg>
+</arguments>
+<msg timestamp="20200108 09:29:02.569" level="INFO">Environment variable 'G_APPIUM_APP_APK' set to value 'D:\AutoTest\androidApk\TVUAnywhere_V8.0.6.281_1912201536_release.apk'.</msg>
+<status status="PASS" endtime="20200108 09:29:02.570" starttime="20200108 09:29:02.569"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>G_APPIUM_AUTO_NAME</arg>
+<arg>uiautomator2</arg>
+</arguments>
+<msg timestamp="20200108 09:29:02.570" level="INFO">Environment variable 'G_APPIUM_AUTO_NAME' set to value 'uiautomator2'.</msg>
+<status status="PASS" endtime="20200108 09:29:02.570" starttime="20200108 09:29:02.570"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>G_APPIUM_REINSTALL_RESET</arg>
+<arg>False</arg>
+</arguments>
+<msg timestamp="20200108 09:29:02.571" level="INFO">Environment variable 'G_APPIUM_REINSTALL_RESET' set to value 'False'.</msg>
+<status status="PASS" endtime="20200108 09:29:02.571" starttime="20200108 09:29:02.571"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>G_APPIUM_HOST_IP0</arg>
+<arg>http://127.0.0.1:4723/wd/hub</arg>
+</arguments>
+<msg timestamp="20200108 09:29:02.572" level="INFO">Environment variable 'G_APPIUM_HOST_IP0' set to value 'http://127.0.0.1:4723/wd/hub'.</msg>
+<status status="PASS" endtime="20200108 09:29:02.572" starttime="20200108 09:29:02.571"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>G_APPIUM_APP_PACKAGE</arg>
+<arg>com.tvunetworks.android.anywhere</arg>
+</arguments>
+<msg timestamp="20200108 09:29:02.573" level="INFO">Environment variable 'G_APPIUM_APP_PACKAGE' set to value 'com.tvunetworks.android.anywhere'.</msg>
+<status status="PASS" endtime="20200108 09:29:02.573" starttime="20200108 09:29:02.572"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>G_APPIUM_PLATFORM_NAME</arg>
+<arg>Android</arg>
+</arguments>
+<msg timestamp="20200108 09:29:02.573" level="INFO">Environment variable 'G_APPIUM_PLATFORM_NAME' set to value 'Android'.</msg>
+<status status="PASS" endtime="20200108 09:29:02.573" starttime="20200108 09:29:02.573"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>G_APPIUM_PLATFORM_VERSION</arg>
+<arg>8.0.0</arg>
+</arguments>
+<msg timestamp="20200108 09:29:02.574" level="INFO">Environment variable 'G_APPIUM_PLATFORM_VERSION' set to value '8.0.0'.</msg>
+<status status="PASS" endtime="20200108 09:29:02.574" starttime="20200108 09:29:02.574"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_APPIUM_DEVICE_NAME</arg>
+<arg>${EMPTY}</arg>
+</arguments>
+<msg timestamp="20200108 09:29:02.575" level="INFO">Environment variable 'U_APPIUM_DEVICE_NAME' set to value ''.</msg>
+<status status="PASS" endtime="20200108 09:29:02.575" starttime="20200108 09:29:02.575"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>G_APPIUM_HOST_ADDRESS</arg>
+<arg>127.0.0.1</arg>
+</arguments>
+<msg timestamp="20200108 09:29:02.576" level="INFO">Environment variable 'G_APPIUM_HOST_ADDRESS' set to value '127.0.0.1'.</msg>
+<status status="PASS" endtime="20200108 09:29:02.576" starttime="20200108 09:29:02.576"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>G_APPIUM_HOST_PORT</arg>
+<arg>4723</arg>
+</arguments>
+<msg timestamp="20200108 09:29:02.577" level="INFO">Environment variable 'G_APPIUM_HOST_PORT' set to value '4723'.</msg>
+<status status="PASS" endtime="20200108 09:29:02.577" starttime="20200108 09:29:02.576"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_APPIUM_APPACTIVITY</arg>
+<arg>AppStart</arg>
+</arguments>
+<msg timestamp="20200108 09:29:02.578" level="INFO">Environment variable 'U_APPIUM_APPACTIVITY' set to value 'AppStart'.</msg>
+<status status="PASS" endtime="20200108 09:29:02.578" starttime="20200108 09:29:02.577"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>G_APPIUM_APP_BUGREPORT_DIR</arg>
+<arg>D:\\COM_DOC\\robotframwork\\results\\bugreport</arg>
+</arguments>
+<msg timestamp="20200108 09:29:02.578" level="INFO">Environment variable 'G_APPIUM_APP_BUGREPORT_DIR' set to value 'D:\COM_DOC\robotframwork\results\bugreport'.</msg>
+<status status="PASS" endtime="20200108 09:29:02.579" starttime="20200108 09:29:02.578"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_APP_CURRENT_VERSION</arg>
+</arguments>
+<msg timestamp="20200108 09:29:02.579" level="INFO">Environment variable 'U_APP_CURRENT_VERSION' set to value ''.</msg>
+<status status="PASS" endtime="20200108 09:29:02.579" starttime="20200108 09:29:02.579"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_APP_GA_VERSION</arg>
+</arguments>
+<msg timestamp="20200108 09:29:02.580" level="INFO">Environment variable 'U_APP_GA_VERSION' set to value ''.</msg>
+<status status="PASS" endtime="20200108 09:29:02.580" starttime="20200108 09:29:02.580"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_APP_TESTING_TYPE</arg>
+<arg>offline</arg>
+</arguments>
+<msg timestamp="20200108 09:29:02.581" level="INFO">Environment variable 'U_APP_TESTING_TYPE' set to value 'offline'.</msg>
+<status status="PASS" endtime="20200108 09:29:02.581" starttime="20200108 09:29:02.580"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_APP_WAITING_TIME</arg>
+<arg>30</arg>
+</arguments>
+<msg timestamp="20200108 09:29:02.582" level="INFO">Environment variable 'U_APP_WAITING_TIME' set to value '30'.</msg>
+<status status="PASS" endtime="20200108 09:29:02.582" starttime="20200108 09:29:02.581"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_APP_VIDEO_WAITING_TIME</arg>
+<arg>20</arg>
+</arguments>
+<msg timestamp="20200108 09:29:02.583" level="INFO">Environment variable 'U_APP_VIDEO_WAITING_TIME' set to value '20'.</msg>
+<status status="PASS" endtime="20200108 09:29:02.583" starttime="20200108 09:29:02.582"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_APP_Activity</arg>
+<arg>AppStart</arg>
+</arguments>
+<msg timestamp="20200108 09:29:02.583" level="INFO">Environment variable 'U_APP_Activity' set to value 'AppStart'.</msg>
+<status status="PASS" endtime="20200108 09:29:02.584" starttime="20200108 09:29:02.583"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_APP_ApkName</arg>
+<arg>TVUAnywhere_V8.0.6.281_1912201536_release.apk</arg>
+</arguments>
+<msg timestamp="20200108 09:29:02.584" level="INFO">Environment variable 'U_APP_ApkName' set to value 'TVUAnywhere_V8.0.6.281_1912201536_release.apk'.</msg>
+<status status="PASS" endtime="20200108 09:29:02.584" starttime="20200108 09:29:02.584"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_APP_TpeerId</arg>
+<arg>0x4B8D62040DA471B2</arg>
+</arguments>
+<msg timestamp="20200108 09:29:02.585" level="INFO">Environment variable 'U_APP_TpeerId' set to value '0x4B8D62040DA471B2'.</msg>
+<status status="PASS" endtime="20200108 09:29:02.585" starttime="20200108 09:29:02.585"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_APP_Tversion</arg>
+<arg>Version: 8.0.6.281 : VTR-AL00</arg>
+</arguments>
+<msg timestamp="20200108 09:29:02.586" level="INFO">Environment variable 'U_APP_Tversion' set to value 'Version: 8.0.6.281 : VTR-AL00'.</msg>
+<status status="PASS" endtime="20200108 09:29:02.586" starttime="20200108 09:29:02.585"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_APP_Res</arg>
+<arg>720P30</arg>
+</arguments>
+<msg timestamp="20200108 09:29:02.587" level="INFO">Environment variable 'U_APP_Res' set to value '720P30'.</msg>
+<status status="PASS" endtime="20200108 09:29:02.587" starttime="20200108 09:29:02.586"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_APP_HEVC</arg>
+<arg>OFF</arg>
+</arguments>
+<msg timestamp="20200108 09:29:02.587" level="INFO">Environment variable 'U_APP_HEVC' set to value 'OFF'.</msg>
+<status status="PASS" endtime="20200108 09:29:02.588" starttime="20200108 09:29:02.587"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_APP_Resolution</arg>
+<arg>1280 x 720</arg>
+</arguments>
+<msg timestamp="20200108 09:29:02.588" level="INFO">Environment variable 'U_APP_Resolution' set to value '1280 x 720'.</msg>
+<status status="PASS" endtime="20200108 09:29:02.588" starttime="20200108 09:29:02.588"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_APP_Framerate</arg>
+<arg>30p</arg>
+</arguments>
+<msg timestamp="20200108 09:29:02.589" level="INFO">Environment variable 'U_APP_Framerate' set to value '30p'.</msg>
+<status status="PASS" endtime="20200108 09:29:02.589" starttime="20200108 09:29:02.589"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_APP_ONLINE_USER</arg>
+<arg>${EMPTY}</arg>
+</arguments>
+<msg timestamp="20200108 09:29:02.590" level="INFO">Environment variable 'U_APP_ONLINE_USER' set to value ''.</msg>
+<status status="PASS" endtime="20200108 09:29:02.590" starttime="20200108 09:29:02.589"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_APP_ONLINE_PWD</arg>
+<arg>${EMPTY}</arg>
+</arguments>
+<msg timestamp="20200108 09:29:02.591" level="INFO">Environment variable 'U_APP_ONLINE_PWD' set to value ''.</msg>
+<status status="PASS" endtime="20200108 09:29:02.591" starttime="20200108 09:29:02.590"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_APP_OFFLINE_USER</arg>
+<arg>soffeeshu@tvu.com</arg>
+</arguments>
+<msg timestamp="20200108 09:29:02.591" level="INFO">Environment variable 'U_APP_OFFLINE_USER' set to value 'soffeeshu@tvu.com'.</msg>
+<status status="PASS" endtime="20200108 09:29:02.592" starttime="20200108 09:29:02.591"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_APP_OFFLINE_PWD</arg>
+<arg>123456</arg>
+</arguments>
+<msg timestamp="20200108 09:29:02.593" level="INFO">Environment variable 'U_APP_OFFLINE_PWD' set to value '123456'.</msg>
+<status status="PASS" endtime="20200108 09:29:02.593" starttime="20200108 09:29:02.592"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_APP_OFFLINE_Rname</arg>
+<arg>v3500_linuxR</arg>
+</arguments>
+<msg timestamp="20200108 09:29:02.594" level="INFO">Environment variable 'U_APP_OFFLINE_Rname' set to value 'v3500_linuxR'.</msg>
+<status status="PASS" endtime="20200108 09:29:02.594" starttime="20200108 09:29:02.593"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_APP_OFFLINE_destination</arg>
+<arg>soffee_test_youtube</arg>
+</arguments>
+<msg timestamp="20200108 09:29:02.594" level="INFO">Environment variable 'U_APP_OFFLINE_destination' set to value 'soffee_test_youtube'.</msg>
+<status status="PASS" endtime="20200108 09:29:02.595" starttime="20200108 09:29:02.594"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_ANDROID_LOG_RECORD</arg>
+<arg>True</arg>
+</arguments>
+<msg timestamp="20200108 09:29:02.595" level="INFO">Environment variable 'U_ANDROID_LOG_RECORD' set to value 'True'.</msg>
+<status status="PASS" endtime="20200108 09:29:02.595" starttime="20200108 09:29:02.595"></status>
+</kw>
+<status status="PASS" endtime="20200108 09:29:02.596" starttime="20200108 09:29:02.567"></status>
+</kw>
+<kw name="Setup_Testbed_Variable" library="EnvironmentKey">
+<doc>Setup_Testbed_Variable：测试机相关预设；</doc>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>G_SQAROOT</arg>
+<arg>D:\\COM_DOC\\robotframwork</arg>
+</arguments>
+<msg timestamp="20200108 09:29:02.597" level="INFO">Environment variable 'G_SQAROOT' set to value 'D:\COM_DOC\robotframwork'.</msg>
+<status status="PASS" endtime="20200108 09:29:02.597" starttime="20200108 09:29:02.596"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>G_LOG</arg>
+<arg>%{G_SQAROOT}\\logs</arg>
+</arguments>
+<msg timestamp="20200108 09:29:02.597" level="INFO">Environment variable 'G_LOG' set to value 'D:\COM_DOC\robotframwork\logs'.</msg>
+<status status="PASS" endtime="20200108 09:29:02.597" starttime="20200108 09:29:02.597"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>G_TOTAL_RESULT</arg>
+<arg>%{G_SQAROOT}\\results</arg>
+</arguments>
+<msg timestamp="20200108 09:29:02.598" level="INFO">Environment variable 'G_TOTAL_RESULT' set to value 'D:\COM_DOC\robotframwork\results'.</msg>
+<status status="PASS" endtime="20200108 09:29:02.598" starttime="20200108 09:29:02.598"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>G_CURRENTLOG</arg>
+<arg>${OUTPUT DIR}</arg>
+</arguments>
+<msg timestamp="20200108 09:29:02.599" level="INFO">Environment variable 'G_CURRENTLOG' set to value 'D:\COM_DOC\robotframwork\logs\20200107_183913'.</msg>
+<status status="PASS" endtime="20200108 09:29:02.599" starttime="20200108 09:29:02.599"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>G_OUTPUTDIR</arg>
+<arg>${OUTPUT DIR}</arg>
+</arguments>
+<msg timestamp="20200108 09:29:02.600" level="INFO">Environment variable 'G_OUTPUTDIR' set to value 'D:\COM_DOC\robotframwork\logs\20200107_183913'.</msg>
+<status status="PASS" endtime="20200108 09:29:02.600" starttime="20200108 09:29:02.599"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>G_DATACENTER</arg>
+<arg>%{G_SQAROOT}\\common\\resource</arg>
+</arguments>
+<msg timestamp="20200108 09:29:02.601" level="INFO">Environment variable 'G_DATACENTER' set to value 'D:\COM_DOC\robotframwork\common\resource'.</msg>
+<status status="PASS" endtime="20200108 09:29:02.601" starttime="20200108 09:29:02.601"></status>
+</kw>
+<status status="PASS" endtime="20200108 09:29:02.602" starttime="20200108 09:29:02.596"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>"导入压力测试变量"</arg>
+</arguments>
+<msg timestamp="20200108 09:29:02.602" level="INFO">"导入压力测试变量"</msg>
+<status status="PASS" endtime="20200108 09:29:02.603" starttime="20200108 09:29:02.602"></status>
+</kw>
+<kw name="Setup_StressSuite_Variable" library="EnvironmentKey">
+<doc>设置测试结束时的相关设置</doc>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_CUSTOM_LONG_TERM</arg>
+<arg>24</arg>
+</arguments>
+<msg timestamp="20200108 09:29:02.604" level="INFO">Environment variable 'U_CUSTOM_LONG_TERM' set to value '24'.</msg>
+<status status="PASS" endtime="20200108 09:29:02.604" starttime="20200108 09:29:02.603"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_CUSTOM_LONG_INTERVAL</arg>
+<arg>180</arg>
+</arguments>
+<msg timestamp="20200108 09:29:02.605" level="INFO">Environment variable 'U_CUSTOM_LONG_INTERVAL' set to value '180'.</msg>
+<status status="PASS" endtime="20200108 09:29:02.605" starttime="20200108 09:29:02.604"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_CUSTOM_LONG_DEVIATION</arg>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20200108 09:29:02.605" level="INFO">Environment variable 'U_CUSTOM_LONG_DEVIATION' set to value '1'.</msg>
+<status status="PASS" endtime="20200108 09:29:02.606" starttime="20200108 09:29:02.605"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_SAVE_APP_TOP_MEM_REPORT</arg>
+<arg>True</arg>
+</arguments>
+<msg timestamp="20200108 09:29:02.606" level="INFO">Environment variable 'U_SAVE_APP_TOP_MEM_REPORT' set to value 'True'.</msg>
+<status status="PASS" endtime="20200108 09:29:02.606" starttime="20200108 09:29:02.606"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_REPORT_NAME</arg>
+<arg>Android_Anywhere</arg>
+</arguments>
+<msg timestamp="20200108 09:29:02.607" level="INFO">Environment variable 'U_REPORT_NAME' set to value 'Android_Anywhere'.</msg>
+<status status="PASS" endtime="20200108 09:29:02.607" starttime="20200108 09:29:02.607"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_TBNAME</arg>
+<arg>${EMPTY}</arg>
+</arguments>
+<msg timestamp="20200108 09:29:02.608" level="INFO">Environment variable 'U_TBNAME' set to value ''.</msg>
+<status status="PASS" endtime="20200108 09:29:02.608" starttime="20200108 09:29:02.607"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>G_TESTER</arg>
+<arg>Soffee</arg>
+</arguments>
+<msg timestamp="20200108 09:29:02.609" level="INFO">Environment variable 'G_TESTER' set to value 'Soffee'.</msg>
+<status status="PASS" endtime="20200108 09:29:02.609" starttime="20200108 09:29:02.608"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_TOP_LOG_NAME</arg>
+<arg>top.txt</arg>
+</arguments>
+<msg timestamp="20200108 09:29:02.609" level="INFO">Environment variable 'U_TOP_LOG_NAME' set to value 'top.txt'.</msg>
+<status status="PASS" endtime="20200108 09:29:02.609" starttime="20200108 09:29:02.609"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_MEMINFO_LOG_NAME</arg>
+<arg>meminfo.txt</arg>
+</arguments>
+<msg timestamp="20200108 09:29:02.610" level="INFO">Environment variable 'U_MEMINFO_LOG_NAME' set to value 'meminfo.txt'.</msg>
+<status status="PASS" endtime="20200108 09:29:02.610" starttime="20200108 09:29:02.610"></status>
+</kw>
+<status status="PASS" endtime="20200108 09:29:02.611" starttime="20200108 09:29:02.603"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>"启动adb server"</arg>
+</arguments>
+<msg timestamp="20200108 09:29:02.611" level="INFO">"启动adb server"</msg>
+<status status="PASS" endtime="20200108 09:29:02.611" starttime="20200108 09:29:02.611"></status>
+</kw>
+<kw name="Setup_ADB_Server" library="EnvironmentKey">
+<doc>启动adb server</doc>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<arguments>
+<arg>Set Device Name</arg>
+</arguments>
+<assign>
+<var>${status}</var>
+</assign>
+<kw name="Set Device Name" library="myTestLibrary">
+<doc>Set Devices Name after get its name through ADB command.
+Examples:
+| Set Device Name |</doc>
+<msg timestamp="20200108 09:29:06.799" level="INFO">List of devices attached
+SJE5T17B02006511	device
+------------------------------
+Pass! Set device name!
+Device Name: SJE5T17B02006511
+------------------------------</msg>
+<status status="PASS" endtime="20200108 09:29:06.800" starttime="20200108 09:29:02.612"></status>
+</kw>
+<msg timestamp="20200108 09:29:06.801" level="INFO">${status} = ('PASS', None)</msg>
+<status status="PASS" endtime="20200108 09:29:06.801" starttime="20200108 09:29:02.612"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>"set Device Name的状态:${status[0]}"</arg>
+</arguments>
+<msg timestamp="20200108 09:29:06.803" level="INFO">"set Device Name的状态:PASS"</msg>
+<status status="PASS" endtime="20200108 09:29:06.804" starttime="20200108 09:29:06.802"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${status[0]}'!='PASS'</arg>
+<arg>Run keywords</arg>
+<arg>Kill Adb Process</arg>
+<arg>AND</arg>
+<arg>Start Adb Service</arg>
+<arg>AND</arg>
+<arg>Set Device Name</arg>
+</arguments>
+<status status="PASS" endtime="20200108 09:29:06.806" starttime="20200108 09:29:06.805"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>'device name :%{U_APPIUM_DEVICE_NAME}'</arg>
+</arguments>
+<msg timestamp="20200108 09:29:06.809" level="INFO">'device name :SJE5T17B02006511'</msg>
+<status status="PASS" endtime="20200108 09:29:06.809" starttime="20200108 09:29:06.808"></status>
+</kw>
+<status status="PASS" endtime="20200108 09:29:06.810" starttime="20200108 09:29:02.612"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20200108 09:29:08.812" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20200108 09:29:08.812" starttime="20200108 09:29:06.811"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>"deviceName:%{U_APPIUM_DEVICE_NAME}" and "start appium server"</arg>
+</arguments>
+<msg timestamp="20200108 09:29:08.814" level="INFO">"deviceName:SJE5T17B02006511" and "start appium server"</msg>
+<status status="PASS" endtime="20200108 09:29:08.815" starttime="20200108 09:29:08.813"></status>
+</kw>
+<kw name="Start Appium Server" library="myTestLibrary">
+<doc>Start Appium Server.
+Examples:
+| Start Appium Server |</doc>
+<status status="PASS" endtime="20200108 09:29:08.957" starttime="20200108 09:29:08.815"></status>
+</kw>
+<status status="PASS" endtime="20200108 09:29:08.958" starttime="20200108 09:29:02.562"></status>
+</kw>
+<suite source="D:\COM_DOC\robotframwork\Andrid_anywhere\AutoAndroidAnywhereTest\04testLiveNewUI.robot" id="s1-s1" name="04testLiveNewUI">
+<test id="s1-s1-t1" name="test_01changeToNewUI">
+<kw type="setup" name="OpenApp" library="MainKeys">
+<doc>open app</doc>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>"open app"</arg>
+</arguments>
+<msg timestamp="20200108 09:29:08.970" level="INFO">"open app"</msg>
+<status status="PASS" endtime="20200108 09:29:08.970" starttime="20200108 09:29:08.969"></status>
+</kw>
+<kw name="Open Application" library="AppiumLibrary">
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<arguments>
+<arg>%{G_APPIUM_HOST_IP0}</arg>
+<arg>platformName=%{G_APPIUM_PLATFORM_NAME}</arg>
+<arg>platformVersion=%{G_APPIUM_PLATFORM_VERSION}</arg>
+<arg>deviceName=%{U_APPIUM_DEVICE_NAME}</arg>
+<arg>appPackage=%{G_APPIUM_APP_PACKAGE}</arg>
+<arg>appActivity=%{U_APP_Activity}</arg>
+<arg>noReset=True</arg>
+<arg>automationName=uiautomator2</arg>
+<arg>autoGrantPermissions=True</arg>
+</arguments>
+<msg timestamp="20200108 09:29:09.973" level="INFO">Could not connect to port 4723 on host 127.0.0.1</msg>
+<msg timestamp="20200108 09:29:09.973" level="INFO">Could not get IP address for host: 127.0.0.1</msg>
+<msg timestamp="20200108 09:29:10.986" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x0000000005D6DC48&gt;: Failed to establish a new connection: [Errno 10061] No connection could be made because the target machine actively refused it',)': /wd/hub/session</msg>
+<msg timestamp="20200108 09:29:11.993" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x0000000005CEA5C8&gt;: Failed to establish a new connection: [Errno 10061] No connection could be made because the target machine actively refused it',)': /wd/hub/session</msg>
+<msg timestamp="20200108 09:29:13.023" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x0000000005D9F308&gt;: Failed to establish a new connection: [Errno 10061] No connection could be made because the target machine actively refused it',)': /wd/hub/session</msg>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20200108 09:29:14.024" level="FAIL">No application is open</msg>
+<status status="FAIL" endtime="20200108 09:29:14.024" starttime="20200108 09:29:14.022"></status>
+</kw>
+<msg timestamp="20200108 09:29:14.025" level="WARN">Keyword 'AppiumLibrary.CapturePageScreenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20200108 09:29:14.026" level="FAIL">MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=4723): Max retries exceeded with url: /wd/hub/session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x0000000005DF5388&gt;: Failed to establish a new connection: [Errno 10061] No connection could be made because the target machine actively refused it',))</msg>
+<status status="FAIL" endtime="20200108 09:29:14.026" starttime="20200108 09:29:08.970"></status>
+</kw>
+<status status="FAIL" endtime="20200108 09:29:14.026" starttime="20200108 09:29:08.969"></status>
+</kw>
+<kw type="teardown" name="Close Application" library="AppiumLibrary">
+<doc>Closes the current application and also close webdriver session.</doc>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20200108 09:29:14.028" level="FAIL">No application is open</msg>
+<status status="FAIL" endtime="20200108 09:29:14.028" starttime="20200108 09:29:14.027"></status>
+</kw>
+<msg timestamp="20200108 09:29:14.029" level="WARN">Keyword 'AppiumLibrary.CapturePageScreenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20200108 09:29:14.030" level="FAIL">No application is open</msg>
+<status status="FAIL" endtime="20200108 09:29:14.030" starttime="20200108 09:29:14.027">No application is open</status>
+</kw>
+<doc>更改到新的ui</doc>
+<tags>
+<tag>ChangeUI</tag>
+</tags>
+<status status="FAIL" endtime="20200108 09:29:14.030" critical="yes" starttime="20200108 09:29:08.968">Setup failed:
+MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=4723): Max retries exceeded with url: /wd/hub/session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x0000000005DF5388&gt;: Failed to establish a new connection: [Errno 10061] No connection could be made because the target machine actively refused it',))
+
+Also teardown failed:
+No application is open</status>
+</test>
+<test id="s1-s1-t2" name="test_02Live_Stop">
+<kw type="setup" name="newUI_openApp" library="MainKeys">
+<msg timestamp="20200108 09:29:14.032" level="FAIL">Keyword 'MainKeys.newUI_openApp' expected 6 arguments, got 0.</msg>
+<status status="FAIL" endtime="20200108 09:29:14.032" starttime="20200108 09:29:14.032"></status>
+</kw>
+<kw type="teardown" name="Close Application" library="AppiumLibrary">
+<doc>Closes the current application and also close webdriver session.</doc>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20200108 09:29:14.034" level="FAIL">No application is open</msg>
+<status status="FAIL" endtime="20200108 09:29:14.034" starttime="20200108 09:29:14.033"></status>
+</kw>
+<msg timestamp="20200108 09:29:14.036" level="WARN">Keyword 'AppiumLibrary.CapturePageScreenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20200108 09:29:14.036" level="FAIL">No application is open</msg>
+<status status="FAIL" endtime="20200108 09:29:14.036" starttime="20200108 09:29:14.033">No application is open</status>
+</kw>
+<doc>live stop on new ui</doc>
+<tags>
+<tag>newUILive</tag>
+</tags>
+<status status="FAIL" endtime="20200108 09:29:14.037" critical="yes" starttime="20200108 09:29:14.031">Setup failed:
+Keyword 'MainKeys.newUI_openApp' expected 6 arguments, got 0.
+
+Also teardown failed:
+No application is open</status>
+</test>
+<status status="FAIL" endtime="20200108 09:29:14.037" starttime="20200108 09:29:08.958"></status>
+</suite>
+<suite source="D:\COM_DOC\robotframwork\Andrid_anywhere\AutoAndroidAnywhereTest\05StressTest.robot" id="s1-s2" name="05StressTest">
+<test id="s1-s2-t1" name="test_02live_standby">
+<kw type="setup" name="Stress_Test_Setup" library="Share_resource">
+<doc>05StressTest使用的setup</doc>
+<arguments>
+<arg>${TEST_NAME}</arg>
+<arg>${OUTPUT_DIR}</arg>
+</arguments>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>"run Stress_Test_Setup"</arg>
+</arguments>
+<msg timestamp="20200108 09:29:14.051" level="INFO">"run Stress_Test_Setup"</msg>
+<status status="PASS" endtime="20200108 09:29:14.052" starttime="20200108 09:29:14.051"></status>
+</kw>
+<kw name="Set Log Level" library="BuiltIn">
+<doc>Sets the log threshold to the specified level and returns the old level.</doc>
+<arguments>
+<arg>TRACE</arg>
+</arguments>
+<msg timestamp="20200108 09:29:14.052" level="INFO">Log level changed from INFO to TRACE.</msg>
+<msg timestamp="20200108 09:29:14.053" level="TRACE">Return: b'INFO'</msg>
+<status status="PASS" endtime="20200108 09:29:14.053" starttime="20200108 09:29:14.052"></status>
+</kw>
+<kw name="Create Log Path" library="main">
+<doc>Create Case log Directory
+Usage: | Create Log Path | caseName | outputDir |</doc>
+<arguments>
+<arg>${TEST_NAME}</arg>
+<arg>${OUTPUT_DIR}</arg>
+</arguments>
+<msg timestamp="20200108 09:29:14.053" level="TRACE">Arguments: [ 'test_02live_standby' | 'D:\\COM_DOC\\robotframwork\\logs\\20200107_183913' ]</msg>
+<msg timestamp="20200108 09:29:14.139" level="INFO">====================================================================================================
+D:\COM_DOC\robotframwork\logs\20200107_183913
+====================================================================================================
+runas /user:administrator rd /Q "D:\COM_DOC\robotframwork\logs\current"
+runas /user:administrator mklink /D "D:\COM_DOC\robotframwork\logs\current" "D:\COM_DOC\robotframwork\logs\20200107_183913"
+case_name:test_02live_standby
+G_CASE_LOG_PATH:D:\COM_DOC\robotframwork\logs\20200107_183913\test_02live_standby
+G_CURRENTLOG:D:\COM_DOC\robotframwork\logs\20200107_183913\test_02live_standby</msg>
+<msg timestamp="20200108 09:29:14.140" level="TRACE">Return: None</msg>
+<status status="PASS" endtime="20200108 09:29:14.140" starttime="20200108 09:29:14.053"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_ANDROID_LOG_RECORD</arg>
+<arg>True</arg>
+</arguments>
+<msg timestamp="20200108 09:29:14.141" level="TRACE">Arguments: [ 'U_ANDROID_LOG_RECORD' | 'True' ]</msg>
+<msg timestamp="20200108 09:29:14.141" level="INFO">Environment variable 'U_ANDROID_LOG_RECORD' set to value 'True'.</msg>
+<msg timestamp="20200108 09:29:14.141" level="TRACE">Return: None</msg>
+<status status="PASS" endtime="20200108 09:29:14.141" starttime="20200108 09:29:14.140"></status>
+</kw>
+<msg timestamp="20200108 09:29:14.142" level="TRACE">Return: None</msg>
+<status status="PASS" endtime="20200108 09:29:14.142" starttime="20200108 09:29:14.050"></status>
+</kw>
+<kw name="OpenApp" library="MainKeys">
+<doc>open app</doc>
+<msg timestamp="20200108 09:29:14.142" level="TRACE">Arguments: [  ]</msg>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>"open app"</arg>
+</arguments>
+<msg timestamp="20200108 09:29:14.143" level="TRACE">Arguments: [ '"open app"' ]</msg>
+<msg timestamp="20200108 09:29:14.143" level="INFO">"open app"</msg>
+<msg timestamp="20200108 09:29:14.143" level="TRACE">Return: None</msg>
+<status status="PASS" endtime="20200108 09:29:14.143" starttime="20200108 09:29:14.143"></status>
+</kw>
+<kw name="Open Application" library="AppiumLibrary">
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<arguments>
+<arg>%{G_APPIUM_HOST_IP0}</arg>
+<arg>platformName=%{G_APPIUM_PLATFORM_NAME}</arg>
+<arg>platformVersion=%{G_APPIUM_PLATFORM_VERSION}</arg>
+<arg>deviceName=%{U_APPIUM_DEVICE_NAME}</arg>
+<arg>appPackage=%{G_APPIUM_APP_PACKAGE}</arg>
+<arg>appActivity=%{U_APP_Activity}</arg>
+<arg>noReset=True</arg>
+<arg>automationName=uiautomator2</arg>
+<arg>autoGrantPermissions=True</arg>
+</arguments>
+<msg timestamp="20200108 09:29:14.145" level="TRACE">Arguments: [ 'http://127.0.0.1:4723/wd/hub' | platformName='Android' | platformVersion='8.0.0' | deviceName='SJE5T17B02006511' | appPackage='com.tvunetworks.android.anywhere' | appActivity='AppStart' | noReset='True' | automationName='uiautomator2' | autoGrantPermissions='True' ]</msg>
+<msg timestamp="20200108 09:29:15.146" level="INFO">Could not connect to port 4723 on host 127.0.0.1</msg>
+<msg timestamp="20200108 09:29:15.146" level="INFO">Could not get IP address for host: 127.0.0.1</msg>
+<msg timestamp="20200108 09:29:15.147" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session {"capabilities": {"firstMatch": [{"appium:appActivity": "AppStart", "appium:autoGrantPermissions": "True", "appium:automationName": "uiautomator2", "appium:deviceName": "SJE5T17B02006511", "appium:platformVersion": "8.0.0", "appium:appPackage": "com.tvunetworks.android.anywhere", "platformName": "Android", "appium:noReset": "True"}]}, "desiredCapabilities": {"deviceName": "SJE5T17B02006511", "autoGrantPermissions": "True", "automationName": "uiautomator2", "noReset": "True", "platformVersion": "8.0.0", "appPackage": "com.tvunetworks.android.anywhere", "platformName": "Android", "appActivity": "AppStart"}}</msg>
+<msg timestamp="20200108 09:29:15.148" level="DEBUG">Starting new HTTP connection (1): 127.0.0.1:4723</msg>
+<msg timestamp="20200108 09:29:16.155" level="DEBUG">Incremented Retry for (url='/wd/hub/session'): Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20200108 09:29:16.155" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x0000000005D6FDC8&gt;: Failed to establish a new connection: [Errno 10061] No connection could be made because the target machine actively refused it',)': /wd/hub/session</msg>
+<msg timestamp="20200108 09:29:16.156" level="DEBUG">Starting new HTTP connection (2): 127.0.0.1:4723</msg>
+<msg timestamp="20200108 09:29:32.839" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session HTTP/1.1" 200 1053</msg>
+<msg timestamp="20200108 09:29:32.840" level="DEBUG">Finished Request</msg>
+<msg timestamp="20200108 09:29:32.841" level="DEBUG">Opened application with session id f0192f40-5c31-4cf5-b353-42557eb8a0b9</msg>
+<msg timestamp="20200108 09:29:32.841" level="TRACE">Return: 1</msg>
+<status status="PASS" endtime="20200108 09:29:32.841" starttime="20200108 09:29:14.144"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>xpath=//*[@resource-id='com.tvunetworks.android.anywhere:id/iv_cancel_explore']</arg>
+<arg>20</arg>
+<arg>"20s,元素没出来"</arg>
+</arguments>
+<msg timestamp="20200108 09:29:32.842" level="TRACE">Arguments: [ "xpath=//*[@resource-id='com.tvunetworks.android.anywhere:id/iv_cancel_explore']" | '20' | '"20s,\u5143\u7d20\u6ca1\u51fa\u6765"' ]</msg>
+<msg timestamp="20200108 09:29:32.842" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/f0192f40-5c31-4cf5-b353-42557eb8a0b9/elements {"using": "xpath", "sessionId": "f0192f40-5c31-4cf5-b353-42557eb8a0b9", "value": "//*[@resource-id='com.tvunetworks.android.anywhere:id/iv_cancel_explore']"}</msg>
+<msg timestamp="20200108 09:29:33.818" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/f0192f40-5c31-4cf5-b353-42557eb8a0b9/elements HTTP/1.1" 200 74</msg>
+<msg timestamp="20200108 09:29:33.819" level="DEBUG">Finished Request</msg>
+<msg timestamp="20200108 09:29:34.019" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/f0192f40-5c31-4cf5-b353-42557eb8a0b9/elements {"using": "xpath", "sessionId": "f0192f40-5c31-4cf5-b353-42557eb8a0b9", "value": "//*[@resource-id='com.tvunetworks.android.anywhere:id/iv_cancel_explore']"}</msg>
+<msg timestamp="20200108 09:29:35.702" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/f0192f40-5c31-4cf5-b353-42557eb8a0b9/elements HTTP/1.1" 200 74</msg>
+<msg timestamp="20200108 09:29:35.703" level="DEBUG">Finished Request</msg>
+<msg timestamp="20200108 09:29:35.904" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/f0192f40-5c31-4cf5-b353-42557eb8a0b9/elements {"using": "xpath", "sessionId": "f0192f40-5c31-4cf5-b353-42557eb8a0b9", "value": "//*[@resource-id='com.tvunetworks.android.anywhere:id/iv_cancel_explore']"}</msg>
+<msg timestamp="20200108 09:29:36.063" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/f0192f40-5c31-4cf5-b353-42557eb8a0b9/elements HTTP/1.1" 200 74</msg>
+<msg timestamp="20200108 09:29:36.065" level="DEBUG">Finished Request</msg>
+<msg timestamp="20200108 09:29:36.269" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/f0192f40-5c31-4cf5-b353-42557eb8a0b9/elements {"using": "xpath", "sessionId": "f0192f40-5c31-4cf5-b353-42557eb8a0b9", "value": "//*[@resource-id='com.tvunetworks.android.anywhere:id/iv_cancel_explore']"}</msg>
+<msg timestamp="20200108 09:29:36.378" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/f0192f40-5c31-4cf5-b353-42557eb8a0b9/elements HTTP/1.1" 200 74</msg>
+<msg timestamp="20200108 09:29:36.378" level="DEBUG">Finished Request</msg>
+<msg timestamp="20200108 09:29:36.578" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/f0192f40-5c31-4cf5-b353-42557eb8a0b9/elements {"using": "xpath", "sessionId": "f0192f40-5c31-4cf5-b353-42557eb8a0b9", "value": "//*[@resource-id='com.tvunetworks.android.anywhere:id/iv_cancel_explore']"}</msg>
+<msg timestamp="20200108 09:29:36.681" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/f0192f40-5c31-4cf5-b353-42557eb8a0b9/elements HTTP/1.1" 200 74</msg>
+<msg timestamp="20200108 09:29:36.681" level="DEBUG">Finished Request</msg>
+<msg timestamp="20200108 09:29:36.882" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/f0192f40-5c31-4cf5-b353-42557eb8a0b9/elements {"using": "xpath", "sessionId": "f0192f40-5c31-4cf5-b353-42557eb8a0b9", "value": "//*[@resource-id='com.tvunetworks.android.anywhere:id/iv_cancel_explore']"}</msg>
+<msg timestamp="20200108 09:29:37.196" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/f0192f40-5c31-4cf5-b353-42557eb8a0b9/elements HTTP/1.1" 200 74</msg>
+<msg timestamp="20200108 09:29:37.197" level="DEBUG">Finished Request</msg>
+<msg timestamp="20200108 09:29:37.398" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/f0192f40-5c31-4cf5-b353-42557eb8a0b9/elements {"using": "xpath", "sessionId": "f0192f40-5c31-4cf5-b353-42557eb8a0b9", "value": "//*[@resource-id='com.tvunetworks.android.anywhere:id/iv_cancel_explore']"}</msg>
+<msg timestamp="20200108 09:29:37.497" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/f0192f40-5c31-4cf5-b353-42557eb8a0b9/elements HTTP/1.1" 200 74</msg>
+<msg timestamp="20200108 09:29:37.498" level="DEBUG">Finished Request</msg>
+<msg timestamp="20200108 09:29:37.698" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/f0192f40-5c31-4cf5-b353-42557eb8a0b9/elements {"using": "xpath", "sessionId": "f0192f40-5c31-4cf5-b353-42557eb8a0b9", "value": "//*[@resource-id='com.tvunetworks.android.anywhere:id/iv_cancel_explore']"}</msg>
+<msg timestamp="20200108 09:29:37.782" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/f0192f40-5c31-4cf5-b353-42557eb8a0b9/elements HTTP/1.1" 200 74</msg>
+<msg timestamp="20200108 09:29:37.783" level="DEBUG">Finished Request</msg>
+<msg timestamp="20200108 09:29:37.983" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/f0192f40-5c31-4cf5-b353-42557eb8a0b9/elements {"using": "xpath", "sessionId": "f0192f40-5c31-4cf5-b353-42557eb8a0b9", "value": "//*[@resource-id='com.tvunetworks.android.anywhere:id/iv_cancel_explore']"}</msg>
+<msg timestamp="20200108 09:29:38.079" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/f0192f40-5c31-4cf5-b353-42557eb8a0b9/elements HTTP/1.1" 200 74</msg>
+<msg timestamp="20200108 09:29:38.080" level="DEBUG">Finished Request</msg>
+<msg timestamp="20200108 09:29:38.281" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/f0192f40-5c31-4cf5-b353-42557eb8a0b9/elements {"using": "xpath", "sessionId": "f0192f40-5c31-4cf5-b353-42557eb8a0b9", "value": "//*[@resource-id='com.tvunetworks.android.anywhere:id/iv_cancel_explore']"}</msg>
+<msg timestamp="20200108 09:29:38.646" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/f0192f40-5c31-4cf5-b353-42557eb8a0b9/elements HTTP/1.1" 200 74</msg>
+<msg timestamp="20200108 09:29:38.647" level="DEBUG">Finished Request</msg>
+<msg timestamp="20200108 09:29:38.847" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/f0192f40-5c31-4cf5-b353-42557eb8a0b9/elements {"using": "xpath", "sessionId": "f0192f40-5c31-4cf5-b353-42557eb8a0b9", "value": "//*[@resource-id='com.tvunetworks.android.anywhere:id/iv_cancel_explore']"}</msg>
+<msg timestamp="20200108 09:29:38.923" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/f0192f40-5c31-4cf5-b353-42557eb8a0b9/elements HTTP/1.1" 200 74</msg>
+<msg timestamp="20200108 09:29:38.924" level="DEBUG">Finished Request</msg>
+<msg timestamp="20200108 09:29:39.124" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/f0192f40-5c31-4cf5-b353-42557eb8a0b9/elements {"using": "xpath", "sessionId": "f0192f40-5c31-4cf5-b353-42557eb8a0b9", "value": "//*[@resource-id='com.tvunetworks.android.anywhere:id/iv_cancel_explore']"}</msg>
+<msg timestamp="20200108 09:29:39.240" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/f0192f40-5c31-4cf5-b353-42557eb8a0b9/elements HTTP/1.1" 200 74</msg>
+<msg timestamp="20200108 09:29:39.241" level="DEBUG">Finished Request</msg>
+<msg timestamp="20200108 09:29:39.442" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/f0192f40-5c31-4cf5-b353-42557eb8a0b9/elements {"using": "xpath", "sessionId": "f0192f40-5c31-4cf5-b353-42557eb8a0b9", "value": "//*[@resource-id='com.tvunetworks.android.anywhere:id/iv_cancel_explore']"}</msg>
+<msg timestamp="20200108 09:29:39.530" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/f0192f40-5c31-4cf5-b353-42557eb8a0b9/elements HTTP/1.1" 200 74</msg>
+<msg timestamp="20200108 09:29:39.531" level="DEBUG">Finished Request</msg>
+<msg timestamp="20200108 09:29:39.731" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/f0192f40-5c31-4cf5-b353-42557eb8a0b9/elements {"using": "xpath", "sessionId": "f0192f40-5c31-4cf5-b353-42557eb8a0b9", "value": "//*[@resource-id='com.tvunetworks.android.anywhere:id/iv_cancel_explore']"}</msg>
+<msg timestamp="20200108 09:29:40.180" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/f0192f40-5c31-4cf5-b353-42557eb8a0b9/elements HTTP/1.1" 200 74</msg>
+<msg timestamp="20200108 09:29:40.180" level="DEBUG">Finished Request</msg>
+<msg timestamp="20200108 09:29:40.381" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/f0192f40-5c31-4cf5-b353-42557eb8a0b9/elements {"using": "xpath", "sessionId": "f0192f40-5c31-4cf5-b353-42557eb8a0b9", "value": "//*[@resource-id='com.tvunetworks.android.anywhere:id/iv_cancel_explore']"}</msg>
+<msg timestamp="20200108 09:29:40.461" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/f0192f40-5c31-4cf5-b353-42557eb8a0b9/elements HTTP/1.1" 200 74</msg>
+<msg timestamp="20200108 09:29:40.461" level="DEBUG">Finished Request</msg>
+<msg timestamp="20200108 09:29:40.662" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/f0192f40-5c31-4cf5-b353-42557eb8a0b9/elements {"using": "xpath", "sessionId": "f0192f40-5c31-4cf5-b353-42557eb8a0b9", "value": "//*[@resource-id='com.tvunetworks.android.anywhere:id/iv_cancel_explore']"}</msg>
+<msg timestamp="20200108 09:29:40.756" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/f0192f40-5c31-4cf5-b353-42557eb8a0b9/elements HTTP/1.1" 200 74</msg>
+<msg timestamp="20200108 09:29:40.757" level="DEBUG">Finished Request</msg>
+<msg timestamp="20200108 09:29:40.957" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/f0192f40-5c31-4cf5-b353-42557eb8a0b9/elements {"using": "xpath", "sessionId": "f0192f40-5c31-4cf5-b353-42557eb8a0b9", "value": "//*[@resource-id='com.tvunetworks.android.anywhere:id/iv_cancel_explore']"}</msg>
+<msg timestamp="20200108 09:29:41.078" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/f0192f40-5c31-4cf5-b353-42557eb8a0b9/elements HTTP/1.1" 200 74</msg>
+<msg timestamp="20200108 09:29:41.080" level="DEBUG">Finished Request</msg>
+<msg timestamp="20200108 09:29:41.281" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/f0192f40-5c31-4cf5-b353-42557eb8a0b9/elements {"using": "xpath", "sessionId": "f0192f40-5c31-4cf5-b353-42557eb8a0b9", "value": "//*[@resource-id='com.tvunetworks.android.anywhere:id/iv_cancel_explore']"}</msg>
+<msg timestamp="20200108 09:29:41.683" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/f0192f40-5c31-4cf5-b353-42557eb8a0b9/elements HTTP/1.1" 200 74</msg>
+<msg timestamp="20200108 09:29:41.684" level="DEBUG">Finished Request</msg>
+<msg timestamp="20200108 09:29:41.885" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/f0192f40-5c31-4cf5-b353-42557eb8a0b9/elements {"using": "xpath", "sessionId": "f0192f40-5c31-4cf5-b353-42557eb8a0b9", "value": "//*[@resource-id='com.tvunetworks.android.anywhere:id/iv_cancel_explore']"}</msg>
+<msg timestamp="20200108 09:29:41.986" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/f0192f40-5c31-4cf5-b353-42557eb8a0b9/elements HTTP/1.1" 200 74</msg>
+<msg timestamp="20200108 09:29:41.987" level="DEBUG">Finished Request</msg>
+<msg timestamp="20200108 09:29:42.187" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/f0192f40-5c31-4cf5-b353-42557eb8a0b9/elements {"using": "xpath", "sessionId": "f0192f40-5c31-4cf5-b353-42557eb8a0b9", "value": "//*[@resource-id='com.tvunetworks.android.anywhere:id/iv_cancel_explore']"}</msg>
+<msg timestamp="20200108 09:29:42.268" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/f0192f40-5c31-4cf5-b353-42557eb8a0b9/elements HTTP/1.1" 200 74</msg>
+<msg timestamp="20200108 09:29:42.269" level="DEBUG">Finished Request</msg>
+<msg timestamp="20200108 09:29:42.469" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/f0192f40-5c31-4cf5-b353-42557eb8a0b9/elements {"using": "xpath", "sessionId": "f0192f40-5c31-4cf5-b353-42557eb8a0b9", "value": "//*[@resource-id='com.tvunetworks.android.anywhere:id/iv_cancel_explore']"}</msg>
+<msg timestamp="20200108 09:29:42.544" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/f0192f40-5c31-4cf5-b353-42557eb8a0b9/elements HTTP/1.1" 200 74</msg>
+<msg timestamp="20200108 09:29:42.545" level="DEBUG">Finished Request</msg>
+<msg timestamp="20200108 09:29:42.745" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/f0192f40-5c31-4cf5-b353-42557eb8a0b9/elements {"using": "xpath", "sessionId": "f0192f40-5c31-4cf5-b353-42557eb8a0b9", "value": "//*[@resource-id='com.tvunetworks.android.anywhere:id/iv_cancel_explore']"}</msg>
+<msg timestamp="20200108 09:29:43.182" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/f0192f40-5c31-4cf5-b353-42557eb8a0b9/elements HTTP/1.1" 200 74</msg>
+<msg timestamp="20200108 09:29:43.183" level="DEBUG">Finished Request</msg>
+<msg timestamp="20200108 09:29:43.383" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/f0192f40-5c31-4cf5-b353-42557eb8a0b9/elements {"using": "xpath", "sessionId": "f0192f40-5c31-4cf5-b353-42557eb8a0b9", "value": "//*[@resource-id='com.tvunetworks.android.anywhere:id/iv_cancel_explore']"}</msg>
+<msg timestamp="20200108 09:29:43.474" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/f0192f40-5c31-4cf5-b353-42557eb8a0b9/elements HTTP/1.1" 200 74</msg>
+<msg timestamp="20200108 09:29:43.475" level="DEBUG">Finished Request</msg>
+<msg timestamp="20200108 09:29:43.675" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/f0192f40-5c31-4cf5-b353-42557eb8a0b9/elements {"using": "xpath", "sessionId": "f0192f40-5c31-4cf5-b353-42557eb8a0b9", "value": "//*[@resource-id='com.tvunetworks.android.anywhere:id/iv_cancel_explore']"}</msg>
+<msg timestamp="20200108 09:29:43.755" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/f0192f40-5c31-4cf5-b353-42557eb8a0b9/elements HTTP/1.1" 200 74</msg>
+<msg timestamp="20200108 09:29:43.756" level="DEBUG">Finished Request</msg>
+<msg timestamp="20200108 09:29:43.956" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/f0192f40-5c31-4cf5-b353-42557eb8a0b9/elements {"using": "xpath", "sessionId": "f0192f40-5c31-4cf5-b353-42557eb8a0b9", "value": "//*[@resource-id='com.tvunetworks.android.anywhere:id/iv_cancel_explore']"}</msg>
+<msg timestamp="20200108 09:29:44.049" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/f0192f40-5c31-4cf5-b353-42557eb8a0b9/elements HTTP/1.1" 200 74</msg>
+<msg timestamp="20200108 09:29:44.049" level="DEBUG">Finished Request</msg>
+<msg timestamp="20200108 09:29:44.250" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/f0192f40-5c31-4cf5-b353-42557eb8a0b9/elements {"using": "xpath", "sessionId": "f0192f40-5c31-4cf5-b353-42557eb8a0b9", "value": "//*[@resource-id='com.tvunetworks.android.anywhere:id/iv_cancel_explore']"}</msg>
+<msg timestamp="20200108 09:29:44.707" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/f0192f40-5c31-4cf5-b353-42557eb8a0b9/elements HTTP/1.1" 200 74</msg>
+<msg timestamp="20200108 09:29:44.708" level="DEBUG">Finished Request</msg>
+<msg timestamp="20200108 09:29:44.908" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/f0192f40-5c31-4cf5-b353-42557eb8a0b9/elements {"using": "xpath", "sessionId": "f0192f40-5c31-4cf5-b353-42557eb8a0b9", "value": "//*[@resource-id='com.tvunetworks.android.anywhere:id/iv_cancel_explore']"}</msg>
+<msg timestamp="20200108 09:29:45.460" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/f0192f40-5c31-4cf5-b353-42557eb8a0b9/elements HTTP/1.1" 200 74</msg>
+<msg timestamp="20200108 09:29:45.460" level="DEBUG">Finished Request</msg>
+<msg timestamp="20200108 09:29:45.661" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/f0192f40-5c31-4cf5-b353-42557eb8a0b9/elements {"using": "xpath", "sessionId": "f0192f40-5c31-4cf5-b353-42557eb8a0b9", "value": "//*[@resource-id='com.tvunetworks.android.anywhere:id/iv_cancel_explore']"}</msg>
+<msg timestamp="20200108 09:29:45.720" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/f0192f40-5c31-4cf5-b353-42557eb8a0b9/elements HTTP/1.1" 200 74</msg>
+<msg timestamp="20200108 09:29:45.720" level="DEBUG">Finished Request</msg>
+<msg timestamp="20200108 09:29:45.921" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/f0192f40-5c31-4cf5-b353-42557eb8a0b9/elements {"using": "xpath", "sessionId": "f0192f40-5c31-4cf5-b353-42557eb8a0b9", "value": "//*[@resource-id='com.tvunetworks.android.anywhere:id/iv_cancel_explore']"}</msg>
+<msg timestamp="20200108 09:29:46.023" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/f0192f40-5c31-4cf5-b353-42557eb8a0b9/elements HTTP/1.1" 200 74</msg>
+<msg timestamp="20200108 09:29:46.024" level="DEBUG">Finished Request</msg>
+<msg timestamp="20200108 09:29:46.225" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/f0192f40-5c31-4cf5-b353-42557eb8a0b9/elements {"using": "xpath", "sessionId": "f0192f40-5c31-4cf5-b353-42557eb8a0b9", "value": "//*[@resource-id='com.tvunetworks.android.anywhere:id/iv_cancel_explore']"}</msg>
+<msg timestamp="20200108 09:29:46.303" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/f0192f40-5c31-4cf5-b353-42557eb8a0b9/elements HTTP/1.1" 200 74</msg>
+<msg timestamp="20200108 09:29:46.304" level="DEBUG">Finished Request</msg>
+<msg timestamp="20200108 09:29:46.504" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/f0192f40-5c31-4cf5-b353-42557eb8a0b9/elements {"using": "xpath", "sessionId": "f0192f40-5c31-4cf5-b353-42557eb8a0b9", "value": "//*[@resource-id='com.tvunetworks.android.anywhere:id/iv_cancel_explore']"}</msg>
+<msg timestamp="20200108 09:29:46.960" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/f0192f40-5c31-4cf5-b353-42557eb8a0b9/elements HTTP/1.1" 200 74</msg>
+<msg timestamp="20200108 09:29:46.960" level="DEBUG">Finished Request</msg>
+<msg timestamp="20200108 09:29:47.161" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/f0192f40-5c31-4cf5-b353-42557eb8a0b9/elements {"using": "xpath", "sessionId": "f0192f40-5c31-4cf5-b353-42557eb8a0b9", "value": "//*[@resource-id='com.tvunetworks.android.anywhere:id/iv_cancel_explore']"}</msg>
+<msg timestamp="20200108 09:29:47.254" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/f0192f40-5c31-4cf5-b353-42557eb8a0b9/elements HTTP/1.1" 200 74</msg>
+<msg timestamp="20200108 09:29:47.255" level="DEBUG">Finished Request</msg>
+<msg timestamp="20200108 09:29:47.455" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/f0192f40-5c31-4cf5-b353-42557eb8a0b9/elements {"using": "xpath", "sessionId": "f0192f40-5c31-4cf5-b353-42557eb8a0b9", "value": "//*[@resource-id='com.tvunetworks.android.anywhere:id/iv_cancel_explore']"}</msg>
+<msg timestamp="20200108 09:29:47.534" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/f0192f40-5c31-4cf5-b353-42557eb8a0b9/elements HTTP/1.1" 200 74</msg>
+<msg timestamp="20200108 09:29:47.535" level="DEBUG">Finished Request</msg>
+<msg timestamp="20200108 09:29:47.736" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/f0192f40-5c31-4cf5-b353-42557eb8a0b9/elements {"using": "xpath", "sessionId": "f0192f40-5c31-4cf5-b353-42557eb8a0b9", "value": "//*[@resource-id='com.tvunetworks.android.anywhere:id/iv_cancel_explore']"}</msg>
+<msg timestamp="20200108 09:29:47.805" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/f0192f40-5c31-4cf5-b353-42557eb8a0b9/elements HTTP/1.1" 200 74</msg>
+<msg timestamp="20200108 09:29:47.806" level="DEBUG">Finished Request</msg>
+<msg timestamp="20200108 09:29:48.006" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/f0192f40-5c31-4cf5-b353-42557eb8a0b9/elements {"using": "xpath", "sessionId": "f0192f40-5c31-4cf5-b353-42557eb8a0b9", "value": "//*[@resource-id='com.tvunetworks.android.anywhere:id/iv_cancel_explore']"}</msg>
+<msg timestamp="20200108 09:29:48.479" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/f0192f40-5c31-4cf5-b353-42557eb8a0b9/elements HTTP/1.1" 200 74</msg>
+<msg timestamp="20200108 09:29:48.480" level="DEBUG">Finished Request</msg>
+<msg timestamp="20200108 09:29:48.680" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/f0192f40-5c31-4cf5-b353-42557eb8a0b9/elements {"using": "xpath", "sessionId": "f0192f40-5c31-4cf5-b353-42557eb8a0b9", "value": "//*[@resource-id='com.tvunetworks.android.anywhere:id/iv_cancel_explore']"}</msg>
+<msg timestamp="20200108 09:29:48.751" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/f0192f40-5c31-4cf5-b353-42557eb8a0b9/elements HTTP/1.1" 200 74</msg>
+<msg timestamp="20200108 09:29:48.751" level="DEBUG">Finished Request</msg>
+<msg timestamp="20200108 09:29:48.952" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/f0192f40-5c31-4cf5-b353-42557eb8a0b9/elements {"using": "xpath", "sessionId": "f0192f40-5c31-4cf5-b353-42557eb8a0b9", "value": "//*[@resource-id='com.tvunetworks.android.anywhere:id/iv_cancel_explore']"}</msg>
+<msg timestamp="20200108 09:29:49.016" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/f0192f40-5c31-4cf5-b353-42557eb8a0b9/elements HTTP/1.1" 200 74</msg>
+<msg timestamp="20200108 09:29:49.016" level="DEBUG">Finished Request</msg>
+<msg timestamp="20200108 09:29:49.217" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/f0192f40-5c31-4cf5-b353-42557eb8a0b9/elements {"using": "xpath", "sessionId": "f0192f40-5c31-4cf5-b353-42557eb8a0b9", "value": "//*[@resource-id='com.tvunetworks.android.anywhere:id/iv_cancel_explore']"}</msg>
+<msg timestamp="20200108 09:29:49.285" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/f0192f40-5c31-4cf5-b353-42557eb8a0b9/elements HTTP/1.1" 200 74</msg>
+<msg timestamp="20200108 09:29:49.285" level="DEBUG">Finished Request</msg>
+<msg timestamp="20200108 09:29:49.485" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/f0192f40-5c31-4cf5-b353-42557eb8a0b9/elements {"using": "xpath", "sessionId": "f0192f40-5c31-4cf5-b353-42557eb8a0b9", "value": "//*[@resource-id='com.tvunetworks.android.anywhere:id/iv_cancel_explore']"}</msg>
+<msg timestamp="20200108 09:29:49.995" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/f0192f40-5c31-4cf5-b353-42557eb8a0b9/elements HTTP/1.1" 200 74</msg>
+<msg timestamp="20200108 09:29:49.996" level="DEBUG">Finished Request</msg>
+<msg timestamp="20200108 09:29:50.196" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/f0192f40-5c31-4cf5-b353-42557eb8a0b9/elements {"using": "xpath", "sessionId": "f0192f40-5c31-4cf5-b353-42557eb8a0b9", "value": "//*[@resource-id='com.tvunetworks.android.anywhere:id/iv_cancel_explore']"}</msg>
+<msg timestamp="20200108 09:29:50.274" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/f0192f40-5c31-4cf5-b353-42557eb8a0b9/elements HTTP/1.1" 200 74</msg>
+<msg timestamp="20200108 09:29:50.275" level="DEBUG">Finished Request</msg>
+<msg timestamp="20200108 09:29:50.475" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/f0192f40-5c31-4cf5-b353-42557eb8a0b9/elements {"using": "xpath", "sessionId": "f0192f40-5c31-4cf5-b353-42557eb8a0b9", "value": "//*[@resource-id='com.tvunetworks.android.anywhere:id/iv_cancel_explore']"}</msg>
+<msg timestamp="20200108 09:29:50.551" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/f0192f40-5c31-4cf5-b353-42557eb8a0b9/elements HTTP/1.1" 200 74</msg>
+<msg timestamp="20200108 09:29:50.552" level="DEBUG">Finished Request</msg>
+<msg timestamp="20200108 09:29:50.752" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/f0192f40-5c31-4cf5-b353-42557eb8a0b9/elements {"using": "xpath", "sessionId": "f0192f40-5c31-4cf5-b353-42557eb8a0b9", "value": "//*[@resource-id='com.tvunetworks.android.anywhere:id/iv_cancel_explore']"}</msg>
+<msg timestamp="20200108 09:29:50.825" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/f0192f40-5c31-4cf5-b353-42557eb8a0b9/elements HTTP/1.1" 200 74</msg>
+<msg timestamp="20200108 09:29:50.825" level="DEBUG">Finished Request</msg>
+<msg timestamp="20200108 09:29:51.026" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/f0192f40-5c31-4cf5-b353-42557eb8a0b9/elements {"using": "xpath", "sessionId": "f0192f40-5c31-4cf5-b353-42557eb8a0b9", "value": "//*[@resource-id='com.tvunetworks.android.anywhere:id/iv_cancel_explore']"}</msg>
+<msg timestamp="20200108 09:29:51.507" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/f0192f40-5c31-4cf5-b353-42557eb8a0b9/elements HTTP/1.1" 200 74</msg>
+<msg timestamp="20200108 09:29:51.507" level="DEBUG">Finished Request</msg>
+<msg timestamp="20200108 09:29:51.708" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/f0192f40-5c31-4cf5-b353-42557eb8a0b9/elements {"using": "xpath", "sessionId": "f0192f40-5c31-4cf5-b353-42557eb8a0b9", "value": "//*[@resource-id='com.tvunetworks.android.anywhere:id/iv_cancel_explore']"}</msg>
+<msg timestamp="20200108 09:29:51.772" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/f0192f40-5c31-4cf5-b353-42557eb8a0b9/elements HTTP/1.1" 200 74</msg>
+<msg timestamp="20200108 09:29:51.772" level="DEBUG">Finished Request</msg>
+<msg timestamp="20200108 09:29:51.972" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/f0192f40-5c31-4cf5-b353-42557eb8a0b9/elements {"using": "xpath", "sessionId": "f0192f40-5c31-4cf5-b353-42557eb8a0b9", "value": "//*[@resource-id='com.tvunetworks.android.anywhere:id/iv_cancel_explore']"}</msg>
+<msg timestamp="20200108 09:29:52.039" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/f0192f40-5c31-4cf5-b353-42557eb8a0b9/elements HTTP/1.1" 200 74</msg>
+<msg timestamp="20200108 09:29:52.040" level="DEBUG">Finished Request</msg>
+<msg timestamp="20200108 09:29:52.241" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/f0192f40-5c31-4cf5-b353-42557eb8a0b9/elements {"using": "xpath", "sessionId": "f0192f40-5c31-4cf5-b353-42557eb8a0b9", "value": "//*[@resource-id='com.tvunetworks.android.anywhere:id/iv_cancel_explore']"}</msg>
+<msg timestamp="20200108 09:29:52.311" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/f0192f40-5c31-4cf5-b353-42557eb8a0b9/elements HTTP/1.1" 200 74</msg>
+<msg timestamp="20200108 09:29:52.312" level="DEBUG">Finished Request</msg>
+<msg timestamp="20200108 09:29:52.512" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/f0192f40-5c31-4cf5-b353-42557eb8a0b9/elements {"using": "xpath", "sessionId": "f0192f40-5c31-4cf5-b353-42557eb8a0b9", "value": "//*[@resource-id='com.tvunetworks.android.anywhere:id/iv_cancel_explore']"}</msg>
+<msg timestamp="20200108 09:29:53.012" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/f0192f40-5c31-4cf5-b353-42557eb8a0b9/elements HTTP/1.1" 200 74</msg>
+<msg timestamp="20200108 09:29:53.014" level="DEBUG">Finished Request</msg>
+<msg timestamp="20200108 09:29:53.081" level="DEBUG">GET http://127.0.0.1:4723/wd/hub/session/f0192f40-5c31-4cf5-b353-42557eb8a0b9/source {"sessionId": "f0192f40-5c31-4cf5-b353-42557eb8a0b9"}</msg>
+<msg timestamp="20200108 09:29:53.136" level="DEBUG">http://127.0.0.1:4723 "GET /wd/hub/session/f0192f40-5c31-4cf5-b353-42557eb8a0b9/source HTTP/1.1" 200 7044</msg>
+<msg timestamp="20200108 09:29:53.137" level="DEBUG">Finished Request</msg>
+<msg timestamp="20200108 09:29:53.138" level="INFO">&lt;?xml version='1.0' encoding='UTF-8' standalone='yes' ?&gt;
+&lt;hierarchy index="0" class="hierarchy" rotation="1" width="1793" height="1080"&gt;
+  &lt;android.widget.FrameLayout index="0" package="com.tvunetworks.android.anywhere" class="android.widget.FrameLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[314,248][1478,832]" displayed="true"&gt;
+    &lt;android.widget.FrameLayout index="0" package="com.tvunetworks.android.anywhere" class="android.widget.FrameLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[314,248][1478,832]" displayed="true"&gt;
+      &lt;android.widget.FrameLayout index="0" package="com.tvunetworks.android.anywhere" class="android.widget.FrameLayout" text="" resource-id="android:id/content" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[314,248][1478,832]" displayed="true"&gt;
+        &lt;android.widget.LinearLayout index="0" package="com.tvunetworks.android.anywhere" class="android.widget.LinearLayout" text="" resource-id="android:id/parentPanel" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[338,248][1454,832]" displayed="true"&gt;
+          &lt;android.widget.LinearLayout index="0" package="com.tvunetworks.android.anywhere" class="android.widget.LinearLayout" text="" resource-id="android:id/topPanel" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[338,248][1454,470]" displayed="true"&gt;
+            &lt;android.widget.LinearLayout index="0" package="com.tvunetworks.android.anywhere" class="android.widget.LinearLayout" text="" resource-id="android:id/title_template" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[410,272][1382,464]" displayed="true"&gt;
+              &lt;android.widget.TextView index="0" package="com.tvunetworks.android.anywhere" class="android.widget.TextView" text="Prompt" resource-id="android:id/alertTitle" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[410,324][1382,412]" displayed="true" /&gt;
+            &lt;/android.widget.LinearLayout&gt;
+            &lt;android.view.View index="1" package="com.tvunetworks.android.anywhere" class="android.view.View" text="" resource-id="android:id/titleDivider" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[362,464][1430,470]" displayed="true" /&gt;
+          &lt;/android.widget.LinearLayout&gt;
+          &lt;android.widget.LinearLayout index="1" package="com.tvunetworks.android.anywhere" class="android.widget.LinearLayout" text="" resource-id="android:id/contentPanel" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[338,470][1454,662]" displayed="true"&gt;
+            &lt;android.widget.ScrollView index="0" package="com.tvunetworks.android.anywhere" class="android.widget.ScrollView" text="" resource-id="android:id/scrollView" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[362,470][1430,654]" displayed="true"&gt;
+              &lt;android.widget.TextView index="0" package="com.tvunetworks.android.anywhere" class="android.widget.TextView" text="Restart application needed for updates to take effect!" resource-id="android:id/message" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[362,470][1430,654]" displayed="true" /&gt;
+            &lt;/android.widget.ScrollView&gt;
+          &lt;/android.widget.LinearLayout&gt;
+          &lt;android.widget.LinearLayout index="2" package="com.tvunetworks.android.anywhere" class="android.widget.LinearLayout" text="" resource-id="android:id/buttonPanel" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[338,662][1454,832]" displayed="true"&gt;
+            &lt;android.widget.LinearLayout index="0" package="com.tvunetworks.android.anywhere" class="android.widget.LinearLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[362,664][1430,808]" displayed="true"&gt;
+              &lt;android.widget.Button index="0" package="com.tvunetworks.android.anywhere" class="android.widget.Button" text="Cancel" resource-id="android:id/button2" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[362,664][895,808]" displayed="true" /&gt;
+              &lt;android.widget.Button index="1" package="com.tvunetworks.android.anywhere" class="android.widget.Button" text="OK" resource-id="android:id/button1" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[897,664][1430,808]" displayed="true" /&gt;
+            &lt;/android.widget.LinearLayout&gt;
+          &lt;/android.widget.LinearLayout&gt;
+        &lt;/android.widget.LinearLayout&gt;
+      &lt;/android.widget.FrameLayout&gt;
+    &lt;/android.widget.FrameLayout&gt;
+  &lt;/android.widget.FrameLayout&gt;
+&lt;/hierarchy&gt;</msg>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20200108 09:29:53.138" level="TRACE">Arguments: [  ]</msg>
+<msg timestamp="20200108 09:29:53.139" level="DEBUG">GET http://127.0.0.1:4723/wd/hub/session/f0192f40-5c31-4cf5-b353-42557eb8a0b9/screenshot {"sessionId": "f0192f40-5c31-4cf5-b353-42557eb8a0b9"}</msg>
+<msg timestamp="20200108 09:29:54.056" level="DEBUG">http://127.0.0.1:4723 "GET /wd/hub/session/f0192f40-5c31-4cf5-b353-42557eb8a0b9/screenshot HTTP/1.1" 200 976322</msg>
+<msg timestamp="20200108 09:29:54.074" level="DEBUG">Finished Request</msg>
+<msg timestamp="20200108 09:29:54.081" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="test_02live_standby/appium-screenshot-4.png"&gt;&lt;img src="test_02live_standby/appium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20200108 09:29:54.081" level="TRACE">Return: None</msg>
+<status status="PASS" endtime="20200108 09:29:54.081" starttime="20200108 09:29:53.138"></status>
+</kw>
+<msg timestamp="20200108 09:29:54.082" level="FAIL">"20s,元素没出来"</msg>
+<msg timestamp="20200108 09:29:54.083" level="DEBUG">Traceback (most recent call last):
+  File "&lt;C:\Python27\lib\site-packages\decorator.pyc:decorator-gen-65&gt;", line 2, in wait_until_element_is_visible
+  File "C:\Python27\lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 21, in _run_on_failure_decorator
+    raise err</msg>
+<status status="FAIL" endtime="20200108 09:29:54.083" starttime="20200108 09:29:32.842"></status>
+</kw>
+<status status="FAIL" endtime="20200108 09:29:54.083" starttime="20200108 09:29:14.142"></status>
+</kw>
+<kw type="teardown" name="Stress_Suit_Teardown" library="Share_resource">
+<doc>05StressTest 中teardown使用</doc>
+<msg timestamp="20200108 09:29:54.084" level="TRACE">Arguments: [  ]</msg>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>"run Stress_Suit_Teardown"</arg>
+</arguments>
+<msg timestamp="20200108 09:29:54.085" level="TRACE">Arguments: [ '"run Stress_Suit_Teardown"' ]</msg>
+<msg timestamp="20200108 09:29:54.085" level="INFO">"run Stress_Suit_Teardown"</msg>
+<msg timestamp="20200108 09:29:54.085" level="TRACE">Return: None</msg>
+<status status="PASS" endtime="20200108 09:29:54.085" starttime="20200108 09:29:54.085"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'%{U_SAVE_APP_TOP_MEM_REPORT}'=='True'</arg>
+<arg>Create CPU And Mem Report</arg>
+<arg>mem_detail='MemoryDetail'</arg>
+</arguments>
+<msg timestamp="20200108 09:29:54.086" level="TRACE">Arguments: [ "'True'=='True'" | 'Create CPU And Mem Report' | "mem_detail='MemoryDetail'" ]</msg>
+<kw name="Create CPU And Mem Report" library="myTestLibrary">
+<doc>create usage of phone resources after running app
+Create CPU And Mem Report | mem_detail='MemoryDetail'</doc>
+<arguments>
+<arg>mem_detail='MemoryDetail'</arg>
+</arguments>
+<msg timestamp="20200108 09:29:54.087" level="TRACE">Arguments: [ mem_detail="'MemoryDetail'" ]</msg>
+<msg timestamp="20200108 09:29:54.088" level="INFO">CPU
+Memory
+'MemoryDetail'</msg>
+<msg timestamp="20200108 09:29:54.089" level="TRACE">Return: None</msg>
+<msg timestamp="20200108 09:29:54.089" level="FAIL">KeyError: u"'MemoryDetail'"</msg>
+<msg timestamp="20200108 09:29:54.089" level="DEBUG">Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\myTestLibrary\keywords\_appium_performance.py", line 105, in CreateCPUAndMemReport
+    self.createLineChart(workbook, sheetName, self.__data[sheetName])</msg>
+<status status="FAIL" endtime="20200108 09:29:54.089" starttime="20200108 09:29:54.086"></status>
+</kw>
+<msg timestamp="20200108 09:29:54.090" level="TRACE">Return: None</msg>
+<status status="FAIL" endtime="20200108 09:29:54.090" starttime="20200108 09:29:54.086"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>“设置u_android_log_record为false"</arg>
+</arguments>
+<msg timestamp="20200108 09:29:54.091" level="TRACE">Arguments: [ '\u201c\u8bbe\u7f6eu_android_log_record\u4e3afalse"' ]</msg>
+<msg timestamp="20200108 09:29:54.091" level="INFO">“设置u_android_log_record为false"</msg>
+<msg timestamp="20200108 09:29:54.091" level="TRACE">Return: None</msg>
+<status status="PASS" endtime="20200108 09:29:54.091" starttime="20200108 09:29:54.090"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_ANDROID_LOG_RECORD</arg>
+<arg>False</arg>
+</arguments>
+<msg timestamp="20200108 09:29:54.092" level="TRACE">Arguments: [ 'U_ANDROID_LOG_RECORD' | 'False' ]</msg>
+<msg timestamp="20200108 09:29:54.092" level="INFO">Environment variable 'U_ANDROID_LOG_RECORD' set to value 'False'.</msg>
+<msg timestamp="20200108 09:29:54.092" level="TRACE">Return: None</msg>
+<status status="PASS" endtime="20200108 09:29:54.092" starttime="20200108 09:29:54.092"></status>
+</kw>
+<msg timestamp="20200108 09:29:54.093" level="TRACE">Return: None</msg>
+<status status="FAIL" endtime="20200108 09:29:54.093" starttime="20200108 09:29:54.084">KeyError: u"'MemoryDetail'"</status>
+</kw>
+<status status="FAIL" endtime="20200108 09:29:54.093" critical="yes" starttime="20200108 09:29:14.050">"20s,元素没出来"
+
+Also teardown failed:
+KeyError: u"'MemoryDetail'"</status>
+</test>
+<status status="FAIL" endtime="20200108 09:29:54.094" starttime="20200108 09:29:14.039"></status>
+</suite>
+<kw type="teardown" name="Common_Suit_Teardown" library="EnvironmentKey">
+<doc>设置测试项目结束时，关闭 Appium 服务</doc>
+<msg timestamp="20200108 09:29:54.096" level="TRACE">Arguments: [  ]</msg>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>"执行common_suit_teardown"</arg>
+</arguments>
+<msg timestamp="20200108 09:29:54.097" level="TRACE">Arguments: [ '"\u6267\u884ccommon_suit_teardown"' ]</msg>
+<msg timestamp="20200108 09:29:54.097" level="INFO">"执行common_suit_teardown"</msg>
+<msg timestamp="20200108 09:29:54.097" level="TRACE">Return: None</msg>
+<status status="PASS" endtime="20200108 09:29:54.097" starttime="20200108 09:29:54.096"></status>
+</kw>
+<kw name="Stop Appium Server" library="myTestLibrary">
+<doc>Stop Appium Server.
+Examples:
+| Stop Appium Server |</doc>
+<msg timestamp="20200108 09:29:54.098" level="TRACE">Arguments: [  ]</msg>
+<msg timestamp="20200108 09:29:55.495" level="INFO">###
+Appium Server Info:  TCP    127.0.0.1:4723         0.0.0.0:0              LISTENING       24724
+  TCP    127.0.0.1:4723         127.0.0.1:11231        ESTABLISHED     24724
+  TCP    127.0.0.1:11231        127.0.0.1:4723         ESTABLISHED     9752
+###
+Pass! Stopped Appium Server. PID: 24724</msg>
+<msg timestamp="20200108 09:29:55.495" level="TRACE">Return: None</msg>
+<status status="PASS" endtime="20200108 09:29:55.496" starttime="20200108 09:29:54.098"></status>
+</kw>
+<kw name="Kill Adb Process" library="myTestLibrary">
+<doc>Kill ADB Process.
+Examples:
+| Kill Adb Process |</doc>
+<msg timestamp="20200108 09:29:55.497" level="TRACE">Arguments: [  ]</msg>
+<msg timestamp="20200108 09:29:55.671" level="INFO">ADB process is already stopped.</msg>
+<msg timestamp="20200108 09:29:55.671" level="TRACE">Return: None</msg>
+<status status="PASS" endtime="20200108 09:29:55.671" starttime="20200108 09:29:55.496"></status>
+</kw>
+<msg timestamp="20200108 09:29:55.672" level="TRACE">Return: None</msg>
+<status status="PASS" endtime="20200108 09:29:55.672" starttime="20200108 09:29:54.095"></status>
+</kw>
+<status status="FAIL" endtime="20200108 09:29:55.672" starttime="20200108 09:28:59.782"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="3" pass="0">Critical Tests</stat>
+<stat fail="3" pass="0">All Tests</stat>
+</total>
+<tag>
+<stat fail="1" pass="0">ChangeUI</stat>
+<stat fail="1" pass="0">newUILive</stat>
+</tag>
+<suite>
+<stat fail="3" id="s1" name="AutoAndroidAnywhereTest" pass="0">AutoAndroidAnywhereTest</stat>
+<stat fail="2" id="s1-s1" name="04testLiveNewUI" pass="0">AutoAndroidAnywhereTest.04testLiveNewUI</stat>
+<stat fail="1" id="s1-s2" name="05StressTest" pass="0">AutoAndroidAnywhereTest.05StressTest</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20200108 09:29:10.986" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x0000000005D6DC48&gt;: Failed to establish a new connection: [Errno 10061] No connection could be made because the target machine actively refused it',)': /wd/hub/session</msg>
+<msg timestamp="20200108 09:29:11.993" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x0000000005CEA5C8&gt;: Failed to establish a new connection: [Errno 10061] No connection could be made because the target machine actively refused it',)': /wd/hub/session</msg>
+<msg timestamp="20200108 09:29:13.023" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x0000000005D9F308&gt;: Failed to establish a new connection: [Errno 10061] No connection could be made because the target machine actively refused it',)': /wd/hub/session</msg>
+<msg timestamp="20200108 09:29:14.025" level="WARN">Keyword 'AppiumLibrary.CapturePageScreenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20200108 09:29:14.029" level="WARN">Keyword 'AppiumLibrary.CapturePageScreenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20200108 09:29:14.036" level="WARN">Keyword 'AppiumLibrary.CapturePageScreenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20200108 09:29:16.155" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x0000000005D6FDC8&gt;: Failed to establish a new connection: [Errno 10061] No connection could be made because the target machine actively refused it',)': /wd/hub/session</msg>
+</errors>
+</robot>

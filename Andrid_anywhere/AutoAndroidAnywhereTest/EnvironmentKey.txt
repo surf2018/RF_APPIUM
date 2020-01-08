@@ -1,0 +1,115 @@
+*** Settings ***
+Documentation     用例公共的Test Setup & Teardown
+...               目的：对所有用例作公共资源的初始化、现场保存和垃圾回收
+Library           myTestLibrary
+Library           AppiumLibrary    run_on_failure=AppiumLibrary.CapturePageScreenshot
+Library           Screenshot
+Library           OperatingSystem
+Resource          ./MainKeys.txt
+Library           String
+Library           Collections
+Library           Common/Library/main.py
+Resource          Share_resource.txt
+
+*** Keywords ***
+Setup_Pre_Condition
+    [Documentation]    A. Setup_Testbed_Variable：测试机相关预设；
+    ...
+    ...    设置测试开始时间，并导入A。
+    log    "执行setup_pre_condition"
+    ${time}    Evaluate    datetime.datetime.now()    datetime
+    log    "导入环境变量"
+    Set Environment Variable    U_CUSTOM_TEST_TASK_START_TIME    ${time}
+    Setup_APP_Variable
+    Setup_Testbed_Variable
+    log    "导入压力测试变量"
+    Setup_StressSuite_Variable
+    #Setup ADB Server
+    log    "启动adb server"
+    Setup_ADB_Server
+    #Setup Appium Server
+    sleep    2
+    log    "deviceName:%{U_APPIUM_DEVICE_NAME}" and "start appium server"
+    Start Appium Server
+
+Setup_APP_Variable
+    #Appium Setup(APK 目录、APK、Appium 服务器、APP 名、手机平台、版本及手机序列)
+    Set Environment Variable    G_APPIUM_APK_NAME    TVUAnywhere_V8.0.6.281_1912201536_release.apk
+    Set Environment Variable    G_APPIUM_APP_DIR    D:\\AutoTest\\androidApk    #App Package Directory
+    Set Environment Variable    G_APPIUM_APP_APK    %{G_APPIUM_APP_DIR}\\%{G_APPIUM_APK_NAME}    #apk
+    Set Environment Variable    G_APPIUM_AUTO_NAME    uiautomator2
+    Set Environment Variable    G_APPIUM_REINSTALL_RESET    False
+    Set Environment Variable    G_APPIUM_HOST_IP0    http://127.0.0.1:4723/wd/hub
+    Set Environment Variable    G_APPIUM_APP_PACKAGE    com.tvunetworks.android.anywhere
+    Set Environment Variable    G_APPIUM_PLATFORM_NAME    Android
+    Set Environment Variable    G_APPIUM_PLATFORM_VERSION    8.0.0
+    Set Environment Variable    U_APPIUM_DEVICE_NAME    ${EMPTY}    #默认为空
+    Set Environment Variable    G_APPIUM_HOST_ADDRESS    127.0.0.1
+    Set Environment Variable    G_APPIUM_HOST_PORT    4723
+    Set Environment Variable    U_APPIUM_APPACTIVITY    AppStart
+    Set Environment Variable    G_APPIUM_APP_BUGREPORT_DIR    D:\\COM_DOC\\robotframwork\\results\\bugreport
+    #APP TEST Info（默认页面加载时间、线上/线下测试和 APP 测试版本）
+    Set Environment Variable    U_APP_CURRENT_VERSION    \    #Current Version
+    Set Environment Variable    U_APP_GA_VERSION    \    #GA Version
+    Set Environment Variable    U_APP_TESTING_TYPE    offline
+    Set Environment Variable    U_APP_WAITING_TIME    30
+    Set Environment Variable    U_APP_VIDEO_WAITING_TIME    20
+    Set Environment Variable    U_APP_Activity    AppStart
+    Set Environment Variable    U_APP_ApkName    TVUAnywhere_V8.0.6.281_1912201536_release.apk
+    Set Environment Variable    U_APP_TpeerId    0x4B8D62040DA471B2
+    Set Environment Variable    U_APP_Tversion    Version: 8.0.6.281 : VTR-AL00
+    Set Environment Variable    U_APP_Res    720P30
+    Set Environment Variable    U_APP_HEVC    OFF
+    Set Environment Variable    U_APP_Resolution    1280 x 720
+    Set Environment Variable    U_APP_Framerate    30p
+    #App Basic Info(用户信息，线上线下）
+    Set Environment Variable    U_APP_ONLINE_USER    ${EMPTY}
+    Set Environment Variable    U_APP_ONLINE_PWD    ${EMPTY}
+    Set Environment Variable    U_APP_OFFLINE_USER    soffeeshu@tvu.com
+    Set Environment Variable    U_APP_OFFLINE_PWD    123456
+    Set Environment Variable    U_APP_OFFLINE_Rname    v3500_linuxR
+    Set Environment Variable    U_APP_OFFLINE_destination    soffee_test_youtube
+    #Android Log Setup
+    Set Environment Variable    U_ANDROID_LOG_RECORD    True
+
+Setup_Testbed_Variable
+    [Documentation]    Setup_Testbed_Variable：测试机相关预设；
+    #Path Info
+    Set Environment Variable    G_SQAROOT    D:\\COM_DOC\\robotframwork
+    Set Environment Variable    G_LOG    %{G_SQAROOT}\\logs
+    Set Environment Variable    G_TOTAL_RESULT    %{G_SQAROOT}\\results
+    Set Environment Variable    G_CURRENTLOG    ${OUTPUT DIR}
+    Set Environment Variable    G_OUTPUTDIR    ${OUTPUT DIR}
+    Set Environment Variable    G_DATACENTER    %{G_SQAROOT}\\common\\resource
+
+Setup_ADB_Server
+    [Documentation]    启动adb server
+    #set Device Name
+    ${status}    Run Keyword And Ignore Error    Set Device Name
+    log    "set Device Name的状态:${status[0]}"
+    Run keyword If    '${status[0]}'!='PASS'    Run keywords    Kill Adb Process
+    ...    AND    Start Adb Service
+    ...    AND    Set Device Name
+    log    'device name :%{U_APPIUM_DEVICE_NAME}'
+
+Setup_StressSuite_Variable
+    [Documentation]    设置测试结束时的相关设置
+    #Long Term Test(APP 压力测试：设置测试持续时间)
+    Set Environment Variable    U_CUSTOM_LONG_TERM    24    #hour
+    Set Environment Variable    U_CUSTOM_LONG_INTERVAL    180    #second
+    Set Environment Variable    U_CUSTOM_LONG_DEVIATION    1    #DAY
+    #Save Test To Report(生成报表)
+    Set Environment Variable    U_SAVE_APP_TOP_MEM_REPORT    True    #true or false
+    Set Environment Variable    U_REPORT_NAME    Android_Anywhere
+    Set Environment Variable    U_TBNAME    ${EMPTY}
+    Set Environment Variable    G_TESTER    Soffee
+    Set Environment Variable    U_TOP_LOG_NAME    top.txt
+    Set Environment Variable    U_MEMINFO_LOG_NAME    meminfo.txt
+
+Common_Suit_Teardown
+    [Documentation]    设置测试项目结束时，关闭 Appium 服务
+    log    "执行common_suit_teardown"
+    #Run Keyword If
+    #Run Keyword If
+    Stop Appium Server
+    Kill Adb Process

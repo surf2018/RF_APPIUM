@@ -1,0 +1,1260 @@
+Applications Memory Usage (in Kilobytes):
+Uptime: 7534733 Realtime: 7534733
+
+** MEMINFO in pid 15021 [com.tvunetworks.android.anywhere] **
+                   Pss  Private  Private  SwapPss     Heap     Heap     Heap
+                 Total    Dirty    Clean    Dirty     Size    Alloc     Free
+                ------   ------   ------   ------   ------   ------   ------
+  Native Heap   153767   153728        4        0   174592   167028     7563
+  Dalvik Heap    16350    16340        0        0    24617    12309    12308
+ Dalvik Other    12493    12492        0        0                           
+        Stack       56       56        0        0                           
+       Ashmem     2952      128        0        0                           
+    Other dev       12        0       12        0                           
+     .so mmap    20627     2992    14564       44                           
+    .apk mmap    22592      144    21508        0                           
+    .ttf mmap       45        0        0        0                           
+    .dex mmap    15883       24    15084        0                           
+    .oat mmap     2360        0      664        0                           
+    .art mmap     1639     1372       32        1                           
+   Other mmap      821        8      740        0                           
+    GL mtrack    84756    84756        0        0                           
+      Unknown     7063     7060        0        8                           
+        TOTAL   341469   279100    52608       53   199209   179337    19871
+ 
+ App Summary
+                       Pss(KB)
+                        ------
+           Java Heap:    17744
+         Native Heap:   153728
+                Code:    54980
+               Stack:       56
+            Graphics:    84756
+       Private Other:    20444
+              System:     9761
+ 
+               TOTAL:   341469       TOTAL SWAP PSS:       53
+ 
+ Objects
+               Views:      263         ViewRootImpl:        3
+         AppContexts:        7           Activities:        2
+              Assets:       16        AssetManagers:        7
+       Local Binders:       88        Proxy Binders:       70
+       Parcel memory:       28         Parcel count:      102
+    Death Recipients:        5      OpenSSL Sockets:        0
+            WebViews:        1
+ 
+ SQL
+         MEMORY_USED:        0
+  PAGECACHE_OVERFLOW:        0          MALLOC_SIZE:      117
+ 
+ 
+ Asset Allocations
+    zip:/data/app/com.tvunetworks.android.anywhere-l_1u1DpO25eI5_E9Y5aIIA==/base.apk:/assets/shader/Vertex/oes.vert: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-l_1u1DpO25eI5_E9Y5aIIA==/base.apk:/assets/shader/Fragment/oes.frag: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-l_1u1DpO25eI5_E9Y5aIIA==/base.apk:/assets/shader/Vertex/lazy.vert: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-l_1u1DpO25eI5_E9Y5aIIA==/base.apk:/assets/shader/Fragment/lazy.frag: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-l_1u1DpO25eI5_E9Y5aIIA==/base.apk:/assets/shader/Vertex/oes.vert: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-l_1u1DpO25eI5_E9Y5aIIA==/base.apk:/assets/shader/Fragment/oes.frag: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-l_1u1DpO25eI5_E9Y5aIIA==/base.apk:/assets/shader/Vertex/beauty.vert: 2K
+    zip:/data/app/com.tvunetworks.android.anywhere-l_1u1DpO25eI5_E9Y5aIIA==/base.apk:/assets/shader/Fragment/beauty.frag: 2K
+Applications Memory Usage (in Kilobytes):
+Uptime: 7600249 Realtime: 7600249
+
+** MEMINFO in pid 16156 [com.tvunetworks.android.anywhere] **
+                   Pss  Private  Private  SwapPss     Heap     Heap     Heap
+                 Total    Dirty    Clean    Dirty     Size    Alloc     Free
+                ------   ------   ------   ------   ------   ------   ------
+  Native Heap   154085   154044        4        0   174592   167607     6984
+  Dalvik Heap    15626    15616        0        0    24697    12349    12348
+ Dalvik Other    12441    12440        0        0                           
+        Stack       56       56        0        0                           
+       Ashmem     2948      128        0        0                           
+    Other dev       12        0       12        0                           
+     .so mmap    20667     2992    14604       45                           
+    .apk mmap    22714      144    21440        0                           
+    .ttf mmap       45        0        0        0                           
+    .dex mmap    15861       24    15064        0                           
+    .oat mmap     2375        0      680        0                           
+    .art mmap     1640     1368       32        1                           
+   Other mmap      800        8      720        0                           
+    GL mtrack    85276    85276        0        0                           
+      Unknown     7087     7084        0        8                           
+        TOTAL   341687   279180    52556       54   199289   179956    19332
+ 
+ App Summary
+                       Pss(KB)
+                        ------
+           Java Heap:    17016
+         Native Heap:   154044
+                Code:    54948
+               Stack:       56
+            Graphics:    85276
+       Private Other:    20396
+              System:     9951
+ 
+               TOTAL:   341687       TOTAL SWAP PSS:       54
+ 
+ Objects
+               Views:      263         ViewRootImpl:        3
+         AppContexts:        7           Activities:        2
+              Assets:       16        AssetManagers:        7
+       Local Binders:      100        Proxy Binders:       70
+       Parcel memory:       29         Parcel count:      105
+    Death Recipients:        5      OpenSSL Sockets:        0
+            WebViews:        1
+ 
+ SQL
+         MEMORY_USED:        0
+  PAGECACHE_OVERFLOW:        0          MALLOC_SIZE:      117
+ 
+ 
+ Asset Allocations
+    zip:/data/app/com.tvunetworks.android.anywhere-DRQKIt2bZgz5WWTOTSvTKg==/base.apk:/assets/shader/Vertex/oes.vert: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-DRQKIt2bZgz5WWTOTSvTKg==/base.apk:/assets/shader/Fragment/oes.frag: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-DRQKIt2bZgz5WWTOTSvTKg==/base.apk:/assets/shader/Vertex/lazy.vert: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-DRQKIt2bZgz5WWTOTSvTKg==/base.apk:/assets/shader/Fragment/lazy.frag: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-DRQKIt2bZgz5WWTOTSvTKg==/base.apk:/assets/shader/Vertex/oes.vert: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-DRQKIt2bZgz5WWTOTSvTKg==/base.apk:/assets/shader/Fragment/oes.frag: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-DRQKIt2bZgz5WWTOTSvTKg==/base.apk:/assets/shader/Vertex/beauty.vert: 2K
+    zip:/data/app/com.tvunetworks.android.anywhere-DRQKIt2bZgz5WWTOTSvTKg==/base.apk:/assets/shader/Fragment/beauty.frag: 2K
+Applications Memory Usage (in Kilobytes):
+Uptime: 7665806 Realtime: 7665806
+
+** MEMINFO in pid 17270 [com.tvunetworks.android.anywhere] **
+                   Pss  Private  Private  SwapPss     Heap     Heap     Heap
+                 Total    Dirty    Clean    Dirty     Size    Alloc     Free
+                ------   ------   ------   ------   ------   ------   ------
+  Native Heap   153856   153816        4        0   174592   167245     7346
+  Dalvik Heap    15626    15616        0        0    24671    12336    12335
+ Dalvik Other    12361    12360        0        0                           
+        Stack       56       56        0        0                           
+       Ashmem     2974      128        0        0                           
+    Other dev       12        0       12        0                           
+     .so mmap    20075     2992    14012       45                           
+    .apk mmap    22638      144    21424        0                           
+    .ttf mmap       45        0        0        0                           
+    .dex mmap    15813       24    15020        0                           
+    .oat mmap     2370        0      672        0                           
+    .art mmap     1640     1368       32        1                           
+   Other mmap      816        8      736        0                           
+    GL mtrack    85064    85064        0        0                           
+      Unknown     7063     7060        0        8                           
+        TOTAL   340463   278636    51912       54   199263   179581    19681
+ 
+ App Summary
+                       Pss(KB)
+                        ------
+           Java Heap:    17016
+         Native Heap:   153816
+                Code:    54288
+               Stack:       56
+            Graphics:    85064
+       Private Other:    20308
+              System:     9915
+ 
+               TOTAL:   340463       TOTAL SWAP PSS:       54
+ 
+ Objects
+               Views:      263         ViewRootImpl:        3
+         AppContexts:        7           Activities:        2
+              Assets:       16        AssetManagers:        7
+       Local Binders:       83        Proxy Binders:       70
+       Parcel memory:       30         Parcel count:      108
+    Death Recipients:        5      OpenSSL Sockets:        0
+            WebViews:        1
+ 
+ SQL
+         MEMORY_USED:        0
+  PAGECACHE_OVERFLOW:        0          MALLOC_SIZE:      117
+ 
+ 
+ Asset Allocations
+    zip:/data/app/com.tvunetworks.android.anywhere-eEZ4cHr1MW4kODxh1q8KGQ==/base.apk:/assets/shader/Vertex/oes.vert: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-eEZ4cHr1MW4kODxh1q8KGQ==/base.apk:/assets/shader/Fragment/oes.frag: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-eEZ4cHr1MW4kODxh1q8KGQ==/base.apk:/assets/shader/Vertex/lazy.vert: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-eEZ4cHr1MW4kODxh1q8KGQ==/base.apk:/assets/shader/Fragment/lazy.frag: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-eEZ4cHr1MW4kODxh1q8KGQ==/base.apk:/assets/shader/Vertex/oes.vert: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-eEZ4cHr1MW4kODxh1q8KGQ==/base.apk:/assets/shader/Fragment/oes.frag: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-eEZ4cHr1MW4kODxh1q8KGQ==/base.apk:/assets/shader/Vertex/beauty.vert: 2K
+    zip:/data/app/com.tvunetworks.android.anywhere-eEZ4cHr1MW4kODxh1q8KGQ==/base.apk:/assets/shader/Fragment/beauty.frag: 2K
+Applications Memory Usage (in Kilobytes):
+Uptime: 7731056 Realtime: 7731056
+
+** MEMINFO in pid 18392 [com.tvunetworks.android.anywhere] **
+                   Pss  Private  Private  SwapPss     Heap     Heap     Heap
+                 Total    Dirty    Clean    Dirty     Size    Alloc     Free
+                ------   ------   ------   ------   ------   ------   ------
+  Native Heap   154024   153984        4        0   174592   167347     7244
+  Dalvik Heap    15601    15592        0        0    24689    12345    12344
+ Dalvik Other    12825    12824        0        0                           
+        Stack       56       56        0        0                           
+       Ashmem     2946      128        0        0                           
+    Other dev       12        0       12        0                           
+     .so mmap    18527     2992    12488       44                           
+    .apk mmap    22120      144    21208        0                           
+    .ttf mmap       45        0        0        0                           
+    .dex mmap    15847       24    15056        0                           
+    .oat mmap     2317        0      644        0                           
+    .art mmap     1632     1372       28        1                           
+   Other mmap      805        8      736        0                           
+    GL mtrack    85036    85036        0        0                           
+      Unknown     7079     7076        0        8                           
+        TOTAL   338925   279236    50176       53   199281   179692    19588
+ 
+ App Summary
+                       Pss(KB)
+                        ------
+           Java Heap:    16992
+         Native Heap:   153984
+                Code:    52556
+               Stack:       56
+            Graphics:    85036
+       Private Other:    20788
+              System:     9513
+ 
+               TOTAL:   338925       TOTAL SWAP PSS:       53
+ 
+ Objects
+               Views:      263         ViewRootImpl:        3
+         AppContexts:        7           Activities:        2
+              Assets:       16        AssetManagers:        7
+       Local Binders:       89        Proxy Binders:       69
+       Parcel memory:       29         Parcel count:      104
+    Death Recipients:        5      OpenSSL Sockets:        0
+            WebViews:        1
+ 
+ SQL
+         MEMORY_USED:        0
+  PAGECACHE_OVERFLOW:        0          MALLOC_SIZE:      117
+ 
+ 
+ Asset Allocations
+    zip:/data/app/com.tvunetworks.android.anywhere-_QlnP8630Ez1S9XC5ZGiMQ==/base.apk:/assets/shader/Vertex/oes.vert: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-_QlnP8630Ez1S9XC5ZGiMQ==/base.apk:/assets/shader/Fragment/oes.frag: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-_QlnP8630Ez1S9XC5ZGiMQ==/base.apk:/assets/shader/Vertex/lazy.vert: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-_QlnP8630Ez1S9XC5ZGiMQ==/base.apk:/assets/shader/Fragment/lazy.frag: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-_QlnP8630Ez1S9XC5ZGiMQ==/base.apk:/assets/shader/Vertex/oes.vert: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-_QlnP8630Ez1S9XC5ZGiMQ==/base.apk:/assets/shader/Fragment/oes.frag: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-_QlnP8630Ez1S9XC5ZGiMQ==/base.apk:/assets/shader/Vertex/beauty.vert: 2K
+    zip:/data/app/com.tvunetworks.android.anywhere-_QlnP8630Ez1S9XC5ZGiMQ==/base.apk:/assets/shader/Fragment/beauty.frag: 2K
+Applications Memory Usage (in Kilobytes):
+Uptime: 7796701 Realtime: 7796701
+
+** MEMINFO in pid 19559 [com.tvunetworks.android.anywhere] **
+                   Pss  Private  Private  SwapPss     Heap     Heap     Heap
+                 Total    Dirty    Clean    Dirty     Size    Alloc     Free
+                ------   ------   ------   ------   ------   ------   ------
+  Native Heap   154207   154160        4        0   174592   167274     7317
+  Dalvik Heap    15729    15720        0        0    24769    12385    12384
+ Dalvik Other    12441    12440        0        0                           
+        Stack       56       56        0        0                           
+       Ashmem     2974      128        0        0                           
+    Other dev       12        0       12        0                           
+     .so mmap    16026     2992     9988       44                           
+    .apk mmap    22253      144    21348        0                           
+    .ttf mmap       45        0        0        0                           
+    .dex mmap    15852       24    15064        0                           
+    .oat mmap     2309        0      648        0                           
+    .art mmap     1630     1368       28        1                           
+   Other mmap      809        8      740        0                           
+    GL mtrack    84904    84904        0        0                           
+      Unknown     7071     7068        0        8                           
+        TOTAL   336371   279012    47832       53   199361   179659    19701
+ 
+ App Summary
+                       Pss(KB)
+                        ------
+           Java Heap:    17116
+         Native Heap:   154160
+                Code:    50208
+               Stack:       56
+            Graphics:    84904
+       Private Other:    20400
+              System:     9527
+ 
+               TOTAL:   336371       TOTAL SWAP PSS:       53
+ 
+ Objects
+               Views:      263         ViewRootImpl:        3
+         AppContexts:        7           Activities:        2
+              Assets:       16        AssetManagers:        7
+       Local Binders:       87        Proxy Binders:       70
+       Parcel memory:       29         Parcel count:      104
+    Death Recipients:        5      OpenSSL Sockets:        0
+            WebViews:        1
+ 
+ SQL
+         MEMORY_USED:        0
+  PAGECACHE_OVERFLOW:        0          MALLOC_SIZE:      117
+ 
+ 
+ Asset Allocations
+    zip:/data/app/com.tvunetworks.android.anywhere-d28c4CInSHJuoLk_2vQsCg==/base.apk:/assets/shader/Vertex/oes.vert: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-d28c4CInSHJuoLk_2vQsCg==/base.apk:/assets/shader/Fragment/oes.frag: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-d28c4CInSHJuoLk_2vQsCg==/base.apk:/assets/shader/Vertex/lazy.vert: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-d28c4CInSHJuoLk_2vQsCg==/base.apk:/assets/shader/Fragment/lazy.frag: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-d28c4CInSHJuoLk_2vQsCg==/base.apk:/assets/shader/Vertex/oes.vert: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-d28c4CInSHJuoLk_2vQsCg==/base.apk:/assets/shader/Fragment/oes.frag: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-d28c4CInSHJuoLk_2vQsCg==/base.apk:/assets/shader/Vertex/beauty.vert: 2K
+    zip:/data/app/com.tvunetworks.android.anywhere-d28c4CInSHJuoLk_2vQsCg==/base.apk:/assets/shader/Fragment/beauty.frag: 2K
+Applications Memory Usage (in Kilobytes):
+Uptime: 7864702 Realtime: 7864702
+
+** MEMINFO in pid 20686 [com.tvunetworks.android.anywhere] **
+                   Pss  Private  Private  SwapPss     Heap     Heap     Heap
+                 Total    Dirty    Clean    Dirty     Size    Alloc     Free
+                ------   ------   ------   ------   ------   ------   ------
+  Native Heap   153950   153904        4        0   174592   167245     7346
+  Dalvik Heap    16385    16376        0        0    24764    12382    12382
+ Dalvik Other    12421    12420        0        0                           
+        Stack       56       56        0        0                           
+       Ashmem     2974      128        0        0                           
+    Other dev       12        0       12        0                           
+     .so mmap    20638     2992    14604       44                           
+    .apk mmap    22898      144    21708        0                           
+    .ttf mmap       45        0        0        0                           
+    .dex mmap    15855       24    15068        0                           
+    .oat mmap     2296        0      640        0                           
+    .art mmap     1627     1368       28        1                           
+   Other mmap      804        8      736        0                           
+    GL mtrack    85504    85504        0        0                           
+      Unknown     7075     7072        0        8                           
+        TOTAL   342593   279996    52800       53   199356   179627    19728
+ 
+ App Summary
+                       Pss(KB)
+                        ------
+           Java Heap:    17772
+         Native Heap:   153904
+                Code:    55180
+               Stack:       56
+            Graphics:    85504
+       Private Other:    20380
+              System:     9797
+ 
+               TOTAL:   342593       TOTAL SWAP PSS:       53
+ 
+ Objects
+               Views:      263         ViewRootImpl:        3
+         AppContexts:        7           Activities:        2
+              Assets:       16        AssetManagers:        7
+       Local Binders:       68        Proxy Binders:       70
+       Parcel memory:       29         Parcel count:      106
+    Death Recipients:        4      OpenSSL Sockets:        0
+            WebViews:        1
+ 
+ SQL
+         MEMORY_USED:        0
+  PAGECACHE_OVERFLOW:        0          MALLOC_SIZE:      117
+ 
+ 
+ Asset Allocations
+    zip:/data/app/com.tvunetworks.android.anywhere-0xF_wiXH_HADXPA-0dAX_A==/base.apk:/assets/shader/Vertex/oes.vert: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-0xF_wiXH_HADXPA-0dAX_A==/base.apk:/assets/shader/Fragment/oes.frag: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-0xF_wiXH_HADXPA-0dAX_A==/base.apk:/assets/shader/Vertex/lazy.vert: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-0xF_wiXH_HADXPA-0dAX_A==/base.apk:/assets/shader/Fragment/lazy.frag: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-0xF_wiXH_HADXPA-0dAX_A==/base.apk:/assets/shader/Vertex/oes.vert: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-0xF_wiXH_HADXPA-0dAX_A==/base.apk:/assets/shader/Fragment/oes.frag: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-0xF_wiXH_HADXPA-0dAX_A==/base.apk:/assets/shader/Vertex/beauty.vert: 2K
+    zip:/data/app/com.tvunetworks.android.anywhere-0xF_wiXH_HADXPA-0dAX_A==/base.apk:/assets/shader/Fragment/beauty.frag: 2K
+Applications Memory Usage (in Kilobytes):
+Uptime: 8424448 Realtime: 8424448
+
+** MEMINFO in pid 24051 [com.tvunetworks.android.anywhere] **
+                   Pss  Private  Private  SwapPss     Heap     Heap     Heap
+                 Total    Dirty    Clean    Dirty     Size    Alloc     Free
+                ------   ------   ------   ------   ------   ------   ------
+  Native Heap   154257   154208        4        0   176640   167906     8733
+  Dalvik Heap    16413    16404        0        0    24663    12332    12331
+ Dalvik Other    12481    12480        0        0                           
+        Stack       56       56        0        0                           
+       Ashmem     2948      128        0        0                           
+    Other dev       12        0       12        0                           
+     .so mmap    20627     2992    14592       44                           
+    .apk mmap    22793      144    21708        0                           
+    .ttf mmap       45        0        0        0                           
+    .dex mmap    15881       24    15088        0                           
+    .oat mmap     2286        0      632        0                           
+    .art mmap     1629     1368       28        1                           
+   Other mmap      799        8      732        0                           
+    GL mtrack    85888    85888        0        0                           
+      Unknown     7079     7076        0        8                           
+        TOTAL   343247   280776    52796       53   201303   180238    21064
+ 
+ App Summary
+                       Pss(KB)
+                        ------
+           Java Heap:    17800
+         Native Heap:   154208
+                Code:    55180
+               Stack:       56
+            Graphics:    85888
+       Private Other:    20440
+              System:     9675
+ 
+               TOTAL:   343247       TOTAL SWAP PSS:       53
+ 
+ Objects
+               Views:      263         ViewRootImpl:        3
+         AppContexts:        7           Activities:        2
+              Assets:       16        AssetManagers:        7
+       Local Binders:       95        Proxy Binders:       70
+       Parcel memory:       28         Parcel count:      102
+    Death Recipients:        4      OpenSSL Sockets:        0
+            WebViews:        1
+ 
+ SQL
+         MEMORY_USED:        0
+  PAGECACHE_OVERFLOW:        0          MALLOC_SIZE:      117
+ 
+ 
+ Asset Allocations
+    zip:/data/app/com.tvunetworks.android.anywhere-PxuX9Z5cJerqZLlU4dxJew==/base.apk:/assets/shader/Vertex/oes.vert: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-PxuX9Z5cJerqZLlU4dxJew==/base.apk:/assets/shader/Fragment/oes.frag: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-PxuX9Z5cJerqZLlU4dxJew==/base.apk:/assets/shader/Vertex/lazy.vert: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-PxuX9Z5cJerqZLlU4dxJew==/base.apk:/assets/shader/Fragment/lazy.frag: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-PxuX9Z5cJerqZLlU4dxJew==/base.apk:/assets/shader/Vertex/oes.vert: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-PxuX9Z5cJerqZLlU4dxJew==/base.apk:/assets/shader/Fragment/oes.frag: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-PxuX9Z5cJerqZLlU4dxJew==/base.apk:/assets/shader/Vertex/beauty.vert: 2K
+    zip:/data/app/com.tvunetworks.android.anywhere-PxuX9Z5cJerqZLlU4dxJew==/base.apk:/assets/shader/Fragment/beauty.frag: 2K
+Applications Memory Usage (in Kilobytes):
+Uptime: 8488051 Realtime: 8488051
+
+** MEMINFO in pid 25152 [com.tvunetworks.android.anywhere] **
+                   Pss  Private  Private  SwapPss     Heap     Heap     Heap
+                 Total    Dirty    Clean    Dirty     Size    Alloc     Free
+                ------   ------   ------   ------   ------   ------   ------
+  Native Heap   153567   153520        4        0   176640   167119     9520
+  Dalvik Heap    16965    16956        0        0    24789    12395    12394
+ Dalvik Other    12493    12492        0        0                           
+        Stack       56       56        0        0                           
+       Ashmem     2974      128        0        0                           
+    Other dev       12        0       12        0                           
+     .so mmap    20573     2992    14544       45                           
+    .apk mmap    21668      144    20544        0                           
+    .ttf mmap       45        0        0        0                           
+    .dex mmap    15860       24    15072        0                           
+    .oat mmap     2279        0      632        0                           
+    .art mmap     1628     1368       28        1                           
+   Other mmap      771        8      704        0                           
+    GL mtrack    85724    85724        0        0                           
+      Unknown     7079     7076        0        8                           
+        TOTAL   341748   280488    51540       54   201429   179514    21914
+ 
+ App Summary
+                       Pss(KB)
+                        ------
+           Java Heap:    18352
+         Native Heap:   153520
+                Code:    53952
+               Stack:       56
+            Graphics:    85724
+       Private Other:    20424
+              System:     9720
+ 
+               TOTAL:   341748       TOTAL SWAP PSS:       54
+ 
+ Objects
+               Views:      263         ViewRootImpl:        3
+         AppContexts:        7           Activities:        2
+              Assets:       16        AssetManagers:        7
+       Local Binders:       82        Proxy Binders:       70
+       Parcel memory:       29         Parcel count:      106
+    Death Recipients:        4      OpenSSL Sockets:        0
+            WebViews:        1
+ 
+ SQL
+         MEMORY_USED:        0
+  PAGECACHE_OVERFLOW:        0          MALLOC_SIZE:      117
+ 
+ 
+ Asset Allocations
+    zip:/data/app/com.tvunetworks.android.anywhere-FwRtuOmcj2hB38Fnybx7_A==/base.apk:/assets/shader/Vertex/oes.vert: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-FwRtuOmcj2hB38Fnybx7_A==/base.apk:/assets/shader/Fragment/oes.frag: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-FwRtuOmcj2hB38Fnybx7_A==/base.apk:/assets/shader/Vertex/lazy.vert: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-FwRtuOmcj2hB38Fnybx7_A==/base.apk:/assets/shader/Fragment/lazy.frag: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-FwRtuOmcj2hB38Fnybx7_A==/base.apk:/assets/shader/Vertex/oes.vert: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-FwRtuOmcj2hB38Fnybx7_A==/base.apk:/assets/shader/Fragment/oes.frag: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-FwRtuOmcj2hB38Fnybx7_A==/base.apk:/assets/shader/Vertex/beauty.vert: 2K
+    zip:/data/app/com.tvunetworks.android.anywhere-FwRtuOmcj2hB38Fnybx7_A==/base.apk:/assets/shader/Fragment/beauty.frag: 2K
+Applications Memory Usage (in Kilobytes):
+Uptime: 8551649 Realtime: 8551649
+
+** MEMINFO in pid 26240 [com.tvunetworks.android.anywhere] **
+                   Pss  Private  Private  SwapPss     Heap     Heap     Heap
+                 Total    Dirty    Clean    Dirty     Size    Alloc     Free
+                ------   ------   ------   ------   ------   ------   ------
+  Native Heap   153515   153468        4        0   174592   167246     7345
+  Dalvik Heap    16489    16480        0        0    24741    12371    12370
+ Dalvik Other    12493    12492        0        0                           
+        Stack       56       56        0        0                           
+       Ashmem     2974      128        0        0                           
+    Other dev       12        0       12        0                           
+     .so mmap    18182     2992    12152       45                           
+    .apk mmap    21185      144    20284        0                           
+    .ttf mmap       45        0        0        0                           
+    .dex mmap    15886       24    15096        0                           
+    .oat mmap     2280        0      632        0                           
+    .art mmap     1628     1368       28        1                           
+   Other mmap      771        8      704        0                           
+    GL mtrack    84900    84900        0        0                           
+      Unknown     7063     7060        0        8                           
+        TOTAL   337533   279120    48912       54   199333   179617    19715
+ 
+ App Summary
+                       Pss(KB)
+                        ------
+           Java Heap:    17876
+         Native Heap:   153468
+                Code:    51324
+               Stack:       56
+            Graphics:    84900
+       Private Other:    20408
+              System:     9501
+ 
+               TOTAL:   337533       TOTAL SWAP PSS:       54
+ 
+ Objects
+               Views:      263         ViewRootImpl:        3
+         AppContexts:        7           Activities:        2
+              Assets:       16        AssetManagers:        7
+       Local Binders:       69        Proxy Binders:       69
+       Parcel memory:       29         Parcel count:      106
+    Death Recipients:        4      OpenSSL Sockets:        0
+            WebViews:        1
+ 
+ SQL
+         MEMORY_USED:        0
+  PAGECACHE_OVERFLOW:        0          MALLOC_SIZE:      117
+ 
+ 
+ Asset Allocations
+    zip:/data/app/com.tvunetworks.android.anywhere-r8G9FNMmW4jHDdLD4Gp6XA==/base.apk:/assets/shader/Vertex/oes.vert: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-r8G9FNMmW4jHDdLD4Gp6XA==/base.apk:/assets/shader/Fragment/oes.frag: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-r8G9FNMmW4jHDdLD4Gp6XA==/base.apk:/assets/shader/Vertex/lazy.vert: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-r8G9FNMmW4jHDdLD4Gp6XA==/base.apk:/assets/shader/Fragment/lazy.frag: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-r8G9FNMmW4jHDdLD4Gp6XA==/base.apk:/assets/shader/Vertex/oes.vert: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-r8G9FNMmW4jHDdLD4Gp6XA==/base.apk:/assets/shader/Fragment/oes.frag: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-r8G9FNMmW4jHDdLD4Gp6XA==/base.apk:/assets/shader/Vertex/beauty.vert: 2K
+    zip:/data/app/com.tvunetworks.android.anywhere-r8G9FNMmW4jHDdLD4Gp6XA==/base.apk:/assets/shader/Fragment/beauty.frag: 2K
+Applications Memory Usage (in Kilobytes):
+Uptime: 8617654 Realtime: 8617654
+
+** MEMINFO in pid 27336 [com.tvunetworks.android.anywhere] **
+                   Pss  Private  Private  SwapPss     Heap     Heap     Heap
+                 Total    Dirty    Clean    Dirty     Size    Alloc     Free
+                ------   ------   ------   ------   ------   ------   ------
+  Native Heap   154071   154024        4        0   176640   167410     9229
+  Dalvik Heap    17337    17328        0        0    24918    12459    12459
+ Dalvik Other    12501    12500        0        0                           
+        Stack       56       56        0        0                           
+       Ashmem     2974      128        0        0                           
+    Other dev       12        0       12        0                           
+     .so mmap    20478     2992    14436       44                           
+    .apk mmap    22709      144    21692        0                           
+    .ttf mmap       45        0        0        0                           
+    .dex mmap    15487       24    14700        0                           
+    .oat mmap     2286        0      632        0                           
+    .art mmap     1628     1368       28        1                           
+   Other mmap      799        8      732        0                           
+    GL mtrack    84900    84900        0        0                           
+      Unknown     7103     7100        0        8                           
+        TOTAL   342439   280572    52236       53   201558   179869    21688
+ 
+ App Summary
+                       Pss(KB)
+                        ------
+           Java Heap:    18724
+         Native Heap:   154024
+                Code:    54620
+               Stack:       56
+            Graphics:    84900
+       Private Other:    20484
+              System:     9631
+ 
+               TOTAL:   342439       TOTAL SWAP PSS:       53
+ 
+ Objects
+               Views:      263         ViewRootImpl:        3
+         AppContexts:        7           Activities:        2
+              Assets:       16        AssetManagers:        7
+       Local Binders:       82        Proxy Binders:       71
+       Parcel memory:       29         Parcel count:      105
+    Death Recipients:        4      OpenSSL Sockets:        0
+            WebViews:        1
+ 
+ SQL
+         MEMORY_USED:        0
+  PAGECACHE_OVERFLOW:        0          MALLOC_SIZE:      117
+ 
+ 
+ Asset Allocations
+    zip:/data/app/com.tvunetworks.android.anywhere-x_Ij357WeOae7oRQTbXsGg==/base.apk:/assets/shader/Vertex/oes.vert: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-x_Ij357WeOae7oRQTbXsGg==/base.apk:/assets/shader/Fragment/oes.frag: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-x_Ij357WeOae7oRQTbXsGg==/base.apk:/assets/shader/Vertex/lazy.vert: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-x_Ij357WeOae7oRQTbXsGg==/base.apk:/assets/shader/Fragment/lazy.frag: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-x_Ij357WeOae7oRQTbXsGg==/base.apk:/assets/shader/Vertex/oes.vert: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-x_Ij357WeOae7oRQTbXsGg==/base.apk:/assets/shader/Fragment/oes.frag: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-x_Ij357WeOae7oRQTbXsGg==/base.apk:/assets/shader/Vertex/beauty.vert: 2K
+    zip:/data/app/com.tvunetworks.android.anywhere-x_Ij357WeOae7oRQTbXsGg==/base.apk:/assets/shader/Fragment/beauty.frag: 2K
+Applications Memory Usage (in Kilobytes):
+Uptime: 8685044 Realtime: 8685044
+
+** MEMINFO in pid 28451 [com.tvunetworks.android.anywhere] **
+                   Pss  Private  Private  SwapPss     Heap     Heap     Heap
+                 Total    Dirty    Clean    Dirty     Size    Alloc     Free
+                ------   ------   ------   ------   ------   ------   ------
+  Native Heap   153941   153892        4        0   174592   167452     7139
+  Dalvik Heap    15701    15692        0        0    24695    12348    12347
+ Dalvik Other    12461    12460        0        0                           
+        Stack       56       56        0        0                           
+       Ashmem     2974      128        0        0                           
+    Other dev       12        0       12        0                           
+     .so mmap    17838     2992    11804       44                           
+    .apk mmap    22118      144    21228        0                           
+    .ttf mmap       45        0        0        0                           
+    .dex mmap    15783       24    14996        0                           
+    .oat mmap     2271        0      628        0                           
+    .art mmap     1628     1368       28        1                           
+   Other mmap      807        8      740        0                           
+    GL mtrack    85024    85024        0        0                           
+      Unknown     7087     7084        0        8                           
+        TOTAL   337799   278872    49440       53   199287   179800    19486
+ 
+ App Summary
+                       Pss(KB)
+                        ------
+           Java Heap:    17088
+         Native Heap:   153892
+                Code:    51816
+               Stack:       56
+            Graphics:    85024
+       Private Other:    20436
+              System:     9487
+ 
+               TOTAL:   337799       TOTAL SWAP PSS:       53
+ 
+ Objects
+               Views:      263         ViewRootImpl:        3
+         AppContexts:        7           Activities:        2
+              Assets:       16        AssetManagers:        7
+       Local Binders:       95        Proxy Binders:       68
+       Parcel memory:       29         Parcel count:      104
+    Death Recipients:        4      OpenSSL Sockets:        0
+            WebViews:        1
+ 
+ SQL
+         MEMORY_USED:        0
+  PAGECACHE_OVERFLOW:        0          MALLOC_SIZE:      117
+ 
+ 
+ Asset Allocations
+    zip:/data/app/com.tvunetworks.android.anywhere-vj9uDq721NdngN11fGZSFA==/base.apk:/assets/shader/Vertex/oes.vert: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-vj9uDq721NdngN11fGZSFA==/base.apk:/assets/shader/Fragment/oes.frag: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-vj9uDq721NdngN11fGZSFA==/base.apk:/assets/shader/Vertex/lazy.vert: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-vj9uDq721NdngN11fGZSFA==/base.apk:/assets/shader/Fragment/lazy.frag: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-vj9uDq721NdngN11fGZSFA==/base.apk:/assets/shader/Vertex/oes.vert: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-vj9uDq721NdngN11fGZSFA==/base.apk:/assets/shader/Fragment/oes.frag: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-vj9uDq721NdngN11fGZSFA==/base.apk:/assets/shader/Vertex/beauty.vert: 2K
+    zip:/data/app/com.tvunetworks.android.anywhere-vj9uDq721NdngN11fGZSFA==/base.apk:/assets/shader/Fragment/beauty.frag: 2K
+Applications Memory Usage (in Kilobytes):
+Uptime: 8752389 Realtime: 8752389
+
+** MEMINFO in pid 29567 [com.tvunetworks.android.anywhere] **
+                   Pss  Private  Private  SwapPss     Heap     Heap     Heap
+                 Total    Dirty    Clean    Dirty     Size    Alloc     Free
+                ------   ------   ------   ------   ------   ------   ------
+  Native Heap   154235   154184        4        0   176640   167198     9441
+  Dalvik Heap    16173    16164        0        0    24760    12380    12380
+ Dalvik Other    12469    12468        0        0                           
+        Stack       56       56        0        0                           
+       Ashmem     2974      128        0        0                           
+    Other dev       12        0       12        0                           
+     .so mmap    20626     2992    14592       44                           
+    .apk mmap    22793      144    21708        0                           
+    .ttf mmap       45        0        0        0                           
+    .dex mmap    15820       24    15036        0                           
+    .oat mmap     2272        0      628        0                           
+    .art mmap     1628     1368       28        1                           
+   Other mmap      807        8      740        0                           
+    GL mtrack    85588    85588        0        0                           
+      Unknown     7091     7088        0        8                           
+        TOTAL   342642   280212    52748       53   201400   179578    21821
+ 
+ App Summary
+                       Pss(KB)
+                        ------
+           Java Heap:    17560
+         Native Heap:   154184
+                Code:    55124
+               Stack:       56
+            Graphics:    85588
+       Private Other:    20448
+              System:     9682
+ 
+               TOTAL:   342642       TOTAL SWAP PSS:       53
+ 
+ Objects
+               Views:      263         ViewRootImpl:        3
+         AppContexts:        7           Activities:        2
+              Assets:       16        AssetManagers:        7
+       Local Binders:       82        Proxy Binders:       70
+       Parcel memory:       28         Parcel count:      102
+    Death Recipients:        4      OpenSSL Sockets:        0
+            WebViews:        1
+ 
+ SQL
+         MEMORY_USED:        0
+  PAGECACHE_OVERFLOW:        0          MALLOC_SIZE:      117
+ 
+ 
+ Asset Allocations
+    zip:/data/app/com.tvunetworks.android.anywhere-TEYSz1iRhtpTFbxVOjzCWA==/base.apk:/assets/shader/Vertex/oes.vert: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-TEYSz1iRhtpTFbxVOjzCWA==/base.apk:/assets/shader/Fragment/oes.frag: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-TEYSz1iRhtpTFbxVOjzCWA==/base.apk:/assets/shader/Vertex/lazy.vert: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-TEYSz1iRhtpTFbxVOjzCWA==/base.apk:/assets/shader/Fragment/lazy.frag: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-TEYSz1iRhtpTFbxVOjzCWA==/base.apk:/assets/shader/Vertex/oes.vert: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-TEYSz1iRhtpTFbxVOjzCWA==/base.apk:/assets/shader/Fragment/oes.frag: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-TEYSz1iRhtpTFbxVOjzCWA==/base.apk:/assets/shader/Vertex/beauty.vert: 2K
+    zip:/data/app/com.tvunetworks.android.anywhere-TEYSz1iRhtpTFbxVOjzCWA==/base.apk:/assets/shader/Fragment/beauty.frag: 2K
+Applications Memory Usage (in Kilobytes):
+Uptime: 8820929 Realtime: 8820929
+
+** MEMINFO in pid 30676 [com.tvunetworks.android.anywhere] **
+                   Pss  Private  Private  SwapPss     Heap     Heap     Heap
+                 Total    Dirty    Clean    Dirty     Size    Alloc     Free
+                ------   ------   ------   ------   ------   ------   ------
+  Native Heap   154049   154000        4        0   176640   167447     9192
+  Dalvik Heap    15533    15524        0        0    24758    12379    12379
+ Dalvik Other    12441    12440        0        0                           
+        Stack       56       56        0        0                           
+       Ashmem     2950      128        0        0                           
+    Other dev       12        0       12        0                           
+     .so mmap    20626     2992    14592       44                           
+    .apk mmap    22677      144    21548        0                           
+    .ttf mmap       45        0        0        0                           
+    .dex mmap    15804       24    15016        0                           
+    .oat mmap     2280        0      632        0                           
+    .art mmap     1628     1368       28        1                           
+   Other mmap      787        8      720        0                           
+    GL mtrack    84972    84972        0        0                           
+      Unknown     7079     7076        0        8                           
+        TOTAL   340992   278732    52552       53   201398   179826    21571
+ 
+ App Summary
+                       Pss(KB)
+                        ------
+           Java Heap:    16920
+         Native Heap:   154000
+                Code:    54948
+               Stack:       56
+            Graphics:    84972
+       Private Other:    20388
+              System:     9708
+ 
+               TOTAL:   340992       TOTAL SWAP PSS:       53
+ 
+ Objects
+               Views:      263         ViewRootImpl:        3
+         AppContexts:        7           Activities:        2
+              Assets:       16        AssetManagers:        7
+       Local Binders:       82        Proxy Binders:       70
+       Parcel memory:       29         Parcel count:      106
+    Death Recipients:        4      OpenSSL Sockets:        0
+            WebViews:        1
+ 
+ SQL
+         MEMORY_USED:        0
+  PAGECACHE_OVERFLOW:        0          MALLOC_SIZE:      117
+ 
+ 
+ Asset Allocations
+    zip:/data/app/com.tvunetworks.android.anywhere-45_o3HJDv3WYuZ3g-4lBXA==/base.apk:/assets/shader/Vertex/oes.vert: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-45_o3HJDv3WYuZ3g-4lBXA==/base.apk:/assets/shader/Fragment/oes.frag: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-45_o3HJDv3WYuZ3g-4lBXA==/base.apk:/assets/shader/Vertex/lazy.vert: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-45_o3HJDv3WYuZ3g-4lBXA==/base.apk:/assets/shader/Fragment/lazy.frag: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-45_o3HJDv3WYuZ3g-4lBXA==/base.apk:/assets/shader/Vertex/oes.vert: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-45_o3HJDv3WYuZ3g-4lBXA==/base.apk:/assets/shader/Fragment/oes.frag: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-45_o3HJDv3WYuZ3g-4lBXA==/base.apk:/assets/shader/Vertex/beauty.vert: 2K
+    zip:/data/app/com.tvunetworks.android.anywhere-45_o3HJDv3WYuZ3g-4lBXA==/base.apk:/assets/shader/Fragment/beauty.frag: 2K
+Applications Memory Usage (in Kilobytes):
+Uptime: 8889772 Realtime: 8889772
+
+** MEMINFO in pid 31821 [com.tvunetworks.android.anywhere] **
+                   Pss  Private  Private  SwapPss     Heap     Heap     Heap
+                 Total    Dirty    Clean    Dirty     Size    Alloc     Free
+                ------   ------   ------   ------   ------   ------   ------
+  Native Heap   154157   154108        4        0   174592   167630     6961
+  Dalvik Heap    15825    15816        0        0    24769    12401    12368
+ Dalvik Other    12445    12444        0        0                           
+        Stack       56       56        0        0                           
+       Ashmem     2948      128        0        0                           
+    Other dev       12        0       12        0                           
+     .so mmap    18185     2992    12152       44                           
+    .apk mmap    22750      144    21708        0                           
+    .ttf mmap       45        0        0        0                           
+    .dex mmap    15854       24    15068        0                           
+    .oat mmap     2279        0      636        0                           
+    .art mmap     1628     1368       28        1                           
+   Other mmap      803        8      736        0                           
+    GL mtrack    84788    84788        0        0                           
+      Unknown     7091     7088        0        8                           
+        TOTAL   338919   278964    50344       53   199361   180031    19329
+ 
+ App Summary
+                       Pss(KB)
+                        ------
+           Java Heap:    17212
+         Native Heap:   154108
+                Code:    52724
+               Stack:       56
+            Graphics:    84788
+       Private Other:    20420
+              System:     9611
+ 
+               TOTAL:   338919       TOTAL SWAP PSS:       53
+ 
+ Objects
+               Views:      263         ViewRootImpl:        3
+         AppContexts:        7           Activities:        2
+              Assets:       16        AssetManagers:        8
+       Local Binders:       81        Proxy Binders:       70
+       Parcel memory:       29         Parcel count:      104
+    Death Recipients:        4      OpenSSL Sockets:        0
+            WebViews:        1
+ 
+ SQL
+         MEMORY_USED:        0
+  PAGECACHE_OVERFLOW:        0          MALLOC_SIZE:      117
+ 
+ 
+ Asset Allocations
+    zip:/data/app/com.tvunetworks.android.anywhere-oE9wxWB9GEHmHbtv9eDIhg==/base.apk:/assets/shader/Vertex/oes.vert: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-oE9wxWB9GEHmHbtv9eDIhg==/base.apk:/assets/shader/Fragment/oes.frag: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-oE9wxWB9GEHmHbtv9eDIhg==/base.apk:/assets/shader/Vertex/lazy.vert: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-oE9wxWB9GEHmHbtv9eDIhg==/base.apk:/assets/shader/Fragment/lazy.frag: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-oE9wxWB9GEHmHbtv9eDIhg==/base.apk:/assets/shader/Vertex/oes.vert: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-oE9wxWB9GEHmHbtv9eDIhg==/base.apk:/assets/shader/Fragment/oes.frag: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-oE9wxWB9GEHmHbtv9eDIhg==/base.apk:/assets/shader/Vertex/beauty.vert: 2K
+    zip:/data/app/com.tvunetworks.android.anywhere-oE9wxWB9GEHmHbtv9eDIhg==/base.apk:/assets/shader/Fragment/beauty.frag: 2K
+Applications Memory Usage (in Kilobytes):
+Uptime: 8956927 Realtime: 8956927
+
+** MEMINFO in pid 882 [com.tvunetworks.android.anywhere] **
+                   Pss  Private  Private  SwapPss     Heap     Heap     Heap
+                 Total    Dirty    Clean    Dirty     Size    Alloc     Free
+                ------   ------   ------   ------   ------   ------   ------
+  Native Heap   153965   153916        4        0   176640   167230     9409
+  Dalvik Heap    15621    15612        0        0    24734    12367    12367
+ Dalvik Other    12453    12452        0        0                           
+        Stack       56       56        0        0                           
+       Ashmem     2952      128        0        0                           
+    Other dev       12        0       12        0                           
+     .so mmap    20629     2992    14596       44                           
+    .apk mmap    22814      144    21704        0                           
+    .ttf mmap       45        0        0        0                           
+    .dex mmap    15855       24    15072        0                           
+    .oat mmap     2284        0      636        0                           
+    .art mmap     1628     1368       28        1                           
+   Other mmap      803        8      736        0                           
+    GL mtrack    84900    84900        0        0                           
+      Unknown     7099     7096        0        8                           
+        TOTAL   341169   278696    52788       53   201374   179597    21776
+ 
+ App Summary
+                       Pss(KB)
+                        ------
+           Java Heap:    17008
+         Native Heap:   153916
+                Code:    55168
+               Stack:       56
+            Graphics:    84900
+       Private Other:    20436
+              System:     9685
+ 
+               TOTAL:   341169       TOTAL SWAP PSS:       53
+ 
+ Objects
+               Views:      263         ViewRootImpl:        3
+         AppContexts:        7           Activities:        2
+              Assets:       16        AssetManagers:        7
+       Local Binders:       80        Proxy Binders:       69
+       Parcel memory:       29         Parcel count:      106
+    Death Recipients:        4      OpenSSL Sockets:        0
+            WebViews:        1
+ 
+ SQL
+         MEMORY_USED:        0
+  PAGECACHE_OVERFLOW:        0          MALLOC_SIZE:      117
+ 
+ 
+ Asset Allocations
+    zip:/data/app/com.tvunetworks.android.anywhere--2kus40yaMykM-3FMVAKGw==/base.apk:/assets/shader/Vertex/oes.vert: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere--2kus40yaMykM-3FMVAKGw==/base.apk:/assets/shader/Fragment/oes.frag: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere--2kus40yaMykM-3FMVAKGw==/base.apk:/assets/shader/Vertex/lazy.vert: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere--2kus40yaMykM-3FMVAKGw==/base.apk:/assets/shader/Fragment/lazy.frag: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere--2kus40yaMykM-3FMVAKGw==/base.apk:/assets/shader/Vertex/oes.vert: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere--2kus40yaMykM-3FMVAKGw==/base.apk:/assets/shader/Fragment/oes.frag: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere--2kus40yaMykM-3FMVAKGw==/base.apk:/assets/shader/Vertex/beauty.vert: 2K
+    zip:/data/app/com.tvunetworks.android.anywhere--2kus40yaMykM-3FMVAKGw==/base.apk:/assets/shader/Fragment/beauty.frag: 2K
+Applications Memory Usage (in Kilobytes):
+Uptime: 9024084 Realtime: 9024084
+
+** MEMINFO in pid 2838 [com.tvunetworks.android.anywhere] **
+                   Pss  Private  Private  SwapPss     Heap     Heap     Heap
+                 Total    Dirty    Clean    Dirty     Size    Alloc     Free
+                ------   ------   ------   ------   ------   ------   ------
+  Native Heap   153199   153152        4        0   176640   166918     9721
+  Dalvik Heap    15597    15588        0        0    24525    12263    12262
+ Dalvik Other    12437    12436        0        0                           
+        Stack       56       56        0        0                           
+       Ashmem     2950      128        0        0                           
+    Other dev       12        0       12        0                           
+     .so mmap    20573     2992    14544       45                           
+    .apk mmap    21836      144    20692        0                           
+    .ttf mmap       45        0        0        0                           
+    .dex mmap    15812       24    15028        0                           
+    .oat mmap     2268        0      628        0                           
+    .art mmap     1628     1368       28        1                           
+   Other mmap      763        8      696        0                           
+    GL mtrack    84916    84916        0        0                           
+      Unknown     7023     7020        0        8                           
+        TOTAL   339169   277832    51632       54   201165   179181    21983
+ 
+ App Summary
+                       Pss(KB)
+                        ------
+           Java Heap:    16984
+         Native Heap:   153152
+                Code:    54052
+               Stack:       56
+            Graphics:    84916
+       Private Other:    20304
+              System:     9705
+ 
+               TOTAL:   339169       TOTAL SWAP PSS:       54
+ 
+ Objects
+               Views:      263         ViewRootImpl:        3
+         AppContexts:        7           Activities:        2
+              Assets:       16        AssetManagers:        7
+       Local Binders:       82        Proxy Binders:       69
+       Parcel memory:       29         Parcel count:      104
+    Death Recipients:        4      OpenSSL Sockets:        0
+            WebViews:        1
+ 
+ SQL
+         MEMORY_USED:        0
+  PAGECACHE_OVERFLOW:        0          MALLOC_SIZE:      117
+ 
+ 
+ Asset Allocations
+    zip:/data/app/com.tvunetworks.android.anywhere-NyTUtINjoT6x-4zf4q1bVA==/base.apk:/assets/shader/Vertex/oes.vert: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-NyTUtINjoT6x-4zf4q1bVA==/base.apk:/assets/shader/Fragment/oes.frag: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-NyTUtINjoT6x-4zf4q1bVA==/base.apk:/assets/shader/Vertex/lazy.vert: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-NyTUtINjoT6x-4zf4q1bVA==/base.apk:/assets/shader/Fragment/lazy.frag: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-NyTUtINjoT6x-4zf4q1bVA==/base.apk:/assets/shader/Vertex/oes.vert: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-NyTUtINjoT6x-4zf4q1bVA==/base.apk:/assets/shader/Fragment/oes.frag: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-NyTUtINjoT6x-4zf4q1bVA==/base.apk:/assets/shader/Vertex/beauty.vert: 2K
+    zip:/data/app/com.tvunetworks.android.anywhere-NyTUtINjoT6x-4zf4q1bVA==/base.apk:/assets/shader/Fragment/beauty.frag: 2K
+Applications Memory Usage (in Kilobytes):
+Uptime: 13250119 Realtime: 13250119
+
+** MEMINFO in pid 19113 [com.tvunetworks.android.anywhere] **
+                   Pss  Private  Private  SwapPss     Heap     Heap     Heap
+                 Total    Dirty    Clean    Dirty     Size    Alloc     Free
+                ------   ------   ------   ------   ------   ------   ------
+  Native Heap   154280   154236        4        0   176640   167818     8821
+  Dalvik Heap    15722    15712        0        0    24587    12294    12293
+ Dalvik Other    12505    12504        0        0                           
+        Stack       56       56        0        0                           
+       Ashmem     2957      128        0        0                           
+    Other dev       12        0       12        0                           
+     .so mmap    20693     2992    14472       46                           
+    .apk mmap    22867      144    21712        0                           
+    .ttf mmap       55        0        0        0                           
+    .dex mmap    15706       24    14884        0                           
+    .oat mmap     2451        0      764        0                           
+    .art mmap     1642     1372       28        1                           
+   Other mmap      804        8      740        0                           
+    GL mtrack    84980    84980        0        0                           
+      Unknown     7100     7096        0        8                           
+        TOTAL   341885   279252    52616       55   201227   180112    21114
+ 
+ App Summary
+                       Pss(KB)
+                        ------
+           Java Heap:    17112
+         Native Heap:   154236
+                Code:    54992
+               Stack:       56
+            Graphics:    84980
+       Private Other:    20492
+              System:    10017
+ 
+               TOTAL:   341885       TOTAL SWAP PSS:       55
+ 
+ Objects
+               Views:      263         ViewRootImpl:        3
+         AppContexts:        7           Activities:        2
+              Assets:       16        AssetManagers:        7
+       Local Binders:       82        Proxy Binders:       70
+       Parcel memory:       29         Parcel count:      107
+    Death Recipients:        4      OpenSSL Sockets:        0
+            WebViews:        1
+ 
+ SQL
+         MEMORY_USED:        0
+  PAGECACHE_OVERFLOW:        0          MALLOC_SIZE:      117
+ 
+ 
+ Asset Allocations
+    zip:/data/app/com.tvunetworks.android.anywhere-JDF1J6qIMcRU6OPZ6Jci4w==/base.apk:/assets/shader/Vertex/oes.vert: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-JDF1J6qIMcRU6OPZ6Jci4w==/base.apk:/assets/shader/Fragment/oes.frag: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-JDF1J6qIMcRU6OPZ6Jci4w==/base.apk:/assets/shader/Vertex/lazy.vert: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-JDF1J6qIMcRU6OPZ6Jci4w==/base.apk:/assets/shader/Fragment/lazy.frag: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-JDF1J6qIMcRU6OPZ6Jci4w==/base.apk:/assets/shader/Vertex/oes.vert: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-JDF1J6qIMcRU6OPZ6Jci4w==/base.apk:/assets/shader/Fragment/oes.frag: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-JDF1J6qIMcRU6OPZ6Jci4w==/base.apk:/assets/shader/Vertex/beauty.vert: 2K
+    zip:/data/app/com.tvunetworks.android.anywhere-JDF1J6qIMcRU6OPZ6Jci4w==/base.apk:/assets/shader/Fragment/beauty.frag: 2K
+Applications Memory Usage (in Kilobytes):
+Uptime: 13315602 Realtime: 13315602
+
+** MEMINFO in pid 20318 [com.tvunetworks.android.anywhere] **
+                   Pss  Private  Private  SwapPss     Heap     Heap     Heap
+                 Total    Dirty    Clean    Dirty     Size    Alloc     Free
+                ------   ------   ------   ------   ------   ------   ------
+  Native Heap   154169   154120        4        0   174592   167554     7037
+  Dalvik Heap    16762    16752        0        0    24669    12335    12334
+ Dalvik Other    12497    12496        0        0                           
+        Stack       56       56        0        0                           
+       Ashmem     2981      128        0        0                           
+    Other dev       12        0       12        0                           
+     .so mmap    20688     2992    14472       46                           
+    .apk mmap    22837      144    21708        0                           
+    .ttf mmap       55        0        0        0                           
+    .dex mmap    15905       24    15084        0                           
+    .oat mmap     2428        0      760        0                           
+    .art mmap     1637     1368       28        1                           
+   Other mmap      803        8      740        0                           
+    GL mtrack    86028    86028        0        0                           
+      Unknown     7116     7112        0        8                           
+        TOTAL   344029   281228    52808       55   199261   179889    19371
+ 
+ App Summary
+                       Pss(KB)
+                        ------
+           Java Heap:    18148
+         Native Heap:   154120
+                Code:    55184
+               Stack:       56
+            Graphics:    86028
+       Private Other:    20500
+              System:     9993
+ 
+               TOTAL:   344029       TOTAL SWAP PSS:       55
+ 
+ Objects
+               Views:      263         ViewRootImpl:        3
+         AppContexts:        7           Activities:        2
+              Assets:       16        AssetManagers:        7
+       Local Binders:       78        Proxy Binders:       71
+       Parcel memory:       29         Parcel count:      107
+    Death Recipients:        4      OpenSSL Sockets:        0
+            WebViews:        1
+ 
+ SQL
+         MEMORY_USED:        0
+  PAGECACHE_OVERFLOW:        0          MALLOC_SIZE:      117
+ 
+ 
+ Asset Allocations
+    zip:/data/app/com.tvunetworks.android.anywhere-8DqUmY4EARRjs4wmA-DFtA==/base.apk:/assets/shader/Vertex/oes.vert: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-8DqUmY4EARRjs4wmA-DFtA==/base.apk:/assets/shader/Fragment/oes.frag: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-8DqUmY4EARRjs4wmA-DFtA==/base.apk:/assets/shader/Vertex/lazy.vert: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-8DqUmY4EARRjs4wmA-DFtA==/base.apk:/assets/shader/Fragment/lazy.frag: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-8DqUmY4EARRjs4wmA-DFtA==/base.apk:/assets/shader/Vertex/oes.vert: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-8DqUmY4EARRjs4wmA-DFtA==/base.apk:/assets/shader/Fragment/oes.frag: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-8DqUmY4EARRjs4wmA-DFtA==/base.apk:/assets/shader/Vertex/beauty.vert: 2K
+    zip:/data/app/com.tvunetworks.android.anywhere-8DqUmY4EARRjs4wmA-DFtA==/base.apk:/assets/shader/Fragment/beauty.frag: 2K
+Applications Memory Usage (in Kilobytes):
+Uptime: 13379173 Realtime: 13379173
+
+** MEMINFO in pid 21436 [com.tvunetworks.android.anywhere] **
+                   Pss  Private  Private  SwapPss     Heap     Heap     Heap
+                 Total    Dirty    Clean    Dirty     Size    Alloc     Free
+                ------   ------   ------   ------   ------   ------   ------
+  Native Heap   153801   153752        4        0   174592   167204     7387
+  Dalvik Heap    16374    16364        0        0    24641    12321    12320
+ Dalvik Other    12385    12384        0        0                           
+        Stack       56       56        0        0                           
+       Ashmem     2981      128        0        0                           
+    Other dev       12        0       12        0                           
+     .so mmap    20672     2992    14456       46                           
+    .apk mmap    22834      144    21676        0                           
+    .ttf mmap       55        0        0        0                           
+    .dex mmap    15891       24    15076        0                           
+    .oat mmap     2411        0      748        0                           
+    .art mmap     1637     1368       28        1                           
+   Other mmap      799        8      736        0                           
+    GL mtrack    85080    85080        0        0                           
+      Unknown     7080     7076        0        8                           
+        TOTAL   342123   279376    52736       55   199233   179525    19707
+ 
+ App Summary
+                       Pss(KB)
+                        ------
+           Java Heap:    17760
+         Native Heap:   153752
+                Code:    55116
+               Stack:       56
+            Graphics:    85080
+       Private Other:    20348
+              System:    10011
+ 
+               TOTAL:   342123       TOTAL SWAP PSS:       55
+ 
+ Objects
+               Views:      263         ViewRootImpl:        3
+         AppContexts:        7           Activities:        2
+              Assets:       16        AssetManagers:        7
+       Local Binders:       81        Proxy Binders:       70
+       Parcel memory:       29         Parcel count:      104
+    Death Recipients:        4      OpenSSL Sockets:        0
+            WebViews:        1
+ 
+ SQL
+         MEMORY_USED:        0
+  PAGECACHE_OVERFLOW:        0          MALLOC_SIZE:      117
+ 
+ 
+ Asset Allocations
+    zip:/data/app/com.tvunetworks.android.anywhere-QALkYaqWNhSAVP_32U6ytg==/base.apk:/assets/shader/Vertex/oes.vert: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-QALkYaqWNhSAVP_32U6ytg==/base.apk:/assets/shader/Fragment/oes.frag: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-QALkYaqWNhSAVP_32U6ytg==/base.apk:/assets/shader/Vertex/lazy.vert: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-QALkYaqWNhSAVP_32U6ytg==/base.apk:/assets/shader/Fragment/lazy.frag: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-QALkYaqWNhSAVP_32U6ytg==/base.apk:/assets/shader/Vertex/oes.vert: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-QALkYaqWNhSAVP_32U6ytg==/base.apk:/assets/shader/Fragment/oes.frag: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-QALkYaqWNhSAVP_32U6ytg==/base.apk:/assets/shader/Vertex/beauty.vert: 2K
+    zip:/data/app/com.tvunetworks.android.anywhere-QALkYaqWNhSAVP_32U6ytg==/base.apk:/assets/shader/Fragment/beauty.frag: 2K
+Applications Memory Usage (in Kilobytes):
+Uptime: 13444058 Realtime: 13444058
+
+** MEMINFO in pid 22531 [com.tvunetworks.android.anywhere] **
+                   Pss  Private  Private  SwapPss     Heap     Heap     Heap
+                 Total    Dirty    Clean    Dirty     Size    Alloc     Free
+                ------   ------   ------   ------   ------   ------   ------
+  Native Heap   153716   153668        4        0   174592   167074     7517
+  Dalvik Heap    16466    16456        0        0    24645    12323    12322
+ Dalvik Other    12525    12524        0        0                           
+        Stack       56       56        0        0                           
+       Ashmem     2977      128        0        0                           
+    Other dev       12        0       12        0                           
+     .so mmap    20690     2992    14476       46                           
+    .apk mmap    22811      144    21708        0                           
+    .ttf mmap       55        0        0        0                           
+    .dex mmap    15764       24    14948        0                           
+    .oat mmap     2430        0      752        0                           
+    .art mmap     1637     1368       28        1                           
+   Other mmap      803        8      740        0                           
+    GL mtrack    84548    84548        0        0                           
+      Unknown     7100     7096        0        8                           
+        TOTAL   341645   279012    52668       55   199237   179397    19839
+ 
+ App Summary
+                       Pss(KB)
+                        ------
+           Java Heap:    17852
+         Native Heap:   153668
+                Code:    55044
+               Stack:       56
+            Graphics:    84548
+       Private Other:    20512
+              System:     9965
+ 
+               TOTAL:   341645       TOTAL SWAP PSS:       55
+ 
+ Objects
+               Views:      263         ViewRootImpl:        3
+         AppContexts:        7           Activities:        2
+              Assets:       16        AssetManagers:        7
+       Local Binders:       94        Proxy Binders:       70
+       Parcel memory:       29         Parcel count:      106
+    Death Recipients:        4      OpenSSL Sockets:        0
+            WebViews:        1
+ 
+ SQL
+         MEMORY_USED:        0
+  PAGECACHE_OVERFLOW:        0          MALLOC_SIZE:      117
+ 
+ 
+ Asset Allocations
+    zip:/data/app/com.tvunetworks.android.anywhere-998Av97xtnPhx0MsrII80w==/base.apk:/assets/shader/Vertex/oes.vert: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-998Av97xtnPhx0MsrII80w==/base.apk:/assets/shader/Fragment/oes.frag: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-998Av97xtnPhx0MsrII80w==/base.apk:/assets/shader/Vertex/lazy.vert: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-998Av97xtnPhx0MsrII80w==/base.apk:/assets/shader/Fragment/lazy.frag: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-998Av97xtnPhx0MsrII80w==/base.apk:/assets/shader/Vertex/oes.vert: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-998Av97xtnPhx0MsrII80w==/base.apk:/assets/shader/Fragment/oes.frag: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-998Av97xtnPhx0MsrII80w==/base.apk:/assets/shader/Vertex/beauty.vert: 2K
+    zip:/data/app/com.tvunetworks.android.anywhere-998Av97xtnPhx0MsrII80w==/base.apk:/assets/shader/Fragment/beauty.frag: 2K
+Applications Memory Usage (in Kilobytes):
+Uptime: 13506511 Realtime: 13506511
+
+** MEMINFO in pid 23656 [com.tvunetworks.android.anywhere] **
+                   Pss  Private  Private  SwapPss     Heap     Heap     Heap
+                 Total    Dirty    Clean    Dirty     Size    Alloc     Free
+                ------   ------   ------   ------   ------   ------   ------
+  Native Heap   153949   153900        4        0   174592   167389     7202
+  Dalvik Heap    15643    15632        0        0    24666    12333    12333
+ Dalvik Other    12461    12460        0        0                           
+        Stack       56       56        0        0                           
+       Ashmem     2983      128        0        0                           
+    Other dev       12        0       12        0                           
+     .so mmap    20697     2992    14476       46                           
+    .apk mmap    22876      144    21680        0                           
+    .ttf mmap       55        0        0        0                           
+    .dex mmap    15842       24    15024        0                           
+    .oat mmap     2433        0      748        0                           
+    .art mmap     1640     1368       28        1                           
+   Other mmap      802        8      736        0                           
+    GL mtrack    85456    85456        0        0                           
+      Unknown     7112     7108        0        8                           
+        TOTAL   342072   279276    52708       55   199258   179722    19535
+ 
+ App Summary
+                       Pss(KB)
+                        ------
+           Java Heap:    17028
+         Native Heap:   153900
+                Code:    55088
+               Stack:       56
+            Graphics:    85456
+       Private Other:    20456
+              System:    10088
+ 
+               TOTAL:   342072       TOTAL SWAP PSS:       55
+ 
+ Objects
+               Views:      263         ViewRootImpl:        3
+         AppContexts:        7           Activities:        2
+              Assets:       16        AssetManagers:        7
+       Local Binders:       81        Proxy Binders:       70
+       Parcel memory:       29         Parcel count:      106
+    Death Recipients:        4      OpenSSL Sockets:        0
+            WebViews:        1
+ 
+ SQL
+         MEMORY_USED:        0
+  PAGECACHE_OVERFLOW:        0          MALLOC_SIZE:      117
+ 
+ 
+ Asset Allocations
+    zip:/data/app/com.tvunetworks.android.anywhere-g-89zB14q_kGftrm-6Vx0g==/base.apk:/assets/shader/Vertex/oes.vert: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-g-89zB14q_kGftrm-6Vx0g==/base.apk:/assets/shader/Fragment/oes.frag: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-g-89zB14q_kGftrm-6Vx0g==/base.apk:/assets/shader/Vertex/lazy.vert: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-g-89zB14q_kGftrm-6Vx0g==/base.apk:/assets/shader/Fragment/lazy.frag: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-g-89zB14q_kGftrm-6Vx0g==/base.apk:/assets/shader/Vertex/oes.vert: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-g-89zB14q_kGftrm-6Vx0g==/base.apk:/assets/shader/Fragment/oes.frag: 0K
+    zip:/data/app/com.tvunetworks.android.anywhere-g-89zB14q_kGftrm-6Vx0g==/base.apk:/assets/shader/Vertex/beauty.vert: 2K
+    zip:/data/app/com.tvunetworks.android.anywhere-g-89zB14q_kGftrm-6Vx0g==/base.apk:/assets/shader/Fragment/beauty.frag: 2K

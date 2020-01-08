@@ -1,0 +1,10 @@
+--outputdir
+D:\COM_DOC\robotframwork\logs\20200106_112656
+-C
+off
+-W
+89
+--suite
+AutoAndroidAnywhereTest.StressTest.App Install Uninstall
+--test
+AutoAndroidAnywhereTest.StressTest.App Install Uninstall.APP_Install_Uninstall_APP

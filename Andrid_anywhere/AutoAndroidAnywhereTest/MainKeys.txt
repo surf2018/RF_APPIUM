@@ -1,0 +1,344 @@
+*** Settings ***
+Library           AppiumLibrary
+Library           String
+Library           Collections
+
+*** Keywords ***
+OpenApp
+    [Documentation]    open app
+    ...
+    ...    使用环境变量
+    log    "open app"
+    Open Application    %{G_APPIUM_HOST_IP0}    platformName=%{G_APPIUM_PLATFORM_NAME}    platformVersion=%{G_APPIUM_PLATFORM_VERSION}    deviceName=%{U_APPIUM_DEVICE_NAME}    appPackage=%{G_APPIUM_APP_PACKAGE}    appActivity=%{U_APP_Activity}
+    ...    noReset=True    automationName=uiautomator2    autoGrantPermissions=True
+    Wait Until Element Is Visible    xpath=//*[@resource-id='com.tvunetworks.android.anywhere:id/iv_cancel_explore']    20    "20s,元素没出来"
+    Click Element    xpath=//*[@resource-id='com.tvunetworks.android.anywhere:id/iv_cancel_explore']
+    sleep    1
+    log    "open app finished"
+
+ElementIsExist
+    [Arguments]    ${locator}
+    [Documentation]    is elements exist
+    ${ok}    Run Keyword And Return Status    Page Should Contain Element    ${locator}
+    log    ${ok}
+    [Return]    ${ok}
+
+ScrollDownApp
+    [Arguments]    ${text}
+    [Documentation]    Scroll Down App unitl element is appear
+    : FOR    ${i}    IN RANGE    20
+    \    Swipe    400    1000    400    200    400
+    \    #    Comment    PAUSE
+    \    ${count}    Get Matching Xpath Count    xpath=//*[@text= '${text}']
+    \    Exit For Loop If    ${count}>0
+    \    sleep    1
+
+Continuous click
+    [Arguments]    ${locator}    ${time}    ${text}
+    [Documentation]    continuous click until element is exist
+    : FOR    ${i}    IN RANGE    20
+    \    tap    ${locator}    ${time}
+    \    ${count}    Get Matching Xpath Count    xpath=//*[contains(@text, '${text}')]
+    \    Exit For Loop If    ${count}>0
+
+SelectR
+    [Arguments]    ${rName}
+    sleep    3
+    #${KEYCODE_BACK}    4
+    Click Element    com.tvunetworks.android.anywhere:id/buttonSelectR
+    Wait Until Element Is Visible    class=android.widget.ScrollView    30
+    #判断R是否被选择
+    ${isChecked}    Get Element Attribute    xpath=//*[@class='android.widget.RadioButton' and @text='${rName}']    checked
+    Run Keyword If    '${isChecked}'=='true'    Run keywords    log    "${rName} is select"
+    ...    AND    Click A Point    1359    626    1
+    ...    ELSE    Click element    xpath=//*[@class='android.widget.RadioButton' and @text='${rName}']
+    #tap    1326    690    50
+    ${ok}    Set Variable    true
+    #check R is selected
+    [Return]    ${ok}
+
+IsLive
+    [Arguments]    ${rName}    ${res_}
+    ${status}    Get Text    com.tvunetworks.android.anywhere:id/live_status
+    #check status
+    run keyword if    '${status}'=='LIVE'    log    "click start button ,status is LIVE"
+    #check R
+    ${r_Name}    Get Text    com.tvunetworks.android.anywhere:id/r_info
+    run keyword if    '${r_Name}'=='${rName}'    log    "live with R:'${r_Name}'
+    #check button disable
+    ${isSelected}    Get Element Attribute    com.tvunetworks.android.anywhere:id/buttonSelectR    checked
+    run keyword if    '${isSelected}'=='false'    log    "click start button ,selectR button is disable"
+    #check startR button text
+    ${buttonText}    Get Text    com.tvunetworks.android.anywhere:id/buttonStartRText
+    run keyword if    '${buttonText}'=='Stop'    log    "click start button ,selectR button Text is Stop"
+    ${bitrate}    Get Text    com.tvunetworks.android.anywhere:id/live_bitrate
+    ${resolution}    Get Text    //*[@resource-id="com.tvunetworks.android.anywhere:id/live_resolution"]
+    #处理resolution
+    @{list}    Split String    ${resolution}    ${SPACE}
+    ${res}    Get From List    ${list}    2
+    log    "resolution:"${res}
+    ${resolution_new}    Evaluate    '${res}'.strip()
+    log    "resolution_new:"${resolution_new}
+    run keyword if    '${bitrate}'>'100K'    log    "click start button ,bitrate>100K"
+    should be equal    '${resolution_new}'    '${res_}'
+    ${isLive}    Set Variable If    '${buttonText}'=='Stop'    1    0
+    [Return]    ${isLive}
+
+StartStopLive
+    #click stop live
+    Click Element    com.tvunetworks.android.anywhere:id/buttonStartR
+    sleep    1
+
+IsStop
+    ${StatusText}    Get Text    com.tvunetworks.android.anywhere:id/live_status
+    run keyword if    '${StatusText}'=='STANDBY'    log    "click stop button ,Status Text is STANDBY"
+    ${isStop}    Set Variable    1
+    [Return]    ${isStop}
+
+getSource
+    ${source}    Get Text    com.tvunetworks.android.anywhere:id/live_resolution
+    [Return]    ${source}
+
+Upload
+    [Arguments]    ${r_name}    ${index}
+    [Documentation]    1.test delete video
+    ...    2.test upload camera video
+    log    "upload file"
+    ${isFinish}    Set variable    0
+    ${percent1}    Set variable    ''
+    ${percent2}    Set variable    ''
+    #删除之前upload 文件
+    ${count}    Get Matching Xpath Count    xpath=//*[@resource-id='com.tvunetworks.android.anywhere:id/delete_item_imagebutton']
+    log    “之前上传过的文件有:${count}"
+    : FOR    ${I}    IN RANGE    ${count}
+    \    Click Element    xpath=//*[@resource-id="com.tvunetworks.android.anywhere:id/upload_listView"]/android.widget.RelativeLayout[1]/android.widget.ImageButton[1]
+    \    sleep    1
+    log    ”delete ok"
+    #click 上传button
+    Click Element    xpath=//*[@content-desc="More options"]
+    sleep    1
+    #select Camera Film
+    Click Element    xpath=//*[@resource-id='com.tvunetworks.android.anywhere:id/title' and @text='Camera Film']
+    sleep    1
+    Wait Until Page Contains Element    xpath=//*[@class='android.widget.TextView' and @text='Recents']    30
+    ${uploadFileName}    Get Text    //*[@resource-id="android:id/title"][1]
+    log    "upload file: ${uploadFileName}"
+    Click Element    //*[@resource-id="com.android.documentsui:id/icon_thumb"][${index}]
+    sleep    1
+    #select R
+    Wait Until Page Contains Element    com.tvunetworks.android.anywhere:id/alertTitle    30
+    Click Element    //*[@resource-id='android:id/text1' and @text="${r_name}"]
+    sleep    1
+    #click upload
+    Click Element    android:id/button1
+    sleep    5
+    ${filename}    Get Text    com.tvunetworks.android.anywhere:id/tv_item_filename
+    ${uploadRXMLName}    Get Text    xpath=//*[contains(@text,'.xml')]
+    log    "uploading file:${filename} and xml:${uploadRXMLName}"
+    Should Be Equal    ${filename}    ${uploadFileName}
+    ${uploadRName}    Get Text    com.tvunetworks.android.anywhere:id/tv_item_rname
+    log    "uploading R name:${uploadRName}"
+    Should Be Equal    ${uploadRName}    ${r_name}
+    : FOR    ${i}    IN RANGE    5
+    \    ${percent1}    Get Text    xpath=//*[@resource-id='com.tvunetworks.android.anywhere:id/tv_item_percent'][1]
+    \    sleep    1
+    \    ${percent2}    Get Text    xpath=//*[@resource-id="com.tvunetworks.android.anywhere:id/upload_listView"]/android.widget.RelativeLayout[2]/android.widget.RelativeLayout[1]/android.widget.TextView[3]
+    \    ${isFinish}    Set Variable If    '${percent1}'=='100%' and '${percent2}'=='100%'    1    0
+    \    sleep    1
+    \    Run Keyword If    '${percent1}'=='100%' and '${percent2}'=='100%'    Exit For Loop
+    \    sleep    5
+    log    “last summary:${isFinish}"
+    log    "${filename}:${percent1}"
+    log    "${uploadRXMLName} is ${percent2}"
+    [Return]    ${isFinish}
+
+addSource
+    [Arguments]    ${count}
+    [Documentation]    add sources
+    : FOR    ${I}    IN RANGE    1    ${count}
+    \    Click Element    //*[@resource-id="com.tvunetworks.android.anywhere:id/multi_source_list"]/android.view.ViewGroup[${i}]/android.widget.ImageView[2]
+    \    sleep    1
+    \    #select the first video
+    \    Click Element    //*[@resource-id="com.android.documentsui:id/dir_list"]/android.widget.RelativeLayout[${i}]/android.widget.FrameLayout[1]/android.widget.ImageView[1]
+    \    sleep    1
+    \    #判断元素是否加进来
+    \    Element Should Contain Text    //*[@resource-id="com.tvunetworks.android.anywhere:id/multi_source_list"]/android.view.ViewGroup[${i}]/android.widget.TextView[1]    Fps    "增加source不成功"
+    \    #获取duration
+    \    ${duration_text}    Get Text    //*[@resource-id="com.tvunetworks.android.anywhere:id/multi_source_list"]/android.view.ViewGroup[${i}]/android.widget.TextView[2]
+    \    @{List}    Split String    ${duration_text}    :
+    \    ${duration}    Get From List    ${List}    1
+    \    log    "第${i}个视频 duration:${duration} s"
+    \    sleep    1
+    \    #click 开始播放源
+    \    Click Element    //*[@resource-id="com.tvunetworks.android.anywhere:id/multi_source_list"]/android.view.ViewGroup[${i}]
+    \    sleep    5
+    \    #check是否使用了源
+    \    ${is_enabled}    Get Element Attribute    com.tvunetworks.android.anywhere:id/text_pip_title    enabled
+    \    Should Be Equal    '${is_enabled}'    'true'    "没有预览选择的source"
+    \    #查看是否播放完源
+    \    sleep    ${duration}
+    \    ${isenabled}    Get Element Attribute    com.tvunetworks.android.anywhere:id/text_pip_title    enabled
+    \    Should Be Equal    '${isenabled}'    'false'    "duration已到还没有播放完源“
+    \    sleep    1
+
+delSource
+    [Arguments]    ${count}
+    log    "依次删除source"
+    : FOR    ${I}    IN RANGE    1    ${count}
+    \    log    "删除第${i}个"
+    \    Long Press    //*[@resource-id="com.tvunetworks.android.anywhere:id/multi_source_list"]/android.view.ViewGroup[${i}]    5
+    \    sleep    5
+    \    Wait Until Element Is Visible    //*[@resource-id="com.tvunetworks.android.anywhere:id/isSelected"]    30
+    \    Click Element    //*[@resource-id="com.tvunetworks.android.anywhere:id/isSelected"]
+    \    sleep    1
+    \    Page Should Not Contain Element    //*[@resource-id="com.tvunetworks.android.anywhere:id/multi_source_list"]/android.view.ViewGroup[${I}]/android.widget.TextView[1]    "删除第${i}不成功"
+
+Start_VFB_LocalSDI
+    [Arguments]    ${r_Name}
+    click Element    com.tvunetworks.android.anywhere:id/img_vfb
+    #Wait Until Element Is Visible    com.tvunetworks.android.anywhere:id/group_receiver_list    30
+    #click Element    //*[@text="${r_Name}"]
+    #sleep    1
+    #click Element    //*[@resource-id="com.tvunetworks.android.anywhere:id/vfb_start_or_stop"]
+
+newUI_selectR_Live
+    [Arguments]    ${r_name}
+    log    "select R and live"
+    Wait Until Element Is Visible    com.tvunetworks.android.anywhere:id/tv_select_r    30
+    sleep    5
+    ${rn}    Get Text    com.tvunetworks.android.anywhere:id/tv_select_r
+    Run keyword If    '${rn}'!='${r_name}'    run keywords    Click Element    com.tvunetworks.android.anywhere:id/tv_select_r
+    ...    AND    Wait Until Element Is Visible    //*[@text="${r_name}"]    30
+    ...    AND    Click Element    //*[@text="${r_name}"]
+    ...    AND    click a point    122    210    1000
+    ...    ELSE    log    "已经选择的是${rn}"
+    sleep    1
+    ${text}    Get Text    com.tvunetworks.android.anywhere:id/buttonStartR
+    should be equal    '${text}'    'LIVE'
+    #click R to Live
+    Click Element    com.tvunetworks.android.anywhere:id/buttonStartR
+    sleep    1
+
+newUI_isLive
+    [Arguments]    ${r_name}    ${res}
+    sleep    5
+    ${liveR}    Get Text    com.tvunetworks.android.anywhere:id/tv_r_info
+    ${bitrate}    Get Text    com.tvunetworks.android.anywhere:id/tv_live_bitrate
+    ${resolution}    Get Text    //*[@resource-id="com.tvunetworks.android.anywhere:id/tv_live_resolution"]
+    ${stat}    Get Text    com.tvunetworks.android.anywhere:id/tv_live_status
+    should be equal    '${stat}'    'LIVE'
+    Should Be True    '${bitrate}'>'40K'
+    should be equal    ${resolution}    ${res}
+    ${isLive}    Set Variable If    '${stat}'=='LIVE'    1    0
+    [Return]    ${isLive}
+
+newUI_isStop
+    [Arguments]    ${r_name}
+    Wait Until Element Is Visible    com.tvunetworks.android.anywhere:id/tv_select_r
+    ${R_name}    Get Text    com.tvunetworks.android.anywhere:id/tv_select_r
+    #should be equal    ${R_name}    ${r_name}
+    ${text}    Get Text    com.tvunetworks.android.anywhere:id/buttonStartR
+    ${isStop}    Set Variable If    '${text}'=='LIVE'    1    0
+    [Teardown]
+    [Return]    ${isStop}
+
+newUI_openApp
+    log    "open app--new UI"
+    Open Application    %{G_APPIUM_HOST_IP0}    platformName=%{G_APPIUM_PLATFORM_NAME}    platformVersion=%{G_APPIUM_PLATFORM_VERSION}    deviceName=%{U_APPIUM_DEVICE_NAME}    appPackage=%{G_APPIUM_APP_PACKAGE}    appActivity=%{U_APP_Activity}
+    ...    noReset=True    automationName=uiautomator2
+    Wait Until Element Is Visible    com.tvunetworks.android.anywhere:id/buttonStartR    20    "20s,元素没出来"
+    sleep    1
+    log    "open app finished"
+
+newUI_clickMenu
+    Click Element    //*[@resource-id="com.tvunetworks.android.anywhere:id/bottom_menu_control"]
+
+newUI_clickSetting
+    newUI_clickMenu
+    log    "click Setting"
+    click Element    com.tvunetworks.android.anywhere:id/imgSetting
+
+stream
+    [Arguments]    ${r_name}    ${destination}
+    #choice R
+    ${choice_r}    Get Text    com.tvunetworks.android.anywhere:id/now_choice
+    Run keyword If    '${choice_r}'=='${r_name}'    log    '${r_name} is choiced'
+    ...    ELSE    Run Keywords    Click Element    //*[@text="Receiver"]
+    ...    AND    Click Element    //*[@resource-id="com.tvunetworks.android.anywhere:id/detail" and @text='${r_name}']
+    #choice Destination
+    log    "choice destination"
+    Click Element    //*[@text="Destination"]
+    sleep    2
+    ${isExist}    Run Keyword And Return Status    Page Should Contain Element    //*[@text="${destination}"]
+    should be equal    '${isExist}'    'True'    '不存在账号:${destination}'
+    Run keyword If    '${isExist}'=='True'    Run keywords    Click Element    //*[@text="${destination}"]
+    ...    AND    Click Element    com.tvunetworks.android.anywhere:id/go
+    sleep    3
+
+ChangeResolutionandFrameRate
+    [Arguments]    ${resolution}    ${frameRate}    ${isOn}
+    log    "设置resolution:${resolution} and FrameRate:${frameRate}"
+    #click resolution
+    Wait Until Element Is Visible    //*[@text="Resolution"]    30
+    Click Element    //*[@text="Resolution"]
+    sleep    1
+    #选择resolution
+    Click Element    //*[@text="${resolution}"]
+    sleep    2
+    #是否选中resolution
+    Element Should Contain Text    //*[@resource-id='android:id/summary' and @text="${resolution}"]    ${resolution}
+    sleep    2
+    #选择frame rate
+    Wait Until Element Is Visible    //*[@text="Frame Rate"]
+    Click Element    //*[@text="Frame Rate"]
+    sleep    2
+    Click Element    //*[@text="${frameRate}"]
+    Element Should Contain Text    //*[@resource-id='android:id/summary' and @text="${frameRate}"]    ${frameRate}
+    #open hevc
+    Wait Until Element Is Visible    //*[@text="HEVC"]    30
+    ${stat}    Get Text    //*[@resource-id="android:id/list"]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.Switch[1]
+    sleep    1
+    Run keyword If    '${stat}'!='${isOn}' and '${isOn}'=='ON'    run keywords    Click Element    //*[@text="HEVC"]
+    ...    AND    Wait Until Element Is Visible    //*[@resource-id="android:id/alertTitle" and @text='Warning']    30
+    ...    AND    Click Element    //*[@resource-id="android:id/button1" and @text='APPLY']
+    ...    ELSE IF    '${stat}'!='${isOn}' and '${isOn}'=='OFF'    run keyword    Click Element    //*[@text="HEVC"]
+    ...    ELSE    log    “Hevc现在的就是需要的状态”
+    #查看open hevc的状态
+    sleep    3
+    #如果打开hevn,提示warning:Recording is diabled while using H265!
+    sleep    2
+    Click Element    //*[@content-desc="Navigate up"]
+
+ClickSetting
+    log    "Setting"
+    sleep    1
+    Wait Until Element Is Visible    com.tvunetworks.android.anywhere:id/buttonSetting    30
+    Click Element    com.tvunetworks.android.anywhere:id/buttonSetting
+    Wait Until Element Is Visible    com.tvunetworks.android.anywhere:id/buttonSubSetting    30
+    Click Element    com.tvunetworks.android.anywhere:id/buttonSubSetting
+    sleep    5
+    ${ok}    Run Keyword And Return Status    Page Should Contain Element    com.tvunetworks.android.anywhere:id/activity_toolbar_title
+    Run Keyword If    '${ok}'=='True'    log    "access to setting page"
+    sleep    3
+
+initApp
+    [Documentation]    初始化和授权app
+    sleep    1
+    log    "init App"
+    Open Application    %{G_APPIUM_HOST_IP0}    platformName=%{G_APPIUM_PLATFORM_NAME}    platformVersion=%{G_APPIUM_PLATFORM_VERSION}    deviceName=%{U_APPIUM_DEVICE_NAME}    appPackage=%{G_APPIUM_APP_PACKAGE}    appActivity=%{U_APP_Activity}
+    ...    automationName=uiautomator2    noReset=True
+    sleep    3
+    ${isExist}    ElementIsExist    //*[@resource-id="com.tvunetworks.android.anywhere:id/btn_agree_privacy"]
+    Run keyword If    '${isExist}'=='True'    Click Element    //*[@resource-id="com.tvunetworks.android.anywhere:id/btn_agree_privacy"]
+    sleep    2
+    #授权
+    : FOR    ${I}    IN RANGE    5
+    \    Wait Until Element Is Visible    com.android.packageinstaller:id/permission_message
+    \    Click Element    com.android.packageinstaller:id/permission_allow_button
+    \    sleep    1
+    Wait Until Element Is Visible    com.tvunetworks.android.anywhere:id/skip
+    Click Element    com.tvunetworks.android.anywhere:id/skip
+    sleep    1
+    Wait Until Element Is Visible    com.tvunetworks.android.anywhere:id/iv_cancel_explore
+    Click Element    com.tvunetworks.android.anywhere:id/iv_cancel_explore
+    Element Should Be Visible    com.tvunetworks.android.anywhere:id/buttonStartR
