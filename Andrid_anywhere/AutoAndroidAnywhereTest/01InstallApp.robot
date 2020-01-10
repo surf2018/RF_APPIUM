@@ -24,7 +24,13 @@ test_02installApp
     [Tags]    installApp
     log    "install apk:%{G_APPIUM_APP_APK}"
     sleep    2
-    Adb Install Package
+    log    "下载最新版本到本地"
+    Download Apk    %{U_APP_ApkName}    %{G_FTPFILEPATH}    %{G_APPIUM_APP_DIR}    %{G_FTPHOSTIP}    %{G_FTPUSER}    %{G_FTPPASS}
+    sleep    30    #等待文件下完
+    sleep    2
+    log    "安装“
+    Adb Install Package    %{U_APP_ApkName}    %{G_APPIUM_APP_PACKAGE}
+    sleep    2
     ${status_new}    Is Package Installed    %{G_APPIUM_APP_PACKAGE}
     should be equal    '${status_new}'    'True'
 

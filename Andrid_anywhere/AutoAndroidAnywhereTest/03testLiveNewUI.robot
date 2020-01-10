@@ -286,7 +286,7 @@ test_15stream
     newUI_isStop    %{U_APP_OFFLINE_Rname}
     [Teardown]    Close Application
 
-tesdt_16Setting
+test_16Setting
     [Documentation]    setting birate ,framerate and hevc
     [Tags]    newUI_Setting
     [Setup]    newUI_openApp

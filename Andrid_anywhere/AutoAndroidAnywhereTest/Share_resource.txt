@@ -9,6 +9,7 @@ Resource          ./MainKeys.txt
 Library           String
 Library           Collections
 Library           Common/Library/main.py
+Resource          EnvironmentKey.txt
 
 *** Keywords ***
 Common_Test_Setup
@@ -71,3 +72,5 @@ Stress_Suit_Teardown
     Run keyword If    '%{U_SAVE_APP_TOP_MEM_REPORT}'=='True'    Create CPU And Mem Report    mem_detail=MemoryDetail
     log    “设置u_android_log_record为false"
     Set Environment Variable    U_ANDROID_LOG_RECORD    False
+    sleep    1
+    Common_Suit_Teardown

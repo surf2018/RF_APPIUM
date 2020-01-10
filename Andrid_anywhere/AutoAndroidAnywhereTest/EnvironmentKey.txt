@@ -34,7 +34,7 @@ Setup_Pre_Condition
 
 Setup_APP_Variable
     #Appium Setup(APK 目录、APK、Appium 服务器、APP 名、手机平台、版本及手机序列)
-    Set Environment Variable    G_APPIUM_APK_NAME    TVUAnywhere_V8.0.6.281_1912201536_release.apk
+    Set Environment Variable    G_APPIUM_APK_NAME    TVUAnywhere_V8.0.9.290_2001101334_release.apk
     Set Environment Variable    G_APPIUM_APP_DIR    D:\\AutoTest\\androidApk    #App Package Directory
     Set Environment Variable    G_APPIUM_APP_APK    %{G_APPIUM_APP_DIR}\\%{G_APPIUM_APK_NAME}    #apk
     Set Environment Variable    G_APPIUM_AUTO_NAME    uiautomator2
@@ -55,9 +55,9 @@ Setup_APP_Variable
     Set Environment Variable    U_APP_WAITING_TIME    30
     Set Environment Variable    U_APP_VIDEO_WAITING_TIME    20
     Set Environment Variable    U_APP_Activity    AppStart
-    Set Environment Variable    U_APP_ApkName    TVUAnywhere_V8.0.6.281_1912201536_release.apk
+    Set Environment Variable    U_APP_ApkName    TVUAnywhere_V8.0.9.290_2001101334_release.apk
     Set Environment Variable    U_APP_TpeerId    0x4B8D62040DA471B2
-    Set Environment Variable    U_APP_Tversion    Version: 8.0.6.281 : VTR-AL00
+    Set Environment Variable    U_APP_Tversion    Version: 8.0.9.290 : VTR-AL00
     Set Environment Variable    U_APP_Res    720P30
     Set Environment Variable    U_APP_HEVC    OFF
     Set Environment Variable    U_APP_Resolution    1280 x 720
@@ -81,6 +81,10 @@ Setup_Testbed_Variable
     Set Environment Variable    G_CURRENTLOG    ${OUTPUT DIR}
     Set Environment Variable    G_OUTPUTDIR    ${OUTPUT DIR}
     Set Environment Variable    G_DATACENTER    %{G_SQAROOT}\\common\\resource
+    Set Environment Variable    G_FTPHOSTIP    10.12.32.163
+    Set Environment Variable    G_FTPUSER    ftpuser
+    Set Environment Variable    G_FTPPASS    tvu123admin
+    Set Environment Variable    G_FTPFILEPATH    /AnywhereShare/android_release/anywhere/
 
 Setup_ADB_Server
     [Documentation]    启动adb server

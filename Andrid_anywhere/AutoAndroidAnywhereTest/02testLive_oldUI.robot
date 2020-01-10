@@ -27,7 +27,7 @@ test_01Live_Stop
     Should Be Equal    ${isok}    1
     #stop LIve
     StartStopLive
-    sleep    1
+    sleep    2
     ${isStop}    IsStop
     Should Be Equal    ${isStop}    1
     [Teardown]    Close Application
@@ -185,7 +185,7 @@ test_10Stream
     log    "存在提示信息:${isToast}"
     Should Be Equal    '${isToast}'    'False'
     sleep    2
-    ${isok}    IsLive    %{U_APP_OFFLINE_Rname}
+    ${isok}    IsLive    %{U_APP_OFFLINE_Rname}    %{U_APP_Res}
     Should Be Equal    ${isok}    1
     #stop live
     StartStopLive

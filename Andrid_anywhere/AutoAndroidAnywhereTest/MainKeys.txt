@@ -90,6 +90,7 @@ StartStopLive
     sleep    1
 
 IsStop
+    sleep    1
     ${StatusText}    Get Text    com.tvunetworks.android.anywhere:id/live_status
     run keyword if    '${StatusText}'=='STANDBY'    log    "click stop button ,Status Text is STANDBY"
     ${isStop}    Set Variable    1
