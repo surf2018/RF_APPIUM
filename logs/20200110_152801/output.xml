@@ -1,0 +1,1247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20200110 16:01:11.686" generator="Robot 3.1.2 (Python 2.7.17rc1 on win32)">
+<suite source="D:\COM_DOC\robotframwork\Andrid_anywhere\AutoAndroidAnywhereTest" id="s1" name="AutoAndroidAnywhereTest">
+<kw type="setup" name="Setup_Pre_Condition" library="EnvironmentKey">
+<doc>A. Setup_Testbed_Variable：测试机相关预设；</doc>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>"执行setup_pre_condition"</arg>
+</arguments>
+<msg timestamp="20200110 16:01:12.049" level="INFO">"执行setup_pre_condition"</msg>
+<status status="PASS" endtime="20200110 16:01:12.049" starttime="20200110 16:01:12.049"></status>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>datetime.datetime.now()</arg>
+<arg>datetime</arg>
+</arguments>
+<assign>
+<var>${time}</var>
+</assign>
+<msg timestamp="20200110 16:01:12.050" level="INFO">${time} = 2020-01-10 16:01:12.050000</msg>
+<status status="PASS" endtime="20200110 16:01:12.051" starttime="20200110 16:01:12.050"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>"导入环境变量"</arg>
+</arguments>
+<msg timestamp="20200110 16:01:12.051" level="INFO">"导入环境变量"</msg>
+<status status="PASS" endtime="20200110 16:01:12.051" starttime="20200110 16:01:12.051"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_CUSTOM_TEST_TASK_START_TIME</arg>
+<arg>${time}</arg>
+</arguments>
+<msg timestamp="20200110 16:01:12.052" level="INFO">Environment variable 'U_CUSTOM_TEST_TASK_START_TIME' set to value '2020-01-10 16:01:12.050000'.</msg>
+<status status="PASS" endtime="20200110 16:01:12.053" starttime="20200110 16:01:12.052"></status>
+</kw>
+<kw name="Setup_APP_Variable" library="EnvironmentKey">
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>G_APPIUM_APK_NAME</arg>
+<arg>TVUAnywhere_V8.0.9.290_2001101334_release.apk</arg>
+</arguments>
+<msg timestamp="20200110 16:01:12.053" level="INFO">Environment variable 'G_APPIUM_APK_NAME' set to value 'TVUAnywhere_V8.0.9.290_2001101334_release.apk'.</msg>
+<status status="PASS" endtime="20200110 16:01:12.054" starttime="20200110 16:01:12.053"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>G_APPIUM_APP_DIR</arg>
+<arg>D:\\AutoTest\\androidApk</arg>
+</arguments>
+<msg timestamp="20200110 16:01:12.054" level="INFO">Environment variable 'G_APPIUM_APP_DIR' set to value 'D:\AutoTest\androidApk'.</msg>
+<status status="PASS" endtime="20200110 16:01:12.054" starttime="20200110 16:01:12.054"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>G_APPIUM_APP_APK</arg>
+<arg>%{G_APPIUM_APP_DIR}\\%{G_APPIUM_APK_NAME}</arg>
+</arguments>
+<msg timestamp="20200110 16:01:12.055" level="INFO">Environment variable 'G_APPIUM_APP_APK' set to value 'D:\AutoTest\androidApk\TVUAnywhere_V8.0.9.290_2001101334_release.apk'.</msg>
+<status status="PASS" endtime="20200110 16:01:12.056" starttime="20200110 16:01:12.055"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>G_APPIUM_AUTO_NAME</arg>
+<arg>uiautomator2</arg>
+</arguments>
+<msg timestamp="20200110 16:01:12.056" level="INFO">Environment variable 'G_APPIUM_AUTO_NAME' set to value 'uiautomator2'.</msg>
+<status status="PASS" endtime="20200110 16:01:12.056" starttime="20200110 16:01:12.056"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>G_APPIUM_REINSTALL_RESET</arg>
+<arg>False</arg>
+</arguments>
+<msg timestamp="20200110 16:01:12.057" level="INFO">Environment variable 'G_APPIUM_REINSTALL_RESET' set to value 'False'.</msg>
+<status status="PASS" endtime="20200110 16:01:12.057" starttime="20200110 16:01:12.057"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>G_APPIUM_HOST_IP0</arg>
+<arg>http://127.0.0.1:4723/wd/hub</arg>
+</arguments>
+<msg timestamp="20200110 16:01:12.058" level="INFO">Environment variable 'G_APPIUM_HOST_IP0' set to value 'http://127.0.0.1:4723/wd/hub'.</msg>
+<status status="PASS" endtime="20200110 16:01:12.058" starttime="20200110 16:01:12.057"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>G_APPIUM_APP_PACKAGE</arg>
+<arg>com.tvunetworks.android.anywhere</arg>
+</arguments>
+<msg timestamp="20200110 16:01:12.058" level="INFO">Environment variable 'G_APPIUM_APP_PACKAGE' set to value 'com.tvunetworks.android.anywhere'.</msg>
+<status status="PASS" endtime="20200110 16:01:12.059" starttime="20200110 16:01:12.058"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>G_APPIUM_PLATFORM_NAME</arg>
+<arg>Android</arg>
+</arguments>
+<msg timestamp="20200110 16:01:12.059" level="INFO">Environment variable 'G_APPIUM_PLATFORM_NAME' set to value 'Android'.</msg>
+<status status="PASS" endtime="20200110 16:01:12.059" starttime="20200110 16:01:12.059"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>G_APPIUM_PLATFORM_VERSION</arg>
+<arg>8.0.0</arg>
+</arguments>
+<msg timestamp="20200110 16:01:12.060" level="INFO">Environment variable 'G_APPIUM_PLATFORM_VERSION' set to value '8.0.0'.</msg>
+<status status="PASS" endtime="20200110 16:01:12.060" starttime="20200110 16:01:12.060"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_APPIUM_DEVICE_NAME</arg>
+<arg>${EMPTY}</arg>
+</arguments>
+<msg timestamp="20200110 16:01:12.061" level="INFO">Environment variable 'U_APPIUM_DEVICE_NAME' set to value ''.</msg>
+<status status="PASS" endtime="20200110 16:01:12.061" starttime="20200110 16:01:12.061"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>G_APPIUM_HOST_ADDRESS</arg>
+<arg>127.0.0.1</arg>
+</arguments>
+<msg timestamp="20200110 16:01:12.062" level="INFO">Environment variable 'G_APPIUM_HOST_ADDRESS' set to value '127.0.0.1'.</msg>
+<status status="PASS" endtime="20200110 16:01:12.062" starttime="20200110 16:01:12.062"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>G_APPIUM_HOST_PORT</arg>
+<arg>4723</arg>
+</arguments>
+<msg timestamp="20200110 16:01:12.063" level="INFO">Environment variable 'G_APPIUM_HOST_PORT' set to value '4723'.</msg>
+<status status="PASS" endtime="20200110 16:01:12.063" starttime="20200110 16:01:12.062"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_APPIUM_APPACTIVITY</arg>
+<arg>AppStart</arg>
+</arguments>
+<msg timestamp="20200110 16:01:12.064" level="INFO">Environment variable 'U_APPIUM_APPACTIVITY' set to value 'AppStart'.</msg>
+<status status="PASS" endtime="20200110 16:01:12.064" starttime="20200110 16:01:12.063"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>G_APPIUM_APP_BUGREPORT_DIR</arg>
+<arg>D:\\COM_DOC\\robotframwork\\results\\bugreport</arg>
+</arguments>
+<msg timestamp="20200110 16:01:12.065" level="INFO">Environment variable 'G_APPIUM_APP_BUGREPORT_DIR' set to value 'D:\COM_DOC\robotframwork\results\bugreport'.</msg>
+<status status="PASS" endtime="20200110 16:01:12.065" starttime="20200110 16:01:12.064"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_APP_CURRENT_VERSION</arg>
+</arguments>
+<msg timestamp="20200110 16:01:12.065" level="INFO">Environment variable 'U_APP_CURRENT_VERSION' set to value ''.</msg>
+<status status="PASS" endtime="20200110 16:01:12.065" starttime="20200110 16:01:12.065"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_APP_GA_VERSION</arg>
+</arguments>
+<msg timestamp="20200110 16:01:12.066" level="INFO">Environment variable 'U_APP_GA_VERSION' set to value ''.</msg>
+<status status="PASS" endtime="20200110 16:01:12.066" starttime="20200110 16:01:12.066"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_APP_TESTING_TYPE</arg>
+<arg>offline</arg>
+</arguments>
+<msg timestamp="20200110 16:01:12.067" level="INFO">Environment variable 'U_APP_TESTING_TYPE' set to value 'offline'.</msg>
+<status status="PASS" endtime="20200110 16:01:12.067" starttime="20200110 16:01:12.066"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_APP_WAITING_TIME</arg>
+<arg>30</arg>
+</arguments>
+<msg timestamp="20200110 16:01:12.067" level="INFO">Environment variable 'U_APP_WAITING_TIME' set to value '30'.</msg>
+<status status="PASS" endtime="20200110 16:01:12.068" starttime="20200110 16:01:12.067"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_APP_VIDEO_WAITING_TIME</arg>
+<arg>20</arg>
+</arguments>
+<msg timestamp="20200110 16:01:12.068" level="INFO">Environment variable 'U_APP_VIDEO_WAITING_TIME' set to value '20'.</msg>
+<status status="PASS" endtime="20200110 16:01:12.068" starttime="20200110 16:01:12.068"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_APP_Activity</arg>
+<arg>AppStart</arg>
+</arguments>
+<msg timestamp="20200110 16:01:12.069" level="INFO">Environment variable 'U_APP_Activity' set to value 'AppStart'.</msg>
+<status status="PASS" endtime="20200110 16:01:12.069" starttime="20200110 16:01:12.069"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_APP_ApkName</arg>
+<arg>TVUAnywhere_V8.0.9.290_2001101334_release.apk</arg>
+</arguments>
+<msg timestamp="20200110 16:01:12.070" level="INFO">Environment variable 'U_APP_ApkName' set to value 'TVUAnywhere_V8.0.9.290_2001101334_release.apk'.</msg>
+<status status="PASS" endtime="20200110 16:01:12.070" starttime="20200110 16:01:12.069"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_APP_TpeerId</arg>
+<arg>0x4B8D62040DA471B2</arg>
+</arguments>
+<msg timestamp="20200110 16:01:12.070" level="INFO">Environment variable 'U_APP_TpeerId' set to value '0x4B8D62040DA471B2'.</msg>
+<status status="PASS" endtime="20200110 16:01:12.071" starttime="20200110 16:01:12.070"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_APP_Tversion</arg>
+<arg>Version: 8.0.9.290 : VTR-AL00</arg>
+</arguments>
+<msg timestamp="20200110 16:01:12.072" level="INFO">Environment variable 'U_APP_Tversion' set to value 'Version: 8.0.9.290 : VTR-AL00'.</msg>
+<status status="PASS" endtime="20200110 16:01:12.072" starttime="20200110 16:01:12.071"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_APP_Res</arg>
+<arg>720P30</arg>
+</arguments>
+<msg timestamp="20200110 16:01:12.072" level="INFO">Environment variable 'U_APP_Res' set to value '720P30'.</msg>
+<status status="PASS" endtime="20200110 16:01:12.073" starttime="20200110 16:01:12.072"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_APP_HEVC</arg>
+<arg>OFF</arg>
+</arguments>
+<msg timestamp="20200110 16:01:12.073" level="INFO">Environment variable 'U_APP_HEVC' set to value 'OFF'.</msg>
+<status status="PASS" endtime="20200110 16:01:12.074" starttime="20200110 16:01:12.073"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_APP_Resolution</arg>
+<arg>1280 x 720</arg>
+</arguments>
+<msg timestamp="20200110 16:01:12.074" level="INFO">Environment variable 'U_APP_Resolution' set to value '1280 x 720'.</msg>
+<status status="PASS" endtime="20200110 16:01:12.075" starttime="20200110 16:01:12.074"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_APP_Framerate</arg>
+<arg>30p</arg>
+</arguments>
+<msg timestamp="20200110 16:01:12.075" level="INFO">Environment variable 'U_APP_Framerate' set to value '30p'.</msg>
+<status status="PASS" endtime="20200110 16:01:12.075" starttime="20200110 16:01:12.075"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_APP_ONLINE_USER</arg>
+<arg>${EMPTY}</arg>
+</arguments>
+<msg timestamp="20200110 16:01:12.076" level="INFO">Environment variable 'U_APP_ONLINE_USER' set to value ''.</msg>
+<status status="PASS" endtime="20200110 16:01:12.076" starttime="20200110 16:01:12.076"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_APP_ONLINE_PWD</arg>
+<arg>${EMPTY}</arg>
+</arguments>
+<msg timestamp="20200110 16:01:12.077" level="INFO">Environment variable 'U_APP_ONLINE_PWD' set to value ''.</msg>
+<status status="PASS" endtime="20200110 16:01:12.077" starttime="20200110 16:01:12.077"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_APP_OFFLINE_USER</arg>
+<arg>soffeeshu@tvu.com</arg>
+</arguments>
+<msg timestamp="20200110 16:01:12.078" level="INFO">Environment variable 'U_APP_OFFLINE_USER' set to value 'soffeeshu@tvu.com'.</msg>
+<status status="PASS" endtime="20200110 16:01:12.078" starttime="20200110 16:01:12.078"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_APP_OFFLINE_PWD</arg>
+<arg>123456</arg>
+</arguments>
+<msg timestamp="20200110 16:01:12.079" level="INFO">Environment variable 'U_APP_OFFLINE_PWD' set to value '123456'.</msg>
+<status status="PASS" endtime="20200110 16:01:12.079" starttime="20200110 16:01:12.078"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_APP_OFFLINE_Rname</arg>
+<arg>v3500_linuxR</arg>
+</arguments>
+<msg timestamp="20200110 16:01:12.080" level="INFO">Environment variable 'U_APP_OFFLINE_Rname' set to value 'v3500_linuxR'.</msg>
+<status status="PASS" endtime="20200110 16:01:12.080" starttime="20200110 16:01:12.079"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_APP_OFFLINE_destination</arg>
+<arg>soffee_test_youtube</arg>
+</arguments>
+<msg timestamp="20200110 16:01:12.081" level="INFO">Environment variable 'U_APP_OFFLINE_destination' set to value 'soffee_test_youtube'.</msg>
+<status status="PASS" endtime="20200110 16:01:12.082" starttime="20200110 16:01:12.081"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_ANDROID_LOG_RECORD</arg>
+<arg>True</arg>
+</arguments>
+<msg timestamp="20200110 16:01:12.082" level="INFO">Environment variable 'U_ANDROID_LOG_RECORD' set to value 'True'.</msg>
+<status status="PASS" endtime="20200110 16:01:12.083" starttime="20200110 16:01:12.082"></status>
+</kw>
+<status status="PASS" endtime="20200110 16:01:12.083" starttime="20200110 16:01:12.053"></status>
+</kw>
+<kw name="Setup_Testbed_Variable" library="EnvironmentKey">
+<doc>Setup_Testbed_Variable：测试机相关预设；</doc>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>G_SQAROOT</arg>
+<arg>D:\\COM_DOC\\robotframwork</arg>
+</arguments>
+<msg timestamp="20200110 16:01:12.084" level="INFO">Environment variable 'G_SQAROOT' set to value 'D:\COM_DOC\robotframwork'.</msg>
+<status status="PASS" endtime="20200110 16:01:12.084" starttime="20200110 16:01:12.083"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>G_LOG</arg>
+<arg>%{G_SQAROOT}\\logs</arg>
+</arguments>
+<msg timestamp="20200110 16:01:12.085" level="INFO">Environment variable 'G_LOG' set to value 'D:\COM_DOC\robotframwork\logs'.</msg>
+<status status="PASS" endtime="20200110 16:01:12.085" starttime="20200110 16:01:12.084"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>G_TOTAL_RESULT</arg>
+<arg>%{G_SQAROOT}\\results</arg>
+</arguments>
+<msg timestamp="20200110 16:01:12.086" level="INFO">Environment variable 'G_TOTAL_RESULT' set to value 'D:\COM_DOC\robotframwork\results'.</msg>
+<status status="PASS" endtime="20200110 16:01:12.086" starttime="20200110 16:01:12.085"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>G_CURRENTLOG</arg>
+<arg>${OUTPUT DIR}</arg>
+</arguments>
+<msg timestamp="20200110 16:01:12.087" level="INFO">Environment variable 'G_CURRENTLOG' set to value 'D:\COM_DOC\robotframwork\logs\20200110_152801'.</msg>
+<status status="PASS" endtime="20200110 16:01:12.087" starttime="20200110 16:01:12.086"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>G_OUTPUTDIR</arg>
+<arg>${OUTPUT DIR}</arg>
+</arguments>
+<msg timestamp="20200110 16:01:12.087" level="INFO">Environment variable 'G_OUTPUTDIR' set to value 'D:\COM_DOC\robotframwork\logs\20200110_152801'.</msg>
+<status status="PASS" endtime="20200110 16:01:12.088" starttime="20200110 16:01:12.087"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>G_DATACENTER</arg>
+<arg>%{G_SQAROOT}\\common\\resource</arg>
+</arguments>
+<msg timestamp="20200110 16:01:12.088" level="INFO">Environment variable 'G_DATACENTER' set to value 'D:\COM_DOC\robotframwork\common\resource'.</msg>
+<status status="PASS" endtime="20200110 16:01:12.089" starttime="20200110 16:01:12.088"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>G_FTPHOSTIP</arg>
+<arg>10.12.32.163</arg>
+</arguments>
+<msg timestamp="20200110 16:01:12.090" level="INFO">Environment variable 'G_FTPHOSTIP' set to value '10.12.32.163'.</msg>
+<status status="PASS" endtime="20200110 16:01:12.090" starttime="20200110 16:01:12.089"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>G_FTPUSER</arg>
+<arg>ftpuser</arg>
+</arguments>
+<msg timestamp="20200110 16:01:12.091" level="INFO">Environment variable 'G_FTPUSER' set to value 'ftpuser'.</msg>
+<status status="PASS" endtime="20200110 16:01:12.091" starttime="20200110 16:01:12.090"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>G_FTPPASS</arg>
+<arg>tvu123admin</arg>
+</arguments>
+<msg timestamp="20200110 16:01:12.091" level="INFO">Environment variable 'G_FTPPASS' set to value 'tvu123admin'.</msg>
+<status status="PASS" endtime="20200110 16:01:12.092" starttime="20200110 16:01:12.091"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>G_FTPFILEPATH</arg>
+<arg>/AnywhereShare/android_release/anywhere/</arg>
+</arguments>
+<msg timestamp="20200110 16:01:12.092" level="INFO">Environment variable 'G_FTPFILEPATH' set to value '/AnywhereShare/android_release/anywhere/'.</msg>
+<status status="PASS" endtime="20200110 16:01:12.093" starttime="20200110 16:01:12.092"></status>
+</kw>
+<status status="PASS" endtime="20200110 16:01:12.093" starttime="20200110 16:01:12.083"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>"导入压力测试变量"</arg>
+</arguments>
+<msg timestamp="20200110 16:01:12.093" level="INFO">"导入压力测试变量"</msg>
+<status status="PASS" endtime="20200110 16:01:12.094" starttime="20200110 16:01:12.093"></status>
+</kw>
+<kw name="Setup_StressSuite_Variable" library="EnvironmentKey">
+<doc>设置测试结束时的相关设置</doc>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_CUSTOM_LONG_TERM</arg>
+<arg>24</arg>
+</arguments>
+<msg timestamp="20200110 16:01:12.095" level="INFO">Environment variable 'U_CUSTOM_LONG_TERM' set to value '24'.</msg>
+<status status="PASS" endtime="20200110 16:01:12.095" starttime="20200110 16:01:12.094"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_CUSTOM_LONG_INTERVAL</arg>
+<arg>180</arg>
+</arguments>
+<msg timestamp="20200110 16:01:12.095" level="INFO">Environment variable 'U_CUSTOM_LONG_INTERVAL' set to value '180'.</msg>
+<status status="PASS" endtime="20200110 16:01:12.095" starttime="20200110 16:01:12.095"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_CUSTOM_LONG_DEVIATION</arg>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20200110 16:01:12.096" level="INFO">Environment variable 'U_CUSTOM_LONG_DEVIATION' set to value '1'.</msg>
+<status status="PASS" endtime="20200110 16:01:12.096" starttime="20200110 16:01:12.096"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_SAVE_APP_TOP_MEM_REPORT</arg>
+<arg>True</arg>
+</arguments>
+<msg timestamp="20200110 16:01:12.097" level="INFO">Environment variable 'U_SAVE_APP_TOP_MEM_REPORT' set to value 'True'.</msg>
+<status status="PASS" endtime="20200110 16:01:12.097" starttime="20200110 16:01:12.097"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_REPORT_NAME</arg>
+<arg>Android_Anywhere</arg>
+</arguments>
+<msg timestamp="20200110 16:01:12.098" level="INFO">Environment variable 'U_REPORT_NAME' set to value 'Android_Anywhere'.</msg>
+<status status="PASS" endtime="20200110 16:01:12.098" starttime="20200110 16:01:12.097"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_TBNAME</arg>
+<arg>${EMPTY}</arg>
+</arguments>
+<msg timestamp="20200110 16:01:12.099" level="INFO">Environment variable 'U_TBNAME' set to value ''.</msg>
+<status status="PASS" endtime="20200110 16:01:12.099" starttime="20200110 16:01:12.098"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>G_TESTER</arg>
+<arg>Soffee</arg>
+</arguments>
+<msg timestamp="20200110 16:01:12.099" level="INFO">Environment variable 'G_TESTER' set to value 'Soffee'.</msg>
+<status status="PASS" endtime="20200110 16:01:12.100" starttime="20200110 16:01:12.099"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_TOP_LOG_NAME</arg>
+<arg>top.txt</arg>
+</arguments>
+<msg timestamp="20200110 16:01:12.100" level="INFO">Environment variable 'U_TOP_LOG_NAME' set to value 'top.txt'.</msg>
+<status status="PASS" endtime="20200110 16:01:12.100" starttime="20200110 16:01:12.100"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_MEMINFO_LOG_NAME</arg>
+<arg>meminfo.txt</arg>
+</arguments>
+<msg timestamp="20200110 16:01:12.101" level="INFO">Environment variable 'U_MEMINFO_LOG_NAME' set to value 'meminfo.txt'.</msg>
+<status status="PASS" endtime="20200110 16:01:12.101" starttime="20200110 16:01:12.101"></status>
+</kw>
+<status status="PASS" endtime="20200110 16:01:12.101" starttime="20200110 16:01:12.094"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>"启动adb server"</arg>
+</arguments>
+<msg timestamp="20200110 16:01:12.102" level="INFO">"启动adb server"</msg>
+<status status="PASS" endtime="20200110 16:01:12.103" starttime="20200110 16:01:12.102"></status>
+</kw>
+<kw name="Setup_ADB_Server" library="EnvironmentKey">
+<doc>启动adb server</doc>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<arguments>
+<arg>Set Device Name</arg>
+</arguments>
+<assign>
+<var>${status}</var>
+</assign>
+<kw name="Set Device Name" library="myTestLibrary">
+<doc>Set Devices Name after get its name through ADB command.
+Examples:
+| Set Device Name |</doc>
+<msg timestamp="20200110 16:01:15.112" level="INFO">List of devices attached
+SJE5T17B02006511	device
+------------------------------
+Pass! Set device name!
+Device Name: SJE5T17B02006511
+------------------------------</msg>
+<status status="PASS" endtime="20200110 16:01:15.112" starttime="20200110 16:01:12.104"></status>
+</kw>
+<msg timestamp="20200110 16:01:15.113" level="INFO">${status} = ('PASS', None)</msg>
+<status status="PASS" endtime="20200110 16:01:15.113" starttime="20200110 16:01:12.103"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>"set Device Name的状态:${status[0]}"</arg>
+</arguments>
+<msg timestamp="20200110 16:01:15.115" level="INFO">"set Device Name的状态:PASS"</msg>
+<status status="PASS" endtime="20200110 16:01:15.115" starttime="20200110 16:01:15.114"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${status[0]}'!='PASS'</arg>
+<arg>Run keywords</arg>
+<arg>Kill Adb Process</arg>
+<arg>AND</arg>
+<arg>Start Adb Service</arg>
+<arg>AND</arg>
+<arg>Set Device Name</arg>
+</arguments>
+<status status="PASS" endtime="20200110 16:01:15.116" starttime="20200110 16:01:15.115"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>'device name :%{U_APPIUM_DEVICE_NAME}'</arg>
+</arguments>
+<msg timestamp="20200110 16:01:15.117" level="INFO">'device name :SJE5T17B02006511'</msg>
+<status status="PASS" endtime="20200110 16:01:15.117" starttime="20200110 16:01:15.116"></status>
+</kw>
+<status status="PASS" endtime="20200110 16:01:15.117" starttime="20200110 16:01:12.103"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20200110 16:01:17.118" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20200110 16:01:17.118" starttime="20200110 16:01:15.118"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>"deviceName:%{U_APPIUM_DEVICE_NAME}" and "start appium server"</arg>
+</arguments>
+<msg timestamp="20200110 16:01:17.119" level="INFO">"deviceName:SJE5T17B02006511" and "start appium server"</msg>
+<status status="PASS" endtime="20200110 16:01:17.120" starttime="20200110 16:01:17.119"></status>
+</kw>
+<kw name="Start Appium Server" library="myTestLibrary">
+<doc>Start Appium Server.
+Examples:
+| Start Appium Server |</doc>
+<status status="PASS" endtime="20200110 16:01:17.245" starttime="20200110 16:01:17.120"></status>
+</kw>
+<status status="PASS" endtime="20200110 16:01:17.246" starttime="20200110 16:01:12.048"></status>
+</kw>
+<suite source="D:\COM_DOC\robotframwork\Andrid_anywhere\AutoAndroidAnywhereTest\03testLiveNewUI.robot" id="s1-s1" name="03testLiveNewUI">
+<test id="s1-s1-t1" name="test_06addExternalSource">
+<kw type="setup" name="newUI_openApp" library="MainKeys">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>"open app--new UI"</arg>
+</arguments>
+<msg timestamp="20200110 16:01:17.256" level="INFO">"open app--new UI"</msg>
+<status status="PASS" endtime="20200110 16:01:17.256" starttime="20200110 16:01:17.255"></status>
+</kw>
+<kw name="Open Application" library="AppiumLibrary">
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<arguments>
+<arg>%{G_APPIUM_HOST_IP0}</arg>
+<arg>platformName=%{G_APPIUM_PLATFORM_NAME}</arg>
+<arg>platformVersion=%{G_APPIUM_PLATFORM_VERSION}</arg>
+<arg>deviceName=%{U_APPIUM_DEVICE_NAME}</arg>
+<arg>appPackage=%{G_APPIUM_APP_PACKAGE}</arg>
+<arg>appActivity=%{U_APP_Activity}</arg>
+<arg>noReset=True</arg>
+<arg>automationName=uiautomator2</arg>
+</arguments>
+<msg timestamp="20200110 16:01:18.259" level="INFO">Could not connect to port 4723 on host 127.0.0.1</msg>
+<msg timestamp="20200110 16:01:18.259" level="INFO">Could not get IP address for host: 127.0.0.1</msg>
+<status status="PASS" endtime="20200110 16:01:31.191" starttime="20200110 16:01:17.256"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>com.tvunetworks.android.anywhere:id/buttonStartR</arg>
+<arg>20</arg>
+<arg>"20s,元素没出来"</arg>
+</arguments>
+<status status="PASS" endtime="20200110 16:01:35.006" starttime="20200110 16:01:31.192"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20200110 16:01:36.008" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20200110 16:01:36.008" starttime="20200110 16:01:35.007"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>"open app finished"</arg>
+</arguments>
+<msg timestamp="20200110 16:01:36.009" level="INFO">"open app finished"</msg>
+<status status="PASS" endtime="20200110 16:01:36.009" starttime="20200110 16:01:36.009"></status>
+</kw>
+<status status="PASS" endtime="20200110 16:01:36.010" starttime="20200110 16:01:17.255"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20200110 16:01:37.011" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20200110 16:01:37.011" starttime="20200110 16:01:36.010"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>"add Extternal Source"</arg>
+</arguments>
+<msg timestamp="20200110 16:01:37.012" level="INFO">"add Extternal Source"</msg>
+<status status="PASS" endtime="20200110 16:01:37.012" starttime="20200110 16:01:37.011"></status>
+</kw>
+<kw name="newUI_clickMenu" library="MainKeys">
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//*[@resource-id="com.tvunetworks.android.anywhere:id/bottom_menu_control"]</arg>
+</arguments>
+<msg timestamp="20200110 16:01:37.014" level="INFO">Clicking element '//*[@resource-id="com.tvunetworks.android.anywhere:id/bottom_menu_control"]'.</msg>
+<status status="PASS" endtime="20200110 16:01:38.501" starttime="20200110 16:01:37.013"></status>
+</kw>
+<status status="PASS" endtime="20200110 16:01:38.502" starttime="20200110 16:01:37.012"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>//*[@resource-id="com.tvunetworks.android.anywhere:id/externalCamera_imgview"]</arg>
+</arguments>
+<status status="PASS" endtime="20200110 16:01:39.882" starttime="20200110 16:01:38.502"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//*[@resource-id="com.tvunetworks.android.anywhere:id/externalCamera_imgview"]</arg>
+</arguments>
+<msg timestamp="20200110 16:01:39.883" level="INFO">Clicking element '//*[@resource-id="com.tvunetworks.android.anywhere:id/externalCamera_imgview"]'.</msg>
+<status status="PASS" endtime="20200110 16:01:40.966" starttime="20200110 16:01:39.882"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20200110 16:01:41.968" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20200110 16:01:41.968" starttime="20200110 16:01:40.967"></status>
+</kw>
+<kw name="addSource" library="MainKeys">
+<doc>add sources</doc>
+<arguments>
+<arg>4</arg>
+</arguments>
+<kw type="for" name="${I} IN RANGE [ 1 | ${count} ]">
+<kw type="foritem" name="${I} = 1">
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//*[@resource-id="com.tvunetworks.android.anywhere:id/multi_source_list"]/android.view.ViewGroup[${i}]/android.widget.ImageView[2]</arg>
+</arguments>
+<msg timestamp="20200110 16:01:41.972" level="INFO">Clicking element '//*[@resource-id="com.tvunetworks.android.anywhere:id/multi_source_list"]/android.view.ViewGroup[1]/android.widget.ImageView[2]'.</msg>
+<status status="PASS" endtime="20200110 16:01:42.619" starttime="20200110 16:01:41.970"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20200110 16:01:43.620" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20200110 16:01:43.620" starttime="20200110 16:01:42.619"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//*[@resource-id="com.android.documentsui:id/dir_list"]/android.widget.RelativeLayout[${i}]/android.widget.FrameLayout[1]/android.widget.ImageView[1]</arg>
+</arguments>
+<msg timestamp="20200110 16:01:43.625" level="INFO">Clicking element '//*[@resource-id="com.android.documentsui:id/dir_list"]/android.widget.RelativeLayout[1]/android.widget.FrameLayout[1]/android.widget.ImageView[1]'.</msg>
+<status status="PASS" endtime="20200110 16:01:45.038" starttime="20200110 16:01:43.622"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20200110 16:01:46.040" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20200110 16:01:46.040" starttime="20200110 16:01:45.039"></status>
+</kw>
+<kw name="Element Should Contain Text" library="AppiumLibrary">
+<doc>Verifies element identified by ``locator`` contains text ``expected``.</doc>
+<arguments>
+<arg>//*[@resource-id="com.tvunetworks.android.anywhere:id/multi_source_list"]/android.view.ViewGroup[${i}]/android.widget.TextView[1]</arg>
+<arg>Fps</arg>
+<arg>"增加source不成功"</arg>
+</arguments>
+<msg timestamp="20200110 16:01:46.042" level="INFO">Verifying element '//*[@resource-id="com.tvunetworks.android.anywhere:id/multi_source_list"]/android.view.ViewGroup[1]/android.widget.TextView[1]' contains text 'Fps'.</msg>
+<status status="PASS" endtime="20200110 16:01:46.611" starttime="20200110 16:01:46.041"></status>
+</kw>
+<kw name="Get Text" library="AppiumLibrary">
+<doc>Get element text (for hybrid and mobile browser use `xpath` locator, others might cause problem)</doc>
+<arguments>
+<arg>//*[@resource-id="com.tvunetworks.android.anywhere:id/multi_source_list"]/android.view.ViewGroup[${i}]/android.widget.TextView[2]</arg>
+</arguments>
+<assign>
+<var>${duration_text}</var>
+</assign>
+<msg timestamp="20200110 16:01:46.721" level="INFO">Element '//*[@resource-id="com.tvunetworks.android.anywhere:id/multi_source_list"]/android.view.ViewGroup[1]/android.widget.TextView[2]' text is '01:27' </msg>
+<msg timestamp="20200110 16:01:46.721" level="INFO">${duration_text} = 01:27</msg>
+<status status="PASS" endtime="20200110 16:01:46.721" starttime="20200110 16:01:46.611"></status>
+</kw>
+<kw name="Split String" library="String">
+<doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
+<arguments>
+<arg>${duration_text}</arg>
+<arg>:</arg>
+</arguments>
+<assign>
+<var>@{List}</var>
+</assign>
+<msg timestamp="20200110 16:01:46.723" level="INFO">@{List} = [ 01 | 27 ]</msg>
+<status status="PASS" endtime="20200110 16:01:46.723" starttime="20200110 16:01:46.722"></status>
+</kw>
+<kw name="Get From List" library="Collections">
+<doc>Returns the value specified with an ``index`` from ``list``.</doc>
+<arguments>
+<arg>${List}</arg>
+<arg>1</arg>
+</arguments>
+<assign>
+<var>${duration}</var>
+</assign>
+<msg timestamp="20200110 16:01:46.725" level="INFO">${duration} = 27</msg>
+<status status="PASS" endtime="20200110 16:01:46.726" starttime="20200110 16:01:46.724"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>"第${i}个视频 duration:${duration} s"</arg>
+</arguments>
+<msg timestamp="20200110 16:01:46.729" level="INFO">"第1个视频 duration:27 s"</msg>
+<status status="PASS" endtime="20200110 16:01:46.730" starttime="20200110 16:01:46.726"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20200110 16:01:47.731" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20200110 16:01:47.732" starttime="20200110 16:01:46.730"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//*[@resource-id="com.tvunetworks.android.anywhere:id/multi_source_list"]/android.view.ViewGroup[${i}]</arg>
+</arguments>
+<msg timestamp="20200110 16:01:47.736" level="INFO">Clicking element '//*[@resource-id="com.tvunetworks.android.anywhere:id/multi_source_list"]/android.view.ViewGroup[1]'.</msg>
+<status status="PASS" endtime="20200110 16:01:48.168" starttime="20200110 16:01:47.733"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20200110 16:01:53.169" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20200110 16:01:53.169" starttime="20200110 16:01:48.169"></status>
+</kw>
+<kw name="Get Element Attribute" library="AppiumLibrary">
+<doc>Get element attribute using given attribute: name, value,...</doc>
+<arguments>
+<arg>com.tvunetworks.android.anywhere:id/text_pip_title</arg>
+<arg>enabled</arg>
+</arguments>
+<assign>
+<var>${is_enabled}</var>
+</assign>
+<msg timestamp="20200110 16:01:53.758" level="INFO">Element 'com.tvunetworks.android.anywhere:id/text_pip_title' attribute 'enabled' value 'true' </msg>
+<msg timestamp="20200110 16:01:53.759" level="INFO">${is_enabled} = true</msg>
+<status status="PASS" endtime="20200110 16:01:53.759" starttime="20200110 16:01:53.169"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>'${is_enabled}'</arg>
+<arg>'true'</arg>
+<arg>"没有预览选择的source"</arg>
+</arguments>
+<status status="PASS" endtime="20200110 16:01:53.760" starttime="20200110 16:01:53.760"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${duration}</arg>
+</arguments>
+<msg timestamp="20200110 16:02:20.761" level="INFO">Slept 27 seconds</msg>
+<status status="PASS" endtime="20200110 16:02:20.761" starttime="20200110 16:01:53.761"></status>
+</kw>
+<kw name="Get Element Attribute" library="AppiumLibrary">
+<doc>Get element attribute using given attribute: name, value,...</doc>
+<arguments>
+<arg>com.tvunetworks.android.anywhere:id/text_pip_title</arg>
+<arg>enabled</arg>
+</arguments>
+<assign>
+<var>${isenabled}</var>
+</assign>
+<msg timestamp="20200110 16:02:20.893" level="INFO">Element 'com.tvunetworks.android.anywhere:id/text_pip_title' attribute 'enabled' value 'true' </msg>
+<msg timestamp="20200110 16:02:20.894" level="INFO">${isenabled} = true</msg>
+<status status="PASS" endtime="20200110 16:02:20.894" starttime="20200110 16:02:20.762"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>'${isenabled}'</arg>
+<arg>'false'</arg>
+<arg>"duration已到还没有播放完源“</arg>
+</arguments>
+<msg timestamp="20200110 16:02:20.895" level="FAIL">"duration已到还没有播放完源“: 'true' != 'false'</msg>
+<status status="FAIL" endtime="20200110 16:02:20.896" starttime="20200110 16:02:20.895"></status>
+</kw>
+<status status="FAIL" endtime="20200110 16:02:20.896" starttime="20200110 16:01:41.970"></status>
+</kw>
+<status status="FAIL" endtime="20200110 16:02:20.896" starttime="20200110 16:01:41.969"></status>
+</kw>
+<status status="FAIL" endtime="20200110 16:02:20.897" starttime="20200110 16:01:41.968"></status>
+</kw>
+<kw type="teardown" name="Close Application" library="AppiumLibrary">
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="PASS" endtime="20200110 16:02:21.367" starttime="20200110 16:02:20.897"></status>
+</kw>
+<tags>
+<tag>newUI_addExt</tag>
+</tags>
+<status status="FAIL" endtime="20200110 16:02:21.368" critical="yes" starttime="20200110 16:01:17.254">"duration已到还没有播放完源“: 'true' != 'false'</status>
+</test>
+<test id="s1-s1-t2" name="test_07delExternelSource">
+<kw type="setup" name="newUI_openApp" library="MainKeys">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>"open app--new UI"</arg>
+</arguments>
+<msg timestamp="20200110 16:02:21.370" level="INFO">"open app--new UI"</msg>
+<status status="PASS" endtime="20200110 16:02:21.371" starttime="20200110 16:02:21.370"></status>
+</kw>
+<kw name="Open Application" library="AppiumLibrary">
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<arguments>
+<arg>%{G_APPIUM_HOST_IP0}</arg>
+<arg>platformName=%{G_APPIUM_PLATFORM_NAME}</arg>
+<arg>platformVersion=%{G_APPIUM_PLATFORM_VERSION}</arg>
+<arg>deviceName=%{U_APPIUM_DEVICE_NAME}</arg>
+<arg>appPackage=%{G_APPIUM_APP_PACKAGE}</arg>
+<arg>appActivity=%{U_APP_Activity}</arg>
+<arg>noReset=True</arg>
+<arg>automationName=uiautomator2</arg>
+</arguments>
+<status status="PASS" endtime="20200110 16:02:32.852" starttime="20200110 16:02:21.371"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>com.tvunetworks.android.anywhere:id/buttonStartR</arg>
+<arg>20</arg>
+<arg>"20s,元素没出来"</arg>
+</arguments>
+<status status="PASS" endtime="20200110 16:02:35.520" starttime="20200110 16:02:32.853"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20200110 16:02:36.522" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20200110 16:02:36.522" starttime="20200110 16:02:35.521"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>"open app finished"</arg>
+</arguments>
+<msg timestamp="20200110 16:02:36.523" level="INFO">"open app finished"</msg>
+<status status="PASS" endtime="20200110 16:02:36.524" starttime="20200110 16:02:36.523"></status>
+</kw>
+<status status="PASS" endtime="20200110 16:02:36.524" starttime="20200110 16:02:21.369"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>"del ExternalSource"</arg>
+</arguments>
+<msg timestamp="20200110 16:02:36.526" level="INFO">"del ExternalSource"</msg>
+<status status="PASS" endtime="20200110 16:02:36.526" starttime="20200110 16:02:36.525"></status>
+</kw>
+<kw name="newUI_clickMenu" library="MainKeys">
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//*[@resource-id="com.tvunetworks.android.anywhere:id/bottom_menu_control"]</arg>
+</arguments>
+<msg timestamp="20200110 16:02:36.529" level="INFO">Clicking element '//*[@resource-id="com.tvunetworks.android.anywhere:id/bottom_menu_control"]'.</msg>
+<status status="PASS" endtime="20200110 16:02:37.341" starttime="20200110 16:02:36.527"></status>
+</kw>
+<status status="PASS" endtime="20200110 16:02:37.341" starttime="20200110 16:02:36.527"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>//*[@resource-id="com.tvunetworks.android.anywhere:id/externalCamera_imgview"]</arg>
+</arguments>
+<status status="PASS" endtime="20200110 16:02:38.630" starttime="20200110 16:02:37.342"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//*[@resource-id="com.tvunetworks.android.anywhere:id/externalCamera_imgview"]</arg>
+</arguments>
+<msg timestamp="20200110 16:02:38.632" level="INFO">Clicking element '//*[@resource-id="com.tvunetworks.android.anywhere:id/externalCamera_imgview"]'.</msg>
+<status status="PASS" endtime="20200110 16:02:39.784" starttime="20200110 16:02:38.631"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20200110 16:02:40.785" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20200110 16:02:40.785" starttime="20200110 16:02:39.784"></status>
+</kw>
+<kw name="delSource" library="MainKeys">
+<arguments>
+<arg>4</arg>
+</arguments>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>"依次删除source"</arg>
+</arguments>
+<msg timestamp="20200110 16:02:40.787" level="INFO">"依次删除source"</msg>
+<status status="PASS" endtime="20200110 16:02:40.787" starttime="20200110 16:02:40.786"></status>
+</kw>
+<kw type="for" name="${I} IN RANGE [ 1 | ${count} ]">
+<kw type="foritem" name="${I} = 1">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>"删除第${i}个"</arg>
+</arguments>
+<msg timestamp="20200110 16:02:40.788" level="INFO">"删除第1个"</msg>
+<status status="PASS" endtime="20200110 16:02:40.789" starttime="20200110 16:02:40.788"></status>
+</kw>
+<kw name="Long Press" library="AppiumLibrary">
+<doc>Long press the element with optional duration</doc>
+<arguments>
+<arg>//*[@resource-id="com.tvunetworks.android.anywhere:id/multi_source_list"]/android.view.ViewGroup[${i}]</arg>
+<arg>5</arg>
+</arguments>
+<status status="PASS" endtime="20200110 16:02:43.042" starttime="20200110 16:02:40.789"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20200110 16:02:48.044" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20200110 16:02:48.045" starttime="20200110 16:02:43.043"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>//*[@resource-id="com.tvunetworks.android.anywhere:id/isSelected"]</arg>
+<arg>30</arg>
+</arguments>
+<status status="PASS" endtime="20200110 16:02:48.566" starttime="20200110 16:02:48.046"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//*[@resource-id="com.tvunetworks.android.anywhere:id/isSelected"]</arg>
+</arguments>
+<msg timestamp="20200110 16:02:48.569" level="INFO">Clicking element '//*[@resource-id="com.tvunetworks.android.anywhere:id/isSelected"]'.</msg>
+<status status="PASS" endtime="20200110 16:02:48.713" starttime="20200110 16:02:48.567"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20200110 16:02:49.714" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20200110 16:02:49.714" starttime="20200110 16:02:48.714"></status>
+</kw>
+<kw name="Page Should Not Contain Element" library="AppiumLibrary">
+<doc>Verifies that current page not contains `locator` element.</doc>
+<arguments>
+<arg>//*[@resource-id="com.tvunetworks.android.anywhere:id/multi_source_list"]/android.view.ViewGroup[${I}]/android.widget.TextView[1]</arg>
+<arg>"删除第${i}不成功"</arg>
+</arguments>
+<msg timestamp="20200110 16:02:50.046" level="INFO">Current page not contains element '//*[@resource-id="com.tvunetworks.android.anywhere:id/multi_source_list"]/android.view.ViewGroup[1]/android.widget.TextView[1]'.</msg>
+<status status="PASS" endtime="20200110 16:02:50.046" starttime="20200110 16:02:49.715"></status>
+</kw>
+<status status="PASS" endtime="20200110 16:02:50.047" starttime="20200110 16:02:40.788"></status>
+</kw>
+<kw type="foritem" name="${I} = 2">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>"删除第${i}个"</arg>
+</arguments>
+<msg timestamp="20200110 16:02:50.048" level="INFO">"删除第2个"</msg>
+<status status="PASS" endtime="20200110 16:02:50.048" starttime="20200110 16:02:50.047"></status>
+</kw>
+<kw name="Long Press" library="AppiumLibrary">
+<doc>Long press the element with optional duration</doc>
+<arguments>
+<arg>//*[@resource-id="com.tvunetworks.android.anywhere:id/multi_source_list"]/android.view.ViewGroup[${i}]</arg>
+<arg>5</arg>
+</arguments>
+<status status="PASS" endtime="20200110 16:02:51.782" starttime="20200110 16:02:50.048"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20200110 16:02:56.784" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20200110 16:02:56.785" starttime="20200110 16:02:51.783"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>//*[@resource-id="com.tvunetworks.android.anywhere:id/isSelected"]</arg>
+<arg>30</arg>
+</arguments>
+<msg timestamp="20200110 16:03:26.927" level="INFO">&lt;?xml version='1.0' encoding='UTF-8' standalone='yes' ?&gt;
+&lt;hierarchy index="0" class="hierarchy" rotation="1" width="1793" height="1080"&gt;
+  &lt;android.widget.FrameLayout index="0" package="com.tvunetworks.android.anywhere" class="android.widget.FrameLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[370,264][1550,815]" displayed="true"&gt;
+    &lt;android.widget.LinearLayout index="0" package="com.tvunetworks.android.anywhere" class="android.widget.LinearLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[370,264][1550,815]" displayed="true"&gt;
+      &lt;android.widget.FrameLayout index="0" package="com.tvunetworks.android.anywhere" class="android.widget.FrameLayout" text="" resource-id="android:id/content" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[370,264][1550,815]" displayed="true"&gt;
+        &lt;android.view.ViewGroup index="0" package="com.tvunetworks.android.anywhere" class="android.view.ViewGroup" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[370,264][1550,815]" displayed="true"&gt;
+          &lt;android.widget.ImageView index="1" package="com.tvunetworks.android.anywhere" class="android.widget.ImageView" text="" resource-id="com.tvunetworks.android.anywhere:id/img_picture_in_picture" checkable="false" checked="false" clickable="true" enabled="false" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[634,272][699,337]" displayed="true" /&gt;
+          &lt;android.widget.TextView index="2" package="com.tvunetworks.android.anywhere" class="android.widget.TextView" text="PIP" resource-id="com.tvunetworks.android.anywhere:id/text_pip_title" checkable="false" checked="false" clickable="true" enabled="false" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[699,272][773,337]" displayed="true" /&gt;
+          &lt;android.view.View index="3" package="com.tvunetworks.android.anywhere" class="android.view.View" text="" resource-id="com.tvunetworks.android.anywhere:id/guidelineVertical" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[958,280][962,332]" displayed="true" /&gt;
+          &lt;android.widget.ImageView index="4" package="com.tvunetworks.android.anywhere" class="android.widget.ImageView" text="" resource-id="com.tvunetworks.android.anywhere:id/img_switch_camera" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[1222,272][1287,337]" displayed="true" /&gt;
+          &lt;android.widget.TextView index="5" package="com.tvunetworks.android.anywhere" class="android.widget.TextView" text="Switch" resource-id="com.tvunetworks.android.anywhere:id/str_switch_camera_title" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[1287,272][1417,337]" displayed="true" /&gt;
+          &lt;androidx.recyclerview.widget.RecyclerView index="6" package="com.tvunetworks.android.anywhere" class="androidx.recyclerview.widget.RecyclerView" text="" resource-id="com.tvunetworks.android.anywhere:id/multi_source_list" checkable="false" checked="false" clickable="false" enabled="true" focusable="true" focused="true" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[370,337][1550,815]" displayed="true"&gt;
+            &lt;android.view.ViewGroup index="0" package="com.tvunetworks.android.anywhere" class="android.view.ViewGroup" text="" resource-id="com.tvunetworks.android.anywhere:id/item_constraintLayout" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="true" password="false" scrollable="false" selected="false" bounds="[382,353][757,565]" displayed="true"&gt;
+              &lt;android.widget.ImageView index="0" package="com.tvunetworks.android.anywhere" class="android.widget.ImageView" text="" content-desc="thumb_image" resource-id="com.tvunetworks.android.anywhere:id/thumb_image" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[382,353][757,565]" displayed="true" /&gt;
+              &lt;android.widget.ImageView index="1" package="com.tvunetworks.android.anywhere" class="android.widget.ImageView" text="" content-desc="logo_image" resource-id="com.tvunetworks.android.anywhere:id/logo_image" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[536,426][603,493]" displayed="true" /&gt;
+            &lt;/android.view.ViewGroup&gt;
+            &lt;android.view.ViewGroup index="1" package="com.tvunetworks.android.anywhere" class="android.view.ViewGroup" text="" resource-id="com.tvunetworks.android.anywhere:id/item_constraintLayout" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="true" password="false" scrollable="false" selected="false" bounds="[769,353][1150,565]" displayed="true"&gt;
+              &lt;android.widget.ImageView index="0" package="com.tvunetworks.android.anywhere" class="android.widget.ImageView" text="" content-desc="thumb_image" resource-id="com.tvunetworks.android.anywhere:id/thumb_image" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[769,353][1150,565]" displayed="true" /&gt;
+              &lt;android.widget.ImageView index="1" package="com.tvunetworks.android.anywhere" class="android.widget.ImageView" text="" content-desc="logo_image" resource-id="com.tvunetworks.android.anywhere:id/logo_image" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[926,426][993,493]" displayed="true" /&gt;
+            &lt;/android.view.ViewGroup&gt;
+            &lt;android.view.ViewGroup index="2" package="com.tvunetworks.android.anywhere" class="android.view.ViewGroup" text="" resource-id="com.tvunetworks.android.anywhere:id/item_constraintLayout" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="true" password="false" scrollable="false" selected="false" bounds="[1162,353][1538,565]" displayed="true"&gt;
+              &lt;android.widget.ImageView index="0" package="com.tvunetworks.android.anywhere" class="android.widget.ImageView" text="" content-desc="thumb_image" resource-id="com.tvunetworks.android.anywhere:id/thumb_image" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[1162,353][1538,565]" displayed="true" /&gt;
+              &lt;android.widget.ImageView index="1" package="com.tvunetworks.android.anywhere" class="android.widget.ImageView" text="" content-desc="logo_image" resource-id="com.tvunetworks.android.anywhere:id/logo_image" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[1317,426][1384,493]" displayed="true" /&gt;
+            &lt;/android.view.ViewGroup&gt;
+            &lt;android.view.ViewGroup index="3" package="com.tvunetworks.android.anywhere" class="android.view.ViewGroup" text="" resource-id="com.tvunetworks.android.anywhere:id/item_constraintLayout" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="true" password="false" scrollable="false" selected="false" bounds="[382,577][757,789]" displayed="true"&gt;
+              &lt;android.widget.ImageView index="0" package="com.tvunetworks.android.anywhere" class="android.widget.ImageView" text="" content-desc="thumb_image" resource-id="com.tvunetworks.android.anywhere:id/thumb_image" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[382,577][757,789]" displayed="true" /&gt;
+              &lt;android.widget.ImageView index="1" package="com.tvunetworks.android.anywhere" class="android.widget.ImageView" text="" content-desc="logo_image" resource-id="com.tvunetworks.android.anywhere:id/logo_image" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[536,650][603,717]" displayed="true" /&gt;
+            &lt;/android.view.ViewGroup&gt;
+            &lt;android.view.ViewGroup index="4" package="com.tvunetworks.android.anywhere" class="android.view.ViewGroup" text="" resource-id="com.tvunetworks.android.anywhere:id/item_constraintLayout" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="true" password="false" scrollable="false" selected="false" bounds="[769,577][1150,789]" displayed="true"&gt;
+              &lt;android.widget.ImageView index="0" package="com.tvunetworks.android.anywhere" class="android.widget.ImageView" text="" content-desc="thumb_image" resource-id="com.tvunetworks.android.anywhere:id/thumb_image" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[769,577][1150,789]" displayed="true" /&gt;
+              &lt;android.widget.ImageView index="1" package="com.tvunetworks.android.anywhere" class="android.widget.ImageView" text="" content-desc="logo_image" resource-id="com.tvunetworks.android.anywhere:id/logo_image" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[926,650][993,717]" displayed="true" /&gt;
+            &lt;/android.view.ViewGroup&gt;
+            &lt;android.view.ViewGroup index="5" package="com.tvunetworks.android.anywhere" class="android.view.ViewGroup" text="" resource-id="com.tvunetworks.android.anywhere:id/item_constraintLayout" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="true" password="false" scrollable="false" selected="false" bounds="[1162,577][1538,789]" displayed="true"&gt;
+              &lt;android.widget.ImageView index="0" package="com.tvunetworks.android.anywhere" class="android.widget.ImageView" text="" content-desc="thumb_image" resource-id="com.tvunetworks.android.anywhere:id/thumb_image" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[1162,577][1538,789]" displayed="true" /&gt;
+              &lt;android.widget.TextView index="1" package="com.tvunetworks.android.anywhere" class="android.widget.TextView" text="External device" resource-id="com.tvunetworks.android.anywhere:id/title_external_device" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[1242,662][1458,705]" displayed="true" /&gt;
+              &lt;android.widget.ImageView index="2" package="com.tvunetworks.android.anywhere" class="android.widget.ImageView" text="" content-desc="logo_image" resource-id="com.tvunetworks.android.anywhere:id/logo_image" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[1349,682][1351,684]" displayed="true" /&gt;
+            &lt;/android.view.ViewGroup&gt;
+          &lt;/androidx.recyclerview.widget.RecyclerView&gt;
+        &lt;/android.view.ViewGroup&gt;
+      &lt;/android.widget.FrameLayout&gt;
+    &lt;/android.widget.LinearLayout&gt;
+  &lt;/android.widget.FrameLayout&gt;
+&lt;/hierarchy&gt;</msg>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20200110 16:03:28.398" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-1.png"&gt;&lt;img src="appium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20200110 16:03:28.398" starttime="20200110 16:03:26.928"></status>
+</kw>
+<msg timestamp="20200110 16:03:28.399" level="FAIL">Element locator '//*[@resource-id="com.tvunetworks.android.anywhere:id/isSelected"]' did not match any elements after 30 seconds</msg>
+<status status="FAIL" endtime="20200110 16:03:28.399" starttime="20200110 16:02:56.786"></status>
+</kw>
+<status status="FAIL" endtime="20200110 16:03:28.399" starttime="20200110 16:02:50.047"></status>
+</kw>
+<status status="FAIL" endtime="20200110 16:03:28.400" starttime="20200110 16:02:40.787"></status>
+</kw>
+<status status="FAIL" endtime="20200110 16:03:28.400" starttime="20200110 16:02:40.786"></status>
+</kw>
+<kw type="teardown" name="Close Application" library="AppiumLibrary">
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="PASS" endtime="20200110 16:03:28.726" starttime="20200110 16:03:28.401"></status>
+</kw>
+<tags>
+<tag>newUI_delEXT</tag>
+</tags>
+<status status="FAIL" endtime="20200110 16:03:28.726" critical="yes" starttime="20200110 16:02:21.369">Element locator '//*[@resource-id="com.tvunetworks.android.anywhere:id/isSelected"]' did not match any elements after 30 seconds</status>
+</test>
+<status status="FAIL" endtime="20200110 16:03:28.728" starttime="20200110 16:01:17.246"></status>
+</suite>
+<kw type="teardown" name="Common_Suit_Teardown" library="EnvironmentKey">
+<doc>设置测试项目结束时，关闭 Appium 服务</doc>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>"执行common_suit_teardown"</arg>
+</arguments>
+<msg timestamp="20200110 16:03:28.732" level="INFO">"执行common_suit_teardown"</msg>
+<status status="PASS" endtime="20200110 16:03:28.732" starttime="20200110 16:03:28.731"></status>
+</kw>
+<kw name="Stop Appium Server" library="myTestLibrary">
+<doc>Stop Appium Server.
+Examples:
+| Stop Appium Server |</doc>
+<msg timestamp="20200110 16:03:29.070" level="INFO">###
+Appium Server Info:  TCP    10.12.128.49:14723     18.211.61.91:80        TIME_WAIT       0
+  TCP    127.0.0.1:4723         0.0.0.0:0              LISTENING       25728
+  TCP    127.0.0.1:4723         127.0.0.1:13041        TIME_WAIT       0
+  TCP    127.0.0.1:4723         127.0.0.1:13569        TIME_WAIT       0
+  TCP    127.0.0.1:4723         127.0.0.1:13872        FIN_WAIT_2      25728
+  TCP    127.0.0.1:4723         127.0.0.1:13898        TIME_WAIT       0
+  TCP    127.0.0.1:4723         127.0.0.1:14341        TIME_WAIT       0
+  TCP    127.0.0.1:4723         127.0.0.1:14454        ESTABLISHED     25728
+  TCP    127.0.0.1:13872        127.0.0.1:4723         CLOSE_WAIT      25344
+  TCP    127.0.0.1:13896        127.0.0.1:4723         TIME_WAIT       0
+  TCP    127.0.0.1:13897        127.0.0.1:4723         TIME_WAIT       0
+  TCP    127.0.0.1:14454        127.0.0.1:4723         ESTABLISHED     25344
+###
+'myTestLibrary' object has no attribute '_appium_server__raiseError'</msg>
+<status status="PASS" endtime="20200110 16:03:29.071" starttime="20200110 16:03:28.732"></status>
+</kw>
+<kw name="Kill Adb Process" library="myTestLibrary">
+<doc>Kill ADB Process.
+Examples:
+| Kill Adb Process |</doc>
+<msg timestamp="20200110 16:03:29.250" level="INFO">ADB process is already stopped.</msg>
+<status status="PASS" endtime="20200110 16:03:29.251" starttime="20200110 16:03:29.071"></status>
+</kw>
+<status status="PASS" endtime="20200110 16:03:29.251" starttime="20200110 16:03:28.730"></status>
+</kw>
+<status status="FAIL" endtime="20200110 16:03:29.252" starttime="20200110 16:01:11.704"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="2" pass="0">Critical Tests</stat>
+<stat fail="2" pass="0">All Tests</stat>
+</total>
+<tag>
+<stat fail="1" pass="0">newUI_addExt</stat>
+<stat fail="1" pass="0">newUI_delEXT</stat>
+</tag>
+<suite>
+<stat fail="2" id="s1" name="AutoAndroidAnywhereTest" pass="0">AutoAndroidAnywhereTest</stat>
+<stat fail="2" id="s1-s1" name="03testLiveNewUI" pass="0">AutoAndroidAnywhereTest.03testLiveNewUI</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

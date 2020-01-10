@@ -1,0 +1,126 @@
+--outputdir
+D:\COM_DOC\robotframwork\logs\20200110_152621
+-C
+off
+-W
+149
+--suite
+AutoAndroidAnywhereTest.03testLiveNewUI
+--test
+AutoAndroidAnywhereTest.03testLiveNewUI.test_16Setting
+--suite
+AutoAndroidAnywhereTest.03testLiveNewUI
+--test
+AutoAndroidAnywhereTest.03testLiveNewUI.test_03Record
+--suite
+AutoAndroidAnywhereTest.02testLive oldUI
+--test
+AutoAndroidAnywhereTest.02testLive oldUI.test_06SignIn
+--suite
+AutoAndroidAnywhereTest.02testLive oldUI
+--test
+AutoAndroidAnywhereTest.02testLive oldUI.test_03Record
+--suite
+AutoAndroidAnywhereTest.02testLive oldUI
+--test
+AutoAndroidAnywhereTest.02testLive oldUI.test_02SwitchCamera
+--suite
+AutoAndroidAnywhereTest.03testLiveNewUI
+--test
+AutoAndroidAnywhereTest.03testLiveNewUI.test_08VFB
+--suite
+AutoAndroidAnywhereTest.03testLiveNewUI
+--test
+AutoAndroidAnywhereTest.03testLiveNewUI.test_15stream
+--suite
+AutoAndroidAnywhereTest.02testLive oldUI
+--test
+AutoAndroidAnywhereTest.02testLive oldUI.test_07testAbout
+--suite
+AutoAndroidAnywhereTest.03testLiveNewUI
+--test
+AutoAndroidAnywhereTest.03testLiveNewUI.test_04Upload
+--suite
+AutoAndroidAnywhereTest.03testLiveNewUI
+--test
+AutoAndroidAnywhereTest.03testLiveNewUI.test_10Scan
+--suite
+AutoAndroidAnywhereTest.03testLiveNewUI
+--test
+AutoAndroidAnywhereTest.03testLiveNewUI.test_05takephoto
+--suite
+AutoAndroidAnywhereTest.03testLiveNewUI
+--test
+AutoAndroidAnywhereTest.03testLiveNewUI.test_06addExternalSource
+--suite
+AutoAndroidAnywhereTest.03testLiveNewUI
+--test
+AutoAndroidAnywhereTest.03testLiveNewUI.test_01changeToNewUI
+--suite
+AutoAndroidAnywhereTest.03testLiveNewUI
+--test
+AutoAndroidAnywhereTest.03testLiveNewUI.test_13SignIn
+--suite
+AutoAndroidAnywhereTest.02testLive oldUI
+--test
+AutoAndroidAnywhereTest.02testLive oldUI.test_14VFB
+--suite
+AutoAndroidAnywhereTest.02testLive oldUI
+--test
+AutoAndroidAnywhereTest.02testLive oldUI.test_15SettingAbout
+--suite
+AutoAndroidAnywhereTest.02testLive oldUI
+--test
+AutoAndroidAnywhereTest.02testLive oldUI.test_01Live_Stop
+--suite
+AutoAndroidAnywhereTest.03testLiveNewUI
+--test
+AutoAndroidAnywhereTest.03testLiveNewUI.test_02Live_Stop
+--suite
+AutoAndroidAnywhereTest.03testLiveNewUI
+--test
+AutoAndroidAnywhereTest.03testLiveNewUI.test_11About
+--suite
+AutoAndroidAnywhereTest.03testLiveNewUI
+--test
+AutoAndroidAnywhereTest.03testLiveNewUI.test_12Alert
+--suite
+AutoAndroidAnywhereTest.02testLive oldUI
+--test
+AutoAndroidAnywhereTest.02testLive oldUI.test_10Stream
+--suite
+AutoAndroidAnywhereTest.03testLiveNewUI
+--test
+AutoAndroidAnywhereTest.03testLiveNewUI.test_14mma
+--suite
+AutoAndroidAnywhereTest.02testLive oldUI
+--test
+AutoAndroidAnywhereTest.02testLive oldUI.test_11MMAPage
+--suite
+AutoAndroidAnywhereTest.02testLive oldUI
+--test
+AutoAndroidAnywhereTest.02testLive oldUI.test_12addExternalSource
+--suite
+AutoAndroidAnywhereTest.02testLive oldUI
+--test
+AutoAndroidAnywhereTest.02testLive oldUI.test_09Alert
+--suite
+AutoAndroidAnywhereTest.02testLive oldUI
+--test
+AutoAndroidAnywhereTest.02testLive oldUI.test_05tokenScan
+--suite
+AutoAndroidAnywhereTest.02testLive oldUI
+--test
+AutoAndroidAnywhereTest.02testLive oldUI.test_04Upload
+--suite
+AutoAndroidAnywhereTest.03testLiveNewUI
+--test
+AutoAndroidAnywhereTest.03testLiveNewUI.test_07delExternelSource
+--suite
+AutoAndroidAnywhereTest.02testLive oldUI
+--test
+AutoAndroidAnywhereTest.02testLive oldUI.test_13delExternelSource
+--suite
+AutoAndroidAnywhereTest.02testLive oldUI
+--test
+AutoAndroidAnywhereTest.02testLive oldUI.test_16ChagneResolutionFrameRate

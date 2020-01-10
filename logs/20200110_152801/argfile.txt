@@ -1,0 +1,14 @@
+--outputdir
+D:\COM_DOC\robotframwork\logs\20200110_152801
+-C
+off
+-W
+142
+--suite
+AutoAndroidAnywhereTest.03testLiveNewUI
+--test
+AutoAndroidAnywhereTest.03testLiveNewUI.test_06addExternalSource
+--suite
+AutoAndroidAnywhereTest.03testLiveNewUI
+--test
+AutoAndroidAnywhereTest.03testLiveNewUI.test_07delExternelSource

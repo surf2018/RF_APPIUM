@@ -1,0 +1,1060 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20200110 16:04:39.431" generator="Robot 3.1.2 (Python 2.7.17rc1 on win32)">
+<suite source="D:\COM_DOC\robotframwork\Andrid_anywhere\AutoAndroidAnywhereTest" id="s1" name="AutoAndroidAnywhereTest">
+<kw type="setup" name="Setup_Pre_Condition" library="EnvironmentKey">
+<doc>A. Setup_Testbed_Variable：测试机相关预设；</doc>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>"执行setup_pre_condition"</arg>
+</arguments>
+<msg timestamp="20200110 16:04:39.791" level="INFO">"执行setup_pre_condition"</msg>
+<status status="PASS" endtime="20200110 16:04:39.791" starttime="20200110 16:04:39.791"></status>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>datetime.datetime.now()</arg>
+<arg>datetime</arg>
+</arguments>
+<assign>
+<var>${time}</var>
+</assign>
+<msg timestamp="20200110 16:04:39.792" level="INFO">${time} = 2020-01-10 16:04:39.792000</msg>
+<status status="PASS" endtime="20200110 16:04:39.792" starttime="20200110 16:04:39.792"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>"导入环境变量"</arg>
+</arguments>
+<msg timestamp="20200110 16:04:39.793" level="INFO">"导入环境变量"</msg>
+<status status="PASS" endtime="20200110 16:04:39.793" starttime="20200110 16:04:39.792"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_CUSTOM_TEST_TASK_START_TIME</arg>
+<arg>${time}</arg>
+</arguments>
+<msg timestamp="20200110 16:04:39.794" level="INFO">Environment variable 'U_CUSTOM_TEST_TASK_START_TIME' set to value '2020-01-10 16:04:39.792000'.</msg>
+<status status="PASS" endtime="20200110 16:04:39.794" starttime="20200110 16:04:39.793"></status>
+</kw>
+<kw name="Setup_APP_Variable" library="EnvironmentKey">
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>G_APPIUM_APK_NAME</arg>
+<arg>TVUAnywhere_V8.0.9.290_2001101334_release.apk</arg>
+</arguments>
+<msg timestamp="20200110 16:04:39.795" level="INFO">Environment variable 'G_APPIUM_APK_NAME' set to value 'TVUAnywhere_V8.0.9.290_2001101334_release.apk'.</msg>
+<status status="PASS" endtime="20200110 16:04:39.795" starttime="20200110 16:04:39.794"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>G_APPIUM_APP_DIR</arg>
+<arg>D:\\AutoTest\\androidApk</arg>
+</arguments>
+<msg timestamp="20200110 16:04:39.796" level="INFO">Environment variable 'G_APPIUM_APP_DIR' set to value 'D:\AutoTest\androidApk'.</msg>
+<status status="PASS" endtime="20200110 16:04:39.796" starttime="20200110 16:04:39.795"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>G_APPIUM_APP_APK</arg>
+<arg>%{G_APPIUM_APP_DIR}\\%{G_APPIUM_APK_NAME}</arg>
+</arguments>
+<msg timestamp="20200110 16:04:39.796" level="INFO">Environment variable 'G_APPIUM_APP_APK' set to value 'D:\AutoTest\androidApk\TVUAnywhere_V8.0.9.290_2001101334_release.apk'.</msg>
+<status status="PASS" endtime="20200110 16:04:39.797" starttime="20200110 16:04:39.796"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>G_APPIUM_AUTO_NAME</arg>
+<arg>uiautomator2</arg>
+</arguments>
+<msg timestamp="20200110 16:04:39.797" level="INFO">Environment variable 'G_APPIUM_AUTO_NAME' set to value 'uiautomator2'.</msg>
+<status status="PASS" endtime="20200110 16:04:39.797" starttime="20200110 16:04:39.797"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>G_APPIUM_REINSTALL_RESET</arg>
+<arg>False</arg>
+</arguments>
+<msg timestamp="20200110 16:04:39.798" level="INFO">Environment variable 'G_APPIUM_REINSTALL_RESET' set to value 'False'.</msg>
+<status status="PASS" endtime="20200110 16:04:39.798" starttime="20200110 16:04:39.798"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>G_APPIUM_HOST_IP0</arg>
+<arg>http://127.0.0.1:4723/wd/hub</arg>
+</arguments>
+<msg timestamp="20200110 16:04:39.799" level="INFO">Environment variable 'G_APPIUM_HOST_IP0' set to value 'http://127.0.0.1:4723/wd/hub'.</msg>
+<status status="PASS" endtime="20200110 16:04:39.799" starttime="20200110 16:04:39.798"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>G_APPIUM_APP_PACKAGE</arg>
+<arg>com.tvunetworks.android.anywhere</arg>
+</arguments>
+<msg timestamp="20200110 16:04:39.800" level="INFO">Environment variable 'G_APPIUM_APP_PACKAGE' set to value 'com.tvunetworks.android.anywhere'.</msg>
+<status status="PASS" endtime="20200110 16:04:39.800" starttime="20200110 16:04:39.799"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>G_APPIUM_PLATFORM_NAME</arg>
+<arg>Android</arg>
+</arguments>
+<msg timestamp="20200110 16:04:39.800" level="INFO">Environment variable 'G_APPIUM_PLATFORM_NAME' set to value 'Android'.</msg>
+<status status="PASS" endtime="20200110 16:04:39.801" starttime="20200110 16:04:39.800"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>G_APPIUM_PLATFORM_VERSION</arg>
+<arg>8.0.0</arg>
+</arguments>
+<msg timestamp="20200110 16:04:39.801" level="INFO">Environment variable 'G_APPIUM_PLATFORM_VERSION' set to value '8.0.0'.</msg>
+<status status="PASS" endtime="20200110 16:04:39.801" starttime="20200110 16:04:39.801"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_APPIUM_DEVICE_NAME</arg>
+<arg>${EMPTY}</arg>
+</arguments>
+<msg timestamp="20200110 16:04:39.802" level="INFO">Environment variable 'U_APPIUM_DEVICE_NAME' set to value ''.</msg>
+<status status="PASS" endtime="20200110 16:04:39.802" starttime="20200110 16:04:39.802"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>G_APPIUM_HOST_ADDRESS</arg>
+<arg>127.0.0.1</arg>
+</arguments>
+<msg timestamp="20200110 16:04:39.803" level="INFO">Environment variable 'G_APPIUM_HOST_ADDRESS' set to value '127.0.0.1'.</msg>
+<status status="PASS" endtime="20200110 16:04:39.803" starttime="20200110 16:04:39.802"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>G_APPIUM_HOST_PORT</arg>
+<arg>4723</arg>
+</arguments>
+<msg timestamp="20200110 16:04:39.803" level="INFO">Environment variable 'G_APPIUM_HOST_PORT' set to value '4723'.</msg>
+<status status="PASS" endtime="20200110 16:04:39.804" starttime="20200110 16:04:39.803"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_APPIUM_APPACTIVITY</arg>
+<arg>AppStart</arg>
+</arguments>
+<msg timestamp="20200110 16:04:39.804" level="INFO">Environment variable 'U_APPIUM_APPACTIVITY' set to value 'AppStart'.</msg>
+<status status="PASS" endtime="20200110 16:04:39.804" starttime="20200110 16:04:39.804"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>G_APPIUM_APP_BUGREPORT_DIR</arg>
+<arg>D:\\COM_DOC\\robotframwork\\results\\bugreport</arg>
+</arguments>
+<msg timestamp="20200110 16:04:39.805" level="INFO">Environment variable 'G_APPIUM_APP_BUGREPORT_DIR' set to value 'D:\COM_DOC\robotframwork\results\bugreport'.</msg>
+<status status="PASS" endtime="20200110 16:04:39.805" starttime="20200110 16:04:39.805"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_APP_CURRENT_VERSION</arg>
+</arguments>
+<msg timestamp="20200110 16:04:39.806" level="INFO">Environment variable 'U_APP_CURRENT_VERSION' set to value ''.</msg>
+<status status="PASS" endtime="20200110 16:04:39.806" starttime="20200110 16:04:39.806"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_APP_GA_VERSION</arg>
+</arguments>
+<msg timestamp="20200110 16:04:39.807" level="INFO">Environment variable 'U_APP_GA_VERSION' set to value ''.</msg>
+<status status="PASS" endtime="20200110 16:04:39.807" starttime="20200110 16:04:39.806"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_APP_TESTING_TYPE</arg>
+<arg>offline</arg>
+</arguments>
+<msg timestamp="20200110 16:04:39.807" level="INFO">Environment variable 'U_APP_TESTING_TYPE' set to value 'offline'.</msg>
+<status status="PASS" endtime="20200110 16:04:39.807" starttime="20200110 16:04:39.807"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_APP_WAITING_TIME</arg>
+<arg>30</arg>
+</arguments>
+<msg timestamp="20200110 16:04:39.808" level="INFO">Environment variable 'U_APP_WAITING_TIME' set to value '30'.</msg>
+<status status="PASS" endtime="20200110 16:04:39.808" starttime="20200110 16:04:39.808"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_APP_VIDEO_WAITING_TIME</arg>
+<arg>20</arg>
+</arguments>
+<msg timestamp="20200110 16:04:39.809" level="INFO">Environment variable 'U_APP_VIDEO_WAITING_TIME' set to value '20'.</msg>
+<status status="PASS" endtime="20200110 16:04:39.809" starttime="20200110 16:04:39.808"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_APP_Activity</arg>
+<arg>AppStart</arg>
+</arguments>
+<msg timestamp="20200110 16:04:39.810" level="INFO">Environment variable 'U_APP_Activity' set to value 'AppStart'.</msg>
+<status status="PASS" endtime="20200110 16:04:39.810" starttime="20200110 16:04:39.809"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_APP_ApkName</arg>
+<arg>TVUAnywhere_V8.0.9.290_2001101334_release.apk</arg>
+</arguments>
+<msg timestamp="20200110 16:04:39.810" level="INFO">Environment variable 'U_APP_ApkName' set to value 'TVUAnywhere_V8.0.9.290_2001101334_release.apk'.</msg>
+<status status="PASS" endtime="20200110 16:04:39.810" starttime="20200110 16:04:39.810"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_APP_TpeerId</arg>
+<arg>0x4B8D62040DA471B2</arg>
+</arguments>
+<msg timestamp="20200110 16:04:39.811" level="INFO">Environment variable 'U_APP_TpeerId' set to value '0x4B8D62040DA471B2'.</msg>
+<status status="PASS" endtime="20200110 16:04:39.811" starttime="20200110 16:04:39.811"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_APP_Tversion</arg>
+<arg>Version: 8.0.9.290 : VTR-AL00</arg>
+</arguments>
+<msg timestamp="20200110 16:04:39.812" level="INFO">Environment variable 'U_APP_Tversion' set to value 'Version: 8.0.9.290 : VTR-AL00'.</msg>
+<status status="PASS" endtime="20200110 16:04:39.812" starttime="20200110 16:04:39.811"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_APP_Res</arg>
+<arg>720P30</arg>
+</arguments>
+<msg timestamp="20200110 16:04:39.813" level="INFO">Environment variable 'U_APP_Res' set to value '720P30'.</msg>
+<status status="PASS" endtime="20200110 16:04:39.813" starttime="20200110 16:04:39.812"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_APP_HEVC</arg>
+<arg>OFF</arg>
+</arguments>
+<msg timestamp="20200110 16:04:39.813" level="INFO">Environment variable 'U_APP_HEVC' set to value 'OFF'.</msg>
+<status status="PASS" endtime="20200110 16:04:39.813" starttime="20200110 16:04:39.813"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_APP_Resolution</arg>
+<arg>1280 x 720</arg>
+</arguments>
+<msg timestamp="20200110 16:04:39.814" level="INFO">Environment variable 'U_APP_Resolution' set to value '1280 x 720'.</msg>
+<status status="PASS" endtime="20200110 16:04:39.814" starttime="20200110 16:04:39.814"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_APP_Framerate</arg>
+<arg>30p</arg>
+</arguments>
+<msg timestamp="20200110 16:04:39.815" level="INFO">Environment variable 'U_APP_Framerate' set to value '30p'.</msg>
+<status status="PASS" endtime="20200110 16:04:39.815" starttime="20200110 16:04:39.815"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_APP_ONLINE_USER</arg>
+<arg>${EMPTY}</arg>
+</arguments>
+<msg timestamp="20200110 16:04:39.816" level="INFO">Environment variable 'U_APP_ONLINE_USER' set to value ''.</msg>
+<status status="PASS" endtime="20200110 16:04:39.816" starttime="20200110 16:04:39.815"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_APP_ONLINE_PWD</arg>
+<arg>${EMPTY}</arg>
+</arguments>
+<msg timestamp="20200110 16:04:39.816" level="INFO">Environment variable 'U_APP_ONLINE_PWD' set to value ''.</msg>
+<status status="PASS" endtime="20200110 16:04:39.817" starttime="20200110 16:04:39.816"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_APP_OFFLINE_USER</arg>
+<arg>soffeeshu@tvu.com</arg>
+</arguments>
+<msg timestamp="20200110 16:04:39.817" level="INFO">Environment variable 'U_APP_OFFLINE_USER' set to value 'soffeeshu@tvu.com'.</msg>
+<status status="PASS" endtime="20200110 16:04:39.817" starttime="20200110 16:04:39.817"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_APP_OFFLINE_PWD</arg>
+<arg>123456</arg>
+</arguments>
+<msg timestamp="20200110 16:04:39.818" level="INFO">Environment variable 'U_APP_OFFLINE_PWD' set to value '123456'.</msg>
+<status status="PASS" endtime="20200110 16:04:39.818" starttime="20200110 16:04:39.818"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_APP_OFFLINE_Rname</arg>
+<arg>v3500_linuxR</arg>
+</arguments>
+<msg timestamp="20200110 16:04:39.819" level="INFO">Environment variable 'U_APP_OFFLINE_Rname' set to value 'v3500_linuxR'.</msg>
+<status status="PASS" endtime="20200110 16:04:39.819" starttime="20200110 16:04:39.818"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_APP_OFFLINE_destination</arg>
+<arg>soffee_test_youtube</arg>
+</arguments>
+<msg timestamp="20200110 16:04:39.820" level="INFO">Environment variable 'U_APP_OFFLINE_destination' set to value 'soffee_test_youtube'.</msg>
+<status status="PASS" endtime="20200110 16:04:39.820" starttime="20200110 16:04:39.819"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_ANDROID_LOG_RECORD</arg>
+<arg>True</arg>
+</arguments>
+<msg timestamp="20200110 16:04:39.820" level="INFO">Environment variable 'U_ANDROID_LOG_RECORD' set to value 'True'.</msg>
+<status status="PASS" endtime="20200110 16:04:39.821" starttime="20200110 16:04:39.820"></status>
+</kw>
+<status status="PASS" endtime="20200110 16:04:39.821" starttime="20200110 16:04:39.794"></status>
+</kw>
+<kw name="Setup_Testbed_Variable" library="EnvironmentKey">
+<doc>Setup_Testbed_Variable：测试机相关预设；</doc>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>G_SQAROOT</arg>
+<arg>D:\\COM_DOC\\robotframwork</arg>
+</arguments>
+<msg timestamp="20200110 16:04:39.822" level="INFO">Environment variable 'G_SQAROOT' set to value 'D:\COM_DOC\robotframwork'.</msg>
+<status status="PASS" endtime="20200110 16:04:39.822" starttime="20200110 16:04:39.822"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>G_LOG</arg>
+<arg>%{G_SQAROOT}\\logs</arg>
+</arguments>
+<msg timestamp="20200110 16:04:39.823" level="INFO">Environment variable 'G_LOG' set to value 'D:\COM_DOC\robotframwork\logs'.</msg>
+<status status="PASS" endtime="20200110 16:04:39.823" starttime="20200110 16:04:39.822"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>G_TOTAL_RESULT</arg>
+<arg>%{G_SQAROOT}\\results</arg>
+</arguments>
+<msg timestamp="20200110 16:04:39.824" level="INFO">Environment variable 'G_TOTAL_RESULT' set to value 'D:\COM_DOC\robotframwork\results'.</msg>
+<status status="PASS" endtime="20200110 16:04:39.824" starttime="20200110 16:04:39.823"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>G_CURRENTLOG</arg>
+<arg>${OUTPUT DIR}</arg>
+</arguments>
+<msg timestamp="20200110 16:04:39.825" level="INFO">Environment variable 'G_CURRENTLOG' set to value 'D:\COM_DOC\robotframwork\logs\20200110_160429'.</msg>
+<status status="PASS" endtime="20200110 16:04:39.825" starttime="20200110 16:04:39.824"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>G_OUTPUTDIR</arg>
+<arg>${OUTPUT DIR}</arg>
+</arguments>
+<msg timestamp="20200110 16:04:39.826" level="INFO">Environment variable 'G_OUTPUTDIR' set to value 'D:\COM_DOC\robotframwork\logs\20200110_160429'.</msg>
+<status status="PASS" endtime="20200110 16:04:39.826" starttime="20200110 16:04:39.825"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>G_DATACENTER</arg>
+<arg>%{G_SQAROOT}\\common\\resource</arg>
+</arguments>
+<msg timestamp="20200110 16:04:39.827" level="INFO">Environment variable 'G_DATACENTER' set to value 'D:\COM_DOC\robotframwork\common\resource'.</msg>
+<status status="PASS" endtime="20200110 16:04:39.827" starttime="20200110 16:04:39.826"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>G_FTPHOSTIP</arg>
+<arg>10.12.32.163</arg>
+</arguments>
+<msg timestamp="20200110 16:04:39.827" level="INFO">Environment variable 'G_FTPHOSTIP' set to value '10.12.32.163'.</msg>
+<status status="PASS" endtime="20200110 16:04:39.828" starttime="20200110 16:04:39.827"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>G_FTPUSER</arg>
+<arg>ftpuser</arg>
+</arguments>
+<msg timestamp="20200110 16:04:39.828" level="INFO">Environment variable 'G_FTPUSER' set to value 'ftpuser'.</msg>
+<status status="PASS" endtime="20200110 16:04:39.828" starttime="20200110 16:04:39.828"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>G_FTPPASS</arg>
+<arg>tvu123admin</arg>
+</arguments>
+<msg timestamp="20200110 16:04:39.829" level="INFO">Environment variable 'G_FTPPASS' set to value 'tvu123admin'.</msg>
+<status status="PASS" endtime="20200110 16:04:39.829" starttime="20200110 16:04:39.829"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>G_FTPFILEPATH</arg>
+<arg>/AnywhereShare/android_release/anywhere/</arg>
+</arguments>
+<msg timestamp="20200110 16:04:39.830" level="INFO">Environment variable 'G_FTPFILEPATH' set to value '/AnywhereShare/android_release/anywhere/'.</msg>
+<status status="PASS" endtime="20200110 16:04:39.830" starttime="20200110 16:04:39.830"></status>
+</kw>
+<status status="PASS" endtime="20200110 16:04:39.830" starttime="20200110 16:04:39.821"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>"导入压力测试变量"</arg>
+</arguments>
+<msg timestamp="20200110 16:04:39.831" level="INFO">"导入压力测试变量"</msg>
+<status status="PASS" endtime="20200110 16:04:39.831" starttime="20200110 16:04:39.831"></status>
+</kw>
+<kw name="Setup_StressSuite_Variable" library="EnvironmentKey">
+<doc>设置测试结束时的相关设置</doc>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_CUSTOM_LONG_TERM</arg>
+<arg>24</arg>
+</arguments>
+<msg timestamp="20200110 16:04:39.832" level="INFO">Environment variable 'U_CUSTOM_LONG_TERM' set to value '24'.</msg>
+<status status="PASS" endtime="20200110 16:04:39.832" starttime="20200110 16:04:39.832"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_CUSTOM_LONG_INTERVAL</arg>
+<arg>180</arg>
+</arguments>
+<msg timestamp="20200110 16:04:39.833" level="INFO">Environment variable 'U_CUSTOM_LONG_INTERVAL' set to value '180'.</msg>
+<status status="PASS" endtime="20200110 16:04:39.833" starttime="20200110 16:04:39.832"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_CUSTOM_LONG_DEVIATION</arg>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20200110 16:04:39.834" level="INFO">Environment variable 'U_CUSTOM_LONG_DEVIATION' set to value '1'.</msg>
+<status status="PASS" endtime="20200110 16:04:39.834" starttime="20200110 16:04:39.833"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_SAVE_APP_TOP_MEM_REPORT</arg>
+<arg>True</arg>
+</arguments>
+<msg timestamp="20200110 16:04:39.834" level="INFO">Environment variable 'U_SAVE_APP_TOP_MEM_REPORT' set to value 'True'.</msg>
+<status status="PASS" endtime="20200110 16:04:39.835" starttime="20200110 16:04:39.834"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_REPORT_NAME</arg>
+<arg>Android_Anywhere</arg>
+</arguments>
+<msg timestamp="20200110 16:04:39.835" level="INFO">Environment variable 'U_REPORT_NAME' set to value 'Android_Anywhere'.</msg>
+<status status="PASS" endtime="20200110 16:04:39.835" starttime="20200110 16:04:39.835"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_TBNAME</arg>
+<arg>${EMPTY}</arg>
+</arguments>
+<msg timestamp="20200110 16:04:39.836" level="INFO">Environment variable 'U_TBNAME' set to value ''.</msg>
+<status status="PASS" endtime="20200110 16:04:39.836" starttime="20200110 16:04:39.836"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>G_TESTER</arg>
+<arg>Soffee</arg>
+</arguments>
+<msg timestamp="20200110 16:04:39.837" level="INFO">Environment variable 'G_TESTER' set to value 'Soffee'.</msg>
+<status status="PASS" endtime="20200110 16:04:39.837" starttime="20200110 16:04:39.837"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_TOP_LOG_NAME</arg>
+<arg>top.txt</arg>
+</arguments>
+<msg timestamp="20200110 16:04:39.838" level="INFO">Environment variable 'U_TOP_LOG_NAME' set to value 'top.txt'.</msg>
+<status status="PASS" endtime="20200110 16:04:39.838" starttime="20200110 16:04:39.837"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_MEMINFO_LOG_NAME</arg>
+<arg>meminfo.txt</arg>
+</arguments>
+<msg timestamp="20200110 16:04:39.839" level="INFO">Environment variable 'U_MEMINFO_LOG_NAME' set to value 'meminfo.txt'.</msg>
+<status status="PASS" endtime="20200110 16:04:39.839" starttime="20200110 16:04:39.838"></status>
+</kw>
+<status status="PASS" endtime="20200110 16:04:39.839" starttime="20200110 16:04:39.831"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>"启动adb server"</arg>
+</arguments>
+<msg timestamp="20200110 16:04:39.840" level="INFO">"启动adb server"</msg>
+<status status="PASS" endtime="20200110 16:04:39.840" starttime="20200110 16:04:39.839"></status>
+</kw>
+<kw name="Setup_ADB_Server" library="EnvironmentKey">
+<doc>启动adb server</doc>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<arguments>
+<arg>Set Device Name</arg>
+</arguments>
+<assign>
+<var>${status}</var>
+</assign>
+<kw name="Set Device Name" library="myTestLibrary">
+<doc>Set Devices Name after get its name through ADB command.
+Examples:
+| Set Device Name |</doc>
+<msg timestamp="20200110 16:04:42.848" level="INFO">List of devices attached
+SJE5T17B02006511	device
+------------------------------
+Pass! Set device name!
+Device Name: SJE5T17B02006511
+------------------------------</msg>
+<status status="PASS" endtime="20200110 16:04:42.848" starttime="20200110 16:04:39.841"></status>
+</kw>
+<msg timestamp="20200110 16:04:42.849" level="INFO">${status} = ('PASS', None)</msg>
+<status status="PASS" endtime="20200110 16:04:42.849" starttime="20200110 16:04:39.840"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>"set Device Name的状态:${status[0]}"</arg>
+</arguments>
+<msg timestamp="20200110 16:04:42.850" level="INFO">"set Device Name的状态:PASS"</msg>
+<status status="PASS" endtime="20200110 16:04:42.850" starttime="20200110 16:04:42.849"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${status[0]}'!='PASS'</arg>
+<arg>Run keywords</arg>
+<arg>Kill Adb Process</arg>
+<arg>AND</arg>
+<arg>Start Adb Service</arg>
+<arg>AND</arg>
+<arg>Set Device Name</arg>
+</arguments>
+<status status="PASS" endtime="20200110 16:04:42.851" starttime="20200110 16:04:42.850"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>'device name :%{U_APPIUM_DEVICE_NAME}'</arg>
+</arguments>
+<msg timestamp="20200110 16:04:42.852" level="INFO">'device name :SJE5T17B02006511'</msg>
+<status status="PASS" endtime="20200110 16:04:42.852" starttime="20200110 16:04:42.851"></status>
+</kw>
+<status status="PASS" endtime="20200110 16:04:42.852" starttime="20200110 16:04:39.840"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20200110 16:04:44.853" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20200110 16:04:44.853" starttime="20200110 16:04:42.853"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>"deviceName:%{U_APPIUM_DEVICE_NAME}" and "start appium server"</arg>
+</arguments>
+<msg timestamp="20200110 16:04:44.855" level="INFO">"deviceName:SJE5T17B02006511" and "start appium server"</msg>
+<status status="PASS" endtime="20200110 16:04:44.856" starttime="20200110 16:04:44.854"></status>
+</kw>
+<kw name="Start Appium Server" library="myTestLibrary">
+<doc>Start Appium Server.
+Examples:
+| Start Appium Server |</doc>
+<status status="PASS" endtime="20200110 16:04:44.968" starttime="20200110 16:04:44.856"></status>
+</kw>
+<status status="PASS" endtime="20200110 16:04:44.969" starttime="20200110 16:04:39.790"></status>
+</kw>
+<suite source="D:\COM_DOC\robotframwork\Andrid_anywhere\AutoAndroidAnywhereTest\04StressTest.robot" id="s1-s1" name="04StressTest">
+<test id="s1-s1-t1" name="test_01_install_uninstall_app">
+<kw type="setup" name="Stress_Test_Setup" library="Share_resource">
+<doc>05StressTest使用的setup</doc>
+<arguments>
+<arg>${TEST_NAME}</arg>
+<arg>${OUTPUT_DIR}</arg>
+</arguments>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>"run Stress_Test_Setup"</arg>
+</arguments>
+<msg timestamp="20200110 16:04:44.989" level="INFO">"run Stress_Test_Setup"</msg>
+<status status="PASS" endtime="20200110 16:04:44.989" starttime="20200110 16:04:44.988"></status>
+</kw>
+<kw name="Set Log Level" library="BuiltIn">
+<doc>Sets the log threshold to the specified level and returns the old level.</doc>
+<arguments>
+<arg>TRACE</arg>
+</arguments>
+<msg timestamp="20200110 16:04:44.990" level="INFO">Log level changed from INFO to TRACE.</msg>
+<msg timestamp="20200110 16:04:44.990" level="TRACE">Return: b'INFO'</msg>
+<status status="PASS" endtime="20200110 16:04:44.990" starttime="20200110 16:04:44.989"></status>
+</kw>
+<kw name="Create Log Path" library="main">
+<doc>Create Case log Directory
+Usage: | Create Log Path | caseName | outputDir |</doc>
+<arguments>
+<arg>${TEST_NAME}</arg>
+<arg>${OUTPUT_DIR}</arg>
+</arguments>
+<msg timestamp="20200110 16:04:44.991" level="TRACE">Arguments: [ 'test_01_install_uninstall_app' | 'D:\\COM_DOC\\robotframwork\\logs\\20200110_160429' ]</msg>
+<msg timestamp="20200110 16:04:45.069" level="INFO">====================================================================================================
+D:\COM_DOC\robotframwork\logs\20200110_160429
+====================================================================================================
+runas /user:administrator rd /Q "D:\COM_DOC\robotframwork\logs\current"
+runas /user:administrator mklink /D "D:\COM_DOC\robotframwork\logs\current" "D:\COM_DOC\robotframwork\logs\20200110_160429"
+case_name:test_01_install_uninstall_app
+G_CASE_LOG_PATH:D:\COM_DOC\robotframwork\logs\20200110_160429\test_01_install_uninstall_app
+G_CURRENTLOG:D:\COM_DOC\robotframwork\logs\20200110_160429\test_01_install_uninstall_app</msg>
+<msg timestamp="20200110 16:04:45.070" level="TRACE">Return: None</msg>
+<status status="PASS" endtime="20200110 16:04:45.070" starttime="20200110 16:04:44.990"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_ANDROID_LOG_RECORD</arg>
+<arg>True</arg>
+</arguments>
+<msg timestamp="20200110 16:04:45.071" level="TRACE">Arguments: [ 'U_ANDROID_LOG_RECORD' | 'True' ]</msg>
+<msg timestamp="20200110 16:04:45.071" level="INFO">Environment variable 'U_ANDROID_LOG_RECORD' set to value 'True'.</msg>
+<msg timestamp="20200110 16:04:45.071" level="TRACE">Return: None</msg>
+<status status="PASS" endtime="20200110 16:04:45.072" starttime="20200110 16:04:45.071"></status>
+</kw>
+<msg timestamp="20200110 16:04:45.072" level="TRACE">Return: None</msg>
+<status status="PASS" endtime="20200110 16:04:45.072" starttime="20200110 16:04:44.987"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20200110 16:04:45.073" level="TRACE">Arguments: [ '2' ]</msg>
+<msg timestamp="20200110 16:04:47.073" level="INFO">Slept 2 seconds</msg>
+<msg timestamp="20200110 16:04:47.073" level="TRACE">Return: None</msg>
+<status status="PASS" endtime="20200110 16:04:47.074" starttime="20200110 16:04:45.073"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>“判断是否安装%{G_APPIUM_APP_PACKAGE}"</arg>
+</arguments>
+<msg timestamp="20200110 16:04:47.076" level="TRACE">Arguments: [ '\u201c\u5224\u65ad\u662f\u5426\u5b89\u88c5com.tvunetworks.android.anywhere"' ]</msg>
+<msg timestamp="20200110 16:04:47.077" level="INFO">“判断是否安装com.tvunetworks.android.anywhere"</msg>
+<msg timestamp="20200110 16:04:47.077" level="TRACE">Return: None</msg>
+<status status="PASS" endtime="20200110 16:04:47.078" starttime="20200110 16:04:47.075"></status>
+</kw>
+<kw name="Is Package Installed" library="myTestLibrary">
+<doc>Check target package is installed through ADB command.
+Examples:
+| ${status} | Is Package Installed |</doc>
+<arguments>
+<arg>%{G_APPIUM_APP_PACKAGE}</arg>
+</arguments>
+<assign>
+<var>${status}</var>
+</assign>
+<msg timestamp="20200110 16:04:47.080" level="TRACE">Arguments: [ 'com.tvunetworks.android.anywhere' ]</msg>
+<msg timestamp="20200110 16:04:47.588" level="TRACE">Return: True</msg>
+<msg timestamp="20200110 16:04:47.589" level="INFO">${status} = True</msg>
+<status status="PASS" endtime="20200110 16:04:47.589" starttime="20200110 16:04:47.079"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>"是否了安装app:${status}</arg>
+</arguments>
+<msg timestamp="20200110 16:04:47.590" level="TRACE">Arguments: [ '"\u662f\u5426\u4e86\u5b89\u88c5app:True' ]</msg>
+<msg timestamp="20200110 16:04:47.590" level="INFO">"是否了安装app:True</msg>
+<msg timestamp="20200110 16:04:47.591" level="TRACE">Return: None</msg>
+<status status="PASS" endtime="20200110 16:04:47.591" starttime="20200110 16:04:47.590"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${status}'=='True'</arg>
+<arg>Adb Uninstall Package</arg>
+<arg>ELSE</arg>
+<arg>log</arg>
+<arg>"没有安装app"</arg>
+</arguments>
+<msg timestamp="20200110 16:04:47.592" level="TRACE">Arguments: [ "'True'=='True'" | 'Adb Uninstall Package' | 'ELSE' | 'log' | '"\u6ca1\u6709\u5b89\u88c5app"' ]</msg>
+<kw name="Adb Uninstall Package" library="myTestLibrary">
+<doc>Uninstall packages through ADB command.
+Examples:
+|    Adb Uninstall Package    | ${package_name} |</doc>
+<msg timestamp="20200110 16:04:47.593" level="TRACE">Arguments: [  ]</msg>
+<msg timestamp="20200110 16:04:48.633" level="INFO">adb -s SJE5T17B02006511 uninstall com.tvunetworks.android.anywhere
+Success</msg>
+<msg timestamp="20200110 16:04:48.634" level="TRACE">Return: None</msg>
+<status status="PASS" endtime="20200110 16:04:48.635" starttime="20200110 16:04:47.592"></status>
+</kw>
+<msg timestamp="20200110 16:04:48.635" level="TRACE">Return: None</msg>
+<status status="PASS" endtime="20200110 16:04:48.635" starttime="20200110 16:04:47.591"></status>
+</kw>
+<kw type="for" name="${I} IN RANGE [ 0 | 10 ]">
+<kw type="foritem" name="${I} = 0">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>"install app"</arg>
+</arguments>
+<msg timestamp="20200110 16:04:48.637" level="TRACE">Arguments: [ '"install app"' ]</msg>
+<msg timestamp="20200110 16:04:48.637" level="INFO">"install app"</msg>
+<msg timestamp="20200110 16:04:48.637" level="TRACE">Return: None</msg>
+<status status="PASS" endtime="20200110 16:04:48.638" starttime="20200110 16:04:48.637"></status>
+</kw>
+<kw name="Adb Install Package" library="myTestLibrary">
+<doc>Install packages through ADB command.
+Examples:
+|     Adb Install Package    | ${apk_name} | ${package_name} |</doc>
+<msg timestamp="20200110 16:04:48.638" level="TRACE">Arguments: [  ]</msg>
+<msg timestamp="20200110 16:05:01.645" level="INFO">adb -s SJE5T17B02006511 install D:\AutoTest\androidApk\TVUAnywhere_V8.0.9.290_2001101334_release.apk
+Performing Streamed Install
+Success</msg>
+<msg timestamp="20200110 16:05:01.645" level="TRACE">Return: None</msg>
+<status status="PASS" endtime="20200110 16:05:01.645" starttime="20200110 16:04:48.638"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20200110 16:05:01.647" level="TRACE">Arguments: [ '3' ]</msg>
+<msg timestamp="20200110 16:05:04.647" level="INFO">Slept 3 seconds</msg>
+<msg timestamp="20200110 16:05:04.647" level="TRACE">Return: None</msg>
+<status status="PASS" endtime="20200110 16:05:04.647" starttime="20200110 16:05:01.646"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>"init app"</arg>
+</arguments>
+<msg timestamp="20200110 16:05:04.649" level="TRACE">Arguments: [ '"init app"' ]</msg>
+<msg timestamp="20200110 16:05:04.649" level="INFO">"init app"</msg>
+<msg timestamp="20200110 16:05:04.649" level="TRACE">Return: None</msg>
+<status status="PASS" endtime="20200110 16:05:04.650" starttime="20200110 16:05:04.648"></status>
+</kw>
+<kw name="initApp" library="MainKeys">
+<doc>初始化和授权app</doc>
+<msg timestamp="20200110 16:05:04.651" level="TRACE">Arguments: [  ]</msg>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20200110 16:05:04.652" level="TRACE">Arguments: [ '1' ]</msg>
+<msg timestamp="20200110 16:05:05.652" level="INFO">Slept 1 second</msg>
+<msg timestamp="20200110 16:05:05.652" level="TRACE">Return: None</msg>
+<status status="PASS" endtime="20200110 16:05:05.652" starttime="20200110 16:05:04.651"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>"init App"</arg>
+</arguments>
+<msg timestamp="20200110 16:05:05.653" level="TRACE">Arguments: [ '"init App"' ]</msg>
+<msg timestamp="20200110 16:05:05.654" level="INFO">"init App"</msg>
+<msg timestamp="20200110 16:05:05.654" level="TRACE">Return: None</msg>
+<status status="PASS" endtime="20200110 16:05:05.654" starttime="20200110 16:05:05.653"></status>
+</kw>
+<kw name="Open Application" library="AppiumLibrary">
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<arguments>
+<arg>%{G_APPIUM_HOST_IP0}</arg>
+<arg>platformName=%{G_APPIUM_PLATFORM_NAME}</arg>
+<arg>platformVersion=%{G_APPIUM_PLATFORM_VERSION}</arg>
+<arg>deviceName=%{U_APPIUM_DEVICE_NAME}</arg>
+<arg>appPackage=%{G_APPIUM_APP_PACKAGE}</arg>
+<arg>appActivity=%{U_APP_Activity}</arg>
+<arg>automationName=uiautomator2</arg>
+<arg>noReset=True</arg>
+</arguments>
+<msg timestamp="20200110 16:05:05.656" level="TRACE">Arguments: [ 'http://127.0.0.1:4723/wd/hub' | platformName='Android' | platformVersion='8.0.0' | deviceName='SJE5T17B02006511' | appPackage='com.tvunetworks.android.anywhere' | appActivity='AppStart' | automationName='uiautomator2' | noReset='True' ]</msg>
+<msg timestamp="20200110 16:05:05.659" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session {"capabilities": {"firstMatch": [{"appium:appActivity": "AppStart", "appium:noReset": "True", "appium:automationName": "uiautomator2", "appium:deviceName": "SJE5T17B02006511", "appium:platformVersion": "8.0.0", "appium:appPackage": "com.tvunetworks.android.anywhere", "platformName": "Android"}]}, "desiredCapabilities": {"deviceName": "SJE5T17B02006511", "automationName": "uiautomator2", "noReset": "True", "platformVersion": "8.0.0", "appPackage": "com.tvunetworks.android.anywhere", "platformName": "Android", "appActivity": "AppStart"}}</msg>
+<msg timestamp="20200110 16:05:05.664" level="DEBUG">Starting new HTTP connection (1): 127.0.0.1:4723</msg>
+<msg timestamp="20200110 16:05:05.676" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session HTTP/1.1" 500 3355</msg>
+<msg timestamp="20200110 16:05:05.677" level="DEBUG">Finished Request</msg>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20200110 16:05:05.678" level="TRACE">Arguments: [  ]</msg>
+<msg timestamp="20200110 16:05:05.679" level="FAIL">No application is open</msg>
+<msg timestamp="20200110 16:05:05.679" level="DEBUG">Traceback (most recent call last):
+  File "&lt;C:\Python27\lib\site-packages\decorator.pyc:decorator-gen-32&gt;", line 2, in capture_page_screenshot
+  File "C:\Python27\lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 21, in _run_on_failure_decorator
+    raise err</msg>
+<status status="FAIL" endtime="20200110 16:05:05.679" starttime="20200110 16:05:05.677"></status>
+</kw>
+<msg timestamp="20200110 16:05:05.680" level="WARN">Keyword 'AppiumLibrary.CapturePageScreenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20200110 16:05:05.681" level="FAIL">WebDriverException: Message: &lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+&lt;meta charset="utf-8"&gt;
+&lt;title&gt;Error&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;pre&gt;Error: EPIPE: broken pipe, write&lt;br&gt; &amp;nbsp; &amp;nbsp;at Socket._write (internal/net.js:40:25)&lt;br&gt; &amp;nbsp; &amp;nbsp;at doWrite (_stream_writable.js:410:12)&lt;br&gt; &amp;nbsp; &amp;nbsp;at writeOrBuffer (_stream_writable.js:394:5)&lt;br&gt; &amp;nbsp; &amp;nbsp;at Socket.Writable.write (_stream_writable.js:294:11)&lt;br&gt; &amp;nbsp; &amp;nbsp;at Console.log (C:\Users\ethans\AppData\Roaming\npm\node_modules\appium\node_modules\winston\lib\winston\transports\console.js:79:23)&lt;br&gt; &amp;nbsp; &amp;nbsp;at Console._write (C:\Users\ethans\AppData\Roaming\npm\node_modules\appium\node_modules\winston-transport\index.js:102:17)&lt;br&gt; &amp;nbsp; &amp;nbsp;at doWrite (C:\Users\ethans\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_writable.js:428:64)&lt;br&gt; &amp;nbsp; &amp;nbsp;at writeOrBuffer (C:\Users\ethans\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_writable.js:417:5)&lt;br&gt; &amp;nbsp; &amp;nbsp;at Console.Writable.write (C:\Users\ethans\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_writable.js:334:11)&lt;br&gt; &amp;nbsp; &amp;nbsp;at DerivedLogger.ondata (C:\Users\ethans\AppData\Roaming\npm\node_modules\appium\node_modules\winston\node_modules\readable-stream\lib\_stream_readable.js:662:20)&lt;br&gt; &amp;nbsp; &amp;nbsp;at DerivedLogger.emit (events.js:182:13)&lt;br&gt; &amp;nbsp; &amp;nbsp;at addChunk (C:\Users\ethans\AppData\Roaming\npm\node_modules\appium\node_modules\winston\node_modules\readable-stream\lib\_stream_readable.js:297:12)&lt;br&gt; &amp;nbsp; &amp;nbsp;at readableAddChunk (C:\Users\ethans\AppData\Roaming\npm\node_modules\appium\node_modules\winston\node_modules\readable-stream\lib\_stream_readable.js:279:11)&lt;br&gt; &amp;nbsp; &amp;nbsp;at DerivedLogger.Readable.push (C:\Users\ethans\AppData\Roaming\npm\node_modules\appium\node_modules\winston\node_modules\readable-stream\lib\_stream_readable.js:240:10)&lt;br&gt; &amp;nbsp; &amp;nbsp;at DerivedLogger.Transform.push (C:\Users\ethans\AppData\Roaming\npm\node_modules\appium\node_modules\winston\node_modules\readable-stream\lib\_stream_transform.js:139:32)&lt;br&gt; &amp;nbsp; &amp;nbsp;at DerivedLogger._transform (C:\Users\ethans\AppData\Roaming\npm\node_modules\appium\node_modules\winston\lib\winston\logger.js:305:12)&lt;br&gt; &amp;nbsp; &amp;nbsp;at DerivedLogger.Transform._read (C:\Users\ethans\AppData\Roaming\npm\node_modules\appium\node_modules\winston\node_modules\readable-stream\lib\_stream_transform.js:177:10)&lt;br&gt; &amp;nbsp; &amp;nbsp;at DerivedLogger.Transform._write (C:\Users\ethans\AppData\Roaming\npm\node_modules\appium\node_modules\winston\node_modules\readable-stream\lib\_stream_transform.js:164:83)&lt;br&gt; &amp;nbsp; &amp;nbsp;at doWrite (C:\Users\ethans\AppData\Roaming\npm\node_modules\appium\node_modules\winston\node_modules\readable-stream\lib\_stream_writable.js:405:139)&lt;br&gt; &amp;nbsp; &amp;nbsp;at writeOrBuffer (C:\Users\ethans\AppData\Roaming\npm\node_modules\appium\node_modules\winston\node_modules\readable-stream\lib\_stream_writable.js:394:5)&lt;br&gt; &amp;nbsp; &amp;nbsp;at DerivedLogger.Writable.write (C:\Users\ethans\AppData\Roaming\npm\node_modules\appium\node_modules\winston\node_modules\readable-stream\lib\_stream_writable.js:303:11)&lt;br&gt; &amp;nbsp; &amp;nbsp;at DerivedLogger.(anonymous function) [as info] (C:\Users\ethans\AppData\Roaming\npm\node_modules\appium\node_modules\winston\lib\winston\create-logger.js:81:14)&lt;/pre&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+</msg>
+<msg timestamp="20200110 16:05:05.682" level="DEBUG">Traceback (most recent call last):
+  File "&lt;C:\Python27\lib\site-packages\decorator.pyc:decorator-gen-37&gt;", line 2, in open_application
+  File "C:\Python27\lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 21, in _run_on_failure_decorator
+    raise err</msg>
+<status status="FAIL" endtime="20200110 16:05:05.682" starttime="20200110 16:05:05.655"></status>
+</kw>
+<status status="FAIL" endtime="20200110 16:05:05.682" starttime="20200110 16:05:04.650"></status>
+</kw>
+<status status="FAIL" endtime="20200110 16:05:05.682" starttime="20200110 16:04:48.636"></status>
+</kw>
+<status status="FAIL" endtime="20200110 16:05:05.683" starttime="20200110 16:04:48.636"></status>
+</kw>
+<kw type="teardown" name="Stress_Suit_Teardown" library="Share_resource">
+<doc>05StressTest 中teardown使用</doc>
+<msg timestamp="20200110 16:05:05.684" level="TRACE">Arguments: [  ]</msg>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>"run Stress_Suit_Teardown"</arg>
+</arguments>
+<msg timestamp="20200110 16:05:05.685" level="TRACE">Arguments: [ '"run Stress_Suit_Teardown"' ]</msg>
+<msg timestamp="20200110 16:05:05.685" level="INFO">"run Stress_Suit_Teardown"</msg>
+<msg timestamp="20200110 16:05:05.685" level="TRACE">Return: None</msg>
+<status status="PASS" endtime="20200110 16:05:05.685" starttime="20200110 16:05:05.684"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'%{U_SAVE_APP_TOP_MEM_REPORT}'=='True'</arg>
+<arg>Create CPU And Mem Report</arg>
+<arg>mem_detail=MemoryDetail</arg>
+</arguments>
+<msg timestamp="20200110 16:05:05.686" level="TRACE">Arguments: [ "'True'=='True'" | 'Create CPU And Mem Report' | 'mem_detail=MemoryDetail' ]</msg>
+<kw name="Create CPU And Mem Report" library="myTestLibrary">
+<doc>create usage of phone resources after running app
+Create CPU And Mem Report | mem_detail='MemoryDetail'</doc>
+<arguments>
+<arg>mem_detail=MemoryDetail</arg>
+</arguments>
+<msg timestamp="20200110 16:05:05.687" level="TRACE">Arguments: [ mem_detail='MemoryDetail' ]</msg>
+<msg timestamp="20200110 16:05:05.885" level="INFO">CPU
+Memory
+MemoryDetail</msg>
+<msg timestamp="20200110 16:05:05.886" level="TRACE">Return: None</msg>
+<status status="PASS" endtime="20200110 16:05:05.886" starttime="20200110 16:05:05.687"></status>
+</kw>
+<msg timestamp="20200110 16:05:05.886" level="TRACE">Return: None</msg>
+<status status="PASS" endtime="20200110 16:05:05.886" starttime="20200110 16:05:05.686"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>“设置u_android_log_record为false"</arg>
+</arguments>
+<msg timestamp="20200110 16:05:05.887" level="TRACE">Arguments: [ '\u201c\u8bbe\u7f6eu_android_log_record\u4e3afalse"' ]</msg>
+<msg timestamp="20200110 16:05:05.887" level="INFO">“设置u_android_log_record为false"</msg>
+<msg timestamp="20200110 16:05:05.888" level="TRACE">Return: None</msg>
+<status status="PASS" endtime="20200110 16:05:05.888" starttime="20200110 16:05:05.887"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_ANDROID_LOG_RECORD</arg>
+<arg>False</arg>
+</arguments>
+<msg timestamp="20200110 16:05:05.889" level="TRACE">Arguments: [ 'U_ANDROID_LOG_RECORD' | 'False' ]</msg>
+<msg timestamp="20200110 16:05:05.889" level="INFO">Environment variable 'U_ANDROID_LOG_RECORD' set to value 'False'.</msg>
+<msg timestamp="20200110 16:05:05.889" level="TRACE">Return: None</msg>
+<status status="PASS" endtime="20200110 16:05:05.889" starttime="20200110 16:05:05.888"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20200110 16:05:05.890" level="TRACE">Arguments: [ '1' ]</msg>
+<msg timestamp="20200110 16:05:06.890" level="INFO">Slept 1 second</msg>
+<msg timestamp="20200110 16:05:06.890" level="TRACE">Return: None</msg>
+<status status="PASS" endtime="20200110 16:05:06.890" starttime="20200110 16:05:05.890"></status>
+</kw>
+<kw name="Common_Suit_Teardown" library="EnvironmentKey">
+<doc>设置测试项目结束时，关闭 Appium 服务</doc>
+<msg timestamp="20200110 16:05:06.892" level="TRACE">Arguments: [  ]</msg>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>"执行common_suit_teardown"</arg>
+</arguments>
+<msg timestamp="20200110 16:05:06.893" level="TRACE">Arguments: [ '"\u6267\u884ccommon_suit_teardown"' ]</msg>
+<msg timestamp="20200110 16:05:06.893" level="INFO">"执行common_suit_teardown"</msg>
+<msg timestamp="20200110 16:05:06.894" level="TRACE">Return: None</msg>
+<status status="PASS" endtime="20200110 16:05:06.894" starttime="20200110 16:05:06.892"></status>
+</kw>
+<kw name="Stop Appium Server" library="myTestLibrary">
+<doc>Stop Appium Server.
+Examples:
+| Stop Appium Server |</doc>
+<msg timestamp="20200110 16:05:06.895" level="TRACE">Arguments: [  ]</msg>
+<msg timestamp="20200110 16:05:07.174" level="INFO">###
+Appium Server Info:  TCP    10.12.128.49:14723     18.211.61.91:80        TIME_WAIT       0
+  TCP    127.0.0.1:2026         127.0.0.1:4723         TIME_WAIT       0
+  TCP    127.0.0.1:2027         127.0.0.1:4723         TIME_WAIT       0
+  TCP    127.0.0.1:2028         127.0.0.1:4723         TIME_WAIT       0
+  TCP    127.0.0.1:4723         0.0.0.0:0              LISTENING       25728
+###
+'myTestLibrary' object has no attribute '_appium_server__raiseError'</msg>
+<msg timestamp="20200110 16:05:07.174" level="TRACE">Return: None</msg>
+<status status="PASS" endtime="20200110 16:05:07.174" starttime="20200110 16:05:06.894"></status>
+</kw>
+<kw name="Kill Adb Process" library="myTestLibrary">
+<doc>Kill ADB Process.
+Examples:
+| Kill Adb Process |</doc>
+<msg timestamp="20200110 16:05:07.175" level="TRACE">Arguments: [  ]</msg>
+<msg timestamp="20200110 16:05:07.354" level="INFO">ADB process is already stopped.</msg>
+<msg timestamp="20200110 16:05:07.354" level="TRACE">Return: None</msg>
+<status status="PASS" endtime="20200110 16:05:07.355" starttime="20200110 16:05:07.175"></status>
+</kw>
+<msg timestamp="20200110 16:05:07.355" level="TRACE">Return: None</msg>
+<status status="PASS" endtime="20200110 16:05:07.355" starttime="20200110 16:05:06.891"></status>
+</kw>
+<msg timestamp="20200110 16:05:07.356" level="TRACE">Return: None</msg>
+<status status="PASS" endtime="20200110 16:05:07.356" starttime="20200110 16:05:05.683"></status>
+</kw>
+<status status="FAIL" endtime="20200110 16:05:07.356" critical="yes" starttime="20200110 16:04:44.986">WebDriverException: Message: &lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+&lt;meta charset="utf-8"&gt;
+&lt;title&gt;Error&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;pre&gt;Error: EPIPE: broken pipe, write&lt;br&gt; &amp;nbsp; &amp;nbsp;at Socket._write (internal/net.js:40:25)&lt;br&gt; &amp;nbsp; &amp;nbsp;at doWrite (_stream_writable.js:410:12)&lt;br&gt; &amp;nbsp; &amp;nbsp;at writeOrBuffer (_stream_writable.js:394:5)&lt;br&gt; &amp;nbsp; &amp;nbsp;at Socket.Writable.write (_stream_writable.js:294:11)&lt;br&gt; &amp;nbsp; &amp;nbsp;at Console.log (C:\Users\ethans\AppData\Roaming\npm\node_modules\appium\node_modules\winston\lib\winston\transports\console.js:79:23)&lt;br&gt; &amp;nbsp; &amp;nbsp;at Console._write (C:\Users\ethans\AppData\Roaming\npm\node_modules\appium\node_modules\winston-transport\index.js:102:17)&lt;br&gt; &amp;nbsp; &amp;nbsp;at doWrite (C:\Users\ethans\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_writable.js:428:64)&lt;br&gt; &amp;nbsp; &amp;nbsp;at writeOrBuffer (C:\Users\ethans\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_writable.js:417:5)&lt;br&gt; &amp;nbsp; &amp;nbsp;at Console.Writable.write (C:\Users\ethans\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_str...
+    [ Message content over the limit has been removed. ]
+...odules\winston\node_modules\readable-stream\lib\_stream_transform.js:139:32)&lt;br&gt; &amp;nbsp; &amp;nbsp;at DerivedLogger._transform (C:\Users\ethans\AppData\Roaming\npm\node_modules\appium\node_modules\winston\lib\winston\logger.js:305:12)&lt;br&gt; &amp;nbsp; &amp;nbsp;at DerivedLogger.Transform._read (C:\Users\ethans\AppData\Roaming\npm\node_modules\appium\node_modules\winston\node_modules\readable-stream\lib\_stream_transform.js:177:10)&lt;br&gt; &amp;nbsp; &amp;nbsp;at DerivedLogger.Transform._write (C:\Users\ethans\AppData\Roaming\npm\node_modules\appium\node_modules\winston\node_modules\readable-stream\lib\_stream_transform.js:164:83)&lt;br&gt; &amp;nbsp; &amp;nbsp;at doWrite (C:\Users\ethans\AppData\Roaming\npm\node_modules\appium\node_modules\winston\node_modules\readable-stream\lib\_stream_writable.js:405:139)&lt;br&gt; &amp;nbsp; &amp;nbsp;at writeOrBuffer (C:\Users\ethans\AppData\Roaming\npm\node_modules\appium\node_modules\winston\node_modules\readable-stream\lib\_stream_writable.js:394:5)&lt;br&gt; &amp;nbsp; &amp;nbsp;at DerivedLogger.Writable.write (C:\Users\ethans\AppData\Roaming\npm\node_modules\appium\node_modules\winston\node_modules\readable-stream\lib\_stream_writable.js:303:11)&lt;br&gt; &amp;nbsp; &amp;nbsp;at DerivedLogger.(anonymous function) [as info] (C:\Users\ethans\AppData\Roaming\npm\node_modules\appium\node_modules\winston\lib\winston\create-logger.js:81:14)&lt;/pre&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</status>
+</test>
+<status status="FAIL" endtime="20200110 16:05:07.357" starttime="20200110 16:04:44.969"></status>
+</suite>
+<kw type="teardown" name="Common_Suit_Teardown" library="EnvironmentKey">
+<doc>设置测试项目结束时，关闭 Appium 服务</doc>
+<msg timestamp="20200110 16:05:07.359" level="TRACE">Arguments: [  ]</msg>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>"执行common_suit_teardown"</arg>
+</arguments>
+<msg timestamp="20200110 16:05:07.360" level="TRACE">Arguments: [ '"\u6267\u884ccommon_suit_teardown"' ]</msg>
+<msg timestamp="20200110 16:05:07.360" level="INFO">"执行common_suit_teardown"</msg>
+<msg timestamp="20200110 16:05:07.360" level="TRACE">Return: None</msg>
+<status status="PASS" endtime="20200110 16:05:07.360" starttime="20200110 16:05:07.359"></status>
+</kw>
+<kw name="Stop Appium Server" library="myTestLibrary">
+<doc>Stop Appium Server.
+Examples:
+| Stop Appium Server |</doc>
+<msg timestamp="20200110 16:05:07.361" level="TRACE">Arguments: [  ]</msg>
+<msg timestamp="20200110 16:05:07.607" level="INFO">###
+Appium Server Info:  TCP    10.12.128.49:14723     18.211.61.91:80        TIME_WAIT       0
+  TCP    127.0.0.1:2026         127.0.0.1:4723         TIME_WAIT       0
+  TCP    127.0.0.1:2027         127.0.0.1:4723         TIME_WAIT       0
+  TCP    127.0.0.1:2028         127.0.0.1:4723         TIME_WAIT       0
+  TCP    127.0.0.1:4723         0.0.0.0:0              LISTENING       25728
+###
+'myTestLibrary' object has no attribute '_appium_server__raiseError'</msg>
+<msg timestamp="20200110 16:05:07.607" level="TRACE">Return: None</msg>
+<status status="PASS" endtime="20200110 16:05:07.607" starttime="20200110 16:05:07.360"></status>
+</kw>
+<kw name="Kill Adb Process" library="myTestLibrary">
+<doc>Kill ADB Process.
+Examples:
+| Kill Adb Process |</doc>
+<msg timestamp="20200110 16:05:07.608" level="TRACE">Arguments: [  ]</msg>
+<msg timestamp="20200110 16:05:07.810" level="INFO">ADB process is already stopped.</msg>
+<msg timestamp="20200110 16:05:07.810" level="TRACE">Return: None</msg>
+<status status="PASS" endtime="20200110 16:05:07.810" starttime="20200110 16:05:07.608"></status>
+</kw>
+<msg timestamp="20200110 16:05:07.811" level="TRACE">Return: None</msg>
+<status status="PASS" endtime="20200110 16:05:07.811" starttime="20200110 16:05:07.359"></status>
+</kw>
+<status status="FAIL" endtime="20200110 16:05:07.811" starttime="20200110 16:04:39.447"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="0">Critical Tests</stat>
+<stat fail="1" pass="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="AutoAndroidAnywhereTest" pass="0">AutoAndroidAnywhereTest</stat>
+<stat fail="1" id="s1-s1" name="04StressTest" pass="0">AutoAndroidAnywhereTest.04StressTest</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20200110 16:05:05.680" level="WARN">Keyword 'AppiumLibrary.CapturePageScreenshot' could not be run on failure: No application is open</msg>
+</errors>
+</robot>

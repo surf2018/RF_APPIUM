@@ -2,6 +2,7 @@
 Library           AppiumLibrary
 Library           String
 Library           Collections
+Library           myTestLibrary
 
 *** Keywords ***
 OpenApp
@@ -10,7 +11,7 @@ OpenApp
     ...    使用环境变量
     log    "open app"
     Open Application    %{G_APPIUM_HOST_IP0}    platformName=%{G_APPIUM_PLATFORM_NAME}    platformVersion=%{G_APPIUM_PLATFORM_VERSION}    deviceName=%{U_APPIUM_DEVICE_NAME}    appPackage=%{G_APPIUM_APP_PACKAGE}    appActivity=%{U_APP_Activity}
-    ...    noReset=True    automationName=uiautomator2    autoGrantPermissions=True
+    ...    noReset=True    automationName=uiautomator2    autoGrantPermissions=True    newCommandTimeout=1800
     Wait Until Element Is Visible    xpath=//*[@resource-id='com.tvunetworks.android.anywhere:id/iv_cancel_explore']    20    "20s,元素没出来"
     Click Element    xpath=//*[@resource-id='com.tvunetworks.android.anywhere:id/iv_cancel_explore']
     sleep    1
@@ -166,8 +167,7 @@ addSource
     \    Element Should Contain Text    //*[@resource-id="com.tvunetworks.android.anywhere:id/multi_source_list"]/android.view.ViewGroup[${i}]/android.widget.TextView[1]    Fps    "增加source不成功"
     \    #获取duration
     \    ${duration_text}    Get Text    //*[@resource-id="com.tvunetworks.android.anywhere:id/multi_source_list"]/android.view.ViewGroup[${i}]/android.widget.TextView[2]
-    \    @{List}    Split String    ${duration_text}    :
-    \    ${duration}    Get From List    ${List}    1
+    \    ${duration}    Sum Duration    ${duration_text}
     \    log    "第${i}个视频 duration:${duration} s"
     \    sleep    1
     \    #click 开始播放源
@@ -246,7 +246,7 @@ newUI_isStop
 newUI_openApp
     log    "open app--new UI"
     Open Application    %{G_APPIUM_HOST_IP0}    platformName=%{G_APPIUM_PLATFORM_NAME}    platformVersion=%{G_APPIUM_PLATFORM_VERSION}    deviceName=%{U_APPIUM_DEVICE_NAME}    appPackage=%{G_APPIUM_APP_PACKAGE}    appActivity=%{U_APP_Activity}
-    ...    noReset=True    automationName=uiautomator2
+    ...    noReset=True    automationName=uiautomator2    newCommandTimeout=1800
     Wait Until Element Is Visible    com.tvunetworks.android.anywhere:id/buttonStartR    20    "20s,元素没出来"
     sleep    1
     log    "open app finished"

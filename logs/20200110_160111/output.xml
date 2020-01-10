@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20200110 16:04:00.370" generator="Robot 3.1.2 (Python 2.7.17rc1 on win32)">
+<suite source="D:\COM_DOC\robotframwork\Andrid_anywhere\AutoAndroidAnywhereTest" id="s1" name="AutoAndroidAnywhereTest">
+<kw type="setup" name="Setup_Pre_Condition" library="EnvironmentKey">
+<doc>A. Setup_Testbed_Variable：测试机相关预设；</doc>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>"执行setup_pre_condition"</arg>
+</arguments>
+<msg timestamp="20200110 16:04:00.709" level="INFO">"执行setup_pre_condition"</msg>
+<status status="PASS" endtime="20200110 16:04:00.710" starttime="20200110 16:04:00.709"></status>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>datetime.datetime.now()</arg>
+<arg>datetime</arg>
+</arguments>
+<assign>
+<var>${time}</var>
+</assign>
+<msg timestamp="20200110 16:04:00.711" level="INFO">${time} = 2020-01-10 16:04:00.711000</msg>
+<status status="PASS" endtime="20200110 16:04:00.712" starttime="20200110 16:04:00.711"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>"导入环境变量"</arg>
+</arguments>
+<msg timestamp="20200110 16:04:00.713" level="INFO">"导入环境变量"</msg>
+<status status="PASS" endtime="20200110 16:04:00.713" starttime="20200110 16:04:00.712"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_CUSTOM_TEST_TASK_START_TIME</arg>
+<arg>${time}</arg>
+</arguments>
+<msg timestamp="20200110 16:04:00.715" level="INFO">Environment variable 'U_CUSTOM_TEST_TASK_START_TIME' set to value '2020-01-10 16:04:00.711000'.</msg>
+<status status="PASS" endtime="20200110 16:04:00.715" starttime="20200110 16:04:00.714"></status>
+</kw>
+<kw name="Setup_APP_Variable" library="EnvironmentKey">
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>G_APPIUM_APK_NAME</arg>
+<arg>TVUAnywhere_V8.0.9.290_2001101334_release.apk</arg>
+</arguments>
+<msg timestamp="20200110 16:04:00.717" level="INFO">Environment variable 'G_APPIUM_APK_NAME' set to value 'TVUAnywhere_V8.0.9.290_2001101334_release.apk'.</msg>
+<status status="PASS" endtime="20200110 16:04:00.717" starttime="20200110 16:04:00.716"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>G_APPIUM_APP_DIR</arg>
+<arg>D:\\AutoTest\\androidApk</arg>
+</arguments>
+<msg timestamp="20200110 16:04:00.718" level="INFO">Environment variable 'G_APPIUM_APP_DIR' set to value 'D:\AutoTest\androidApk'.</msg>
+<status status="PASS" endtime="20200110 16:04:00.719" starttime="20200110 16:04:00.718"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>G_APPIUM_APP_APK</arg>
+<arg>%{G_APPIUM_APP_DIR}\\%{G_APPIUM_APK_NAME}</arg>
+</arguments>
+<msg timestamp="20200110 16:04:00.720" level="INFO">Environment variable 'G_APPIUM_APP_APK' set to value 'D:\AutoTest\androidApk\TVUAnywhere_V8.0.9.290_2001101334_release.apk'.</msg>
+<status status="PASS" endtime="20200110 16:04:00.720" starttime="20200110 16:04:00.719"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>G_APPIUM_AUTO_NAME</arg>
+<arg>uiautomator2</arg>
+</arguments>
+<msg timestamp="20200110 16:04:00.721" level="INFO">Environment variable 'G_APPIUM_AUTO_NAME' set to value 'uiautomator2'.</msg>
+<status status="PASS" endtime="20200110 16:04:00.721" starttime="20200110 16:04:00.720"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>G_APPIUM_REINSTALL_RESET</arg>
+<arg>False</arg>
+</arguments>
+<msg timestamp="20200110 16:04:00.722" level="INFO">Environment variable 'G_APPIUM_REINSTALL_RESET' set to value 'False'.</msg>
+<status status="PASS" endtime="20200110 16:04:00.722" starttime="20200110 16:04:00.721"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>G_APPIUM_HOST_IP0</arg>
+<arg>http://127.0.0.1:4723/wd/hub</arg>
+</arguments>
+<msg timestamp="20200110 16:04:00.723" level="INFO">Environment variable 'G_APPIUM_HOST_IP0' set to value 'http://127.0.0.1:4723/wd/hub'.</msg>
+<status status="PASS" endtime="20200110 16:04:00.723" starttime="20200110 16:04:00.722"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>G_APPIUM_APP_PACKAGE</arg>
+<arg>com.tvunetworks.android.anywhere</arg>
+</arguments>
+<msg timestamp="20200110 16:04:00.724" level="INFO">Environment variable 'G_APPIUM_APP_PACKAGE' set to value 'com.tvunetworks.android.anywhere'.</msg>
+<status status="PASS" endtime="20200110 16:04:00.724" starttime="20200110 16:04:00.723"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>G_APPIUM_PLATFORM_NAME</arg>
+<arg>Android</arg>
+</arguments>
+<msg timestamp="20200110 16:04:00.725" level="INFO">Environment variable 'G_APPIUM_PLATFORM_NAME' set to value 'Android'.</msg>
+<status status="PASS" endtime="20200110 16:04:00.725" starttime="20200110 16:04:00.724"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>G_APPIUM_PLATFORM_VERSION</arg>
+<arg>8.0.0</arg>
+</arguments>
+<msg timestamp="20200110 16:04:00.725" level="INFO">Environment variable 'G_APPIUM_PLATFORM_VERSION' set to value '8.0.0'.</msg>
+<status status="PASS" endtime="20200110 16:04:00.726" starttime="20200110 16:04:00.725"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_APPIUM_DEVICE_NAME</arg>
+<arg>${EMPTY}</arg>
+</arguments>
+<msg timestamp="20200110 16:04:00.727" level="INFO">Environment variable 'U_APPIUM_DEVICE_NAME' set to value ''.</msg>
+<status status="PASS" endtime="20200110 16:04:00.727" starttime="20200110 16:04:00.726"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>G_APPIUM_HOST_ADDRESS</arg>
+<arg>127.0.0.1</arg>
+</arguments>
+<msg timestamp="20200110 16:04:00.728" level="INFO">Environment variable 'G_APPIUM_HOST_ADDRESS' set to value '127.0.0.1'.</msg>
+<status status="PASS" endtime="20200110 16:04:00.729" starttime="20200110 16:04:00.727"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>G_APPIUM_HOST_PORT</arg>
+<arg>4723</arg>
+</arguments>
+<msg timestamp="20200110 16:04:00.730" level="INFO">Environment variable 'G_APPIUM_HOST_PORT' set to value '4723'.</msg>
+<status status="PASS" endtime="20200110 16:04:00.730" starttime="20200110 16:04:00.729"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_APPIUM_APPACTIVITY</arg>
+<arg>AppStart</arg>
+</arguments>
+<msg timestamp="20200110 16:04:00.731" level="INFO">Environment variable 'U_APPIUM_APPACTIVITY' set to value 'AppStart'.</msg>
+<status status="PASS" endtime="20200110 16:04:00.732" starttime="20200110 16:04:00.731"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>G_APPIUM_APP_BUGREPORT_DIR</arg>
+<arg>D:\\COM_DOC\\robotframwork\\results\\bugreport</arg>
+</arguments>
+<msg timestamp="20200110 16:04:00.733" level="INFO">Environment variable 'G_APPIUM_APP_BUGREPORT_DIR' set to value 'D:\COM_DOC\robotframwork\results\bugreport'.</msg>
+<status status="PASS" endtime="20200110 16:04:00.733" starttime="20200110 16:04:00.732"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_APP_CURRENT_VERSION</arg>
+</arguments>
+<msg timestamp="20200110 16:04:00.734" level="INFO">Environment variable 'U_APP_CURRENT_VERSION' set to value ''.</msg>
+<status status="PASS" endtime="20200110 16:04:00.734" starttime="20200110 16:04:00.733"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_APP_GA_VERSION</arg>
+</arguments>
+<msg timestamp="20200110 16:04:00.735" level="INFO">Environment variable 'U_APP_GA_VERSION' set to value ''.</msg>
+<status status="PASS" endtime="20200110 16:04:00.735" starttime="20200110 16:04:00.735"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_APP_TESTING_TYPE</arg>
+<arg>offline</arg>
+</arguments>
+<msg timestamp="20200110 16:04:00.736" level="INFO">Environment variable 'U_APP_TESTING_TYPE' set to value 'offline'.</msg>
+<status status="PASS" endtime="20200110 16:04:00.737" starttime="20200110 16:04:00.736"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_APP_WAITING_TIME</arg>
+<arg>30</arg>
+</arguments>
+<msg timestamp="20200110 16:04:00.738" level="INFO">Environment variable 'U_APP_WAITING_TIME' set to value '30'.</msg>
+<status status="PASS" endtime="20200110 16:04:00.738" starttime="20200110 16:04:00.737"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_APP_VIDEO_WAITING_TIME</arg>
+<arg>20</arg>
+</arguments>
+<msg timestamp="20200110 16:04:00.738" level="INFO">Environment variable 'U_APP_VIDEO_WAITING_TIME' set to value '20'.</msg>
+<status status="PASS" endtime="20200110 16:04:00.739" starttime="20200110 16:04:00.738"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_APP_Activity</arg>
+<arg>AppStart</arg>
+</arguments>
+<msg timestamp="20200110 16:04:00.739" level="INFO">Environment variable 'U_APP_Activity' set to value 'AppStart'.</msg>
+<status status="PASS" endtime="20200110 16:04:00.740" starttime="20200110 16:04:00.739"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_APP_ApkName</arg>
+<arg>TVUAnywhere_V8.0.9.290_2001101334_release.apk</arg>
+</arguments>
+<msg timestamp="20200110 16:04:00.740" level="INFO">Environment variable 'U_APP_ApkName' set to value 'TVUAnywhere_V8.0.9.290_2001101334_release.apk'.</msg>
+<status status="PASS" endtime="20200110 16:04:00.741" starttime="20200110 16:04:00.740"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_APP_TpeerId</arg>
+<arg>0x4B8D62040DA471B2</arg>
+</arguments>
+<msg timestamp="20200110 16:04:00.742" level="INFO">Environment variable 'U_APP_TpeerId' set to value '0x4B8D62040DA471B2'.</msg>
+<status status="PASS" endtime="20200110 16:04:00.742" starttime="20200110 16:04:00.741"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_APP_Tversion</arg>
+<arg>Version: 8.0.9.290 : VTR-AL00</arg>
+</arguments>
+<msg timestamp="20200110 16:04:00.742" level="INFO">Environment variable 'U_APP_Tversion' set to value 'Version: 8.0.9.290 : VTR-AL00'.</msg>
+<status status="PASS" endtime="20200110 16:04:00.743" starttime="20200110 16:04:00.742"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_APP_Res</arg>
+<arg>720P30</arg>
+</arguments>
+<msg timestamp="20200110 16:04:00.743" level="INFO">Environment variable 'U_APP_Res' set to value '720P30'.</msg>
+<status status="PASS" endtime="20200110 16:04:00.743" starttime="20200110 16:04:00.743"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_APP_HEVC</arg>
+<arg>OFF</arg>
+</arguments>
+<msg timestamp="20200110 16:04:02.235" level="INFO">Environment variable 'U_APP_HEVC' set to value 'OFF'.</msg>
+<status status="PASS" endtime="20200110 16:04:02.235" starttime="20200110 16:04:02.234"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_APP_Resolution</arg>
+<arg>1280 x 720</arg>
+</arguments>
+<msg timestamp="20200110 16:04:02.235" level="INFO">Environment variable 'U_APP_Resolution' set to value '1280 x 720'.</msg>
+<status status="PASS" endtime="20200110 16:04:02.236" starttime="20200110 16:04:02.235"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_APP_Framerate</arg>
+<arg>30p</arg>
+</arguments>
+<msg timestamp="20200110 16:04:02.236" level="INFO">Environment variable 'U_APP_Framerate' set to value '30p'.</msg>
+<status status="PASS" endtime="20200110 16:04:02.237" starttime="20200110 16:04:02.236"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_APP_ONLINE_USER</arg>
+<arg>${EMPTY}</arg>
+</arguments>
+<msg timestamp="20200110 16:04:02.237" level="INFO">Environment variable 'U_APP_ONLINE_USER' set to value ''.</msg>
+<status status="PASS" endtime="20200110 16:04:02.238" starttime="20200110 16:04:02.237"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_APP_ONLINE_PWD</arg>
+<arg>${EMPTY}</arg>
+</arguments>
+<msg timestamp="20200110 16:04:02.238" level="INFO">Environment variable 'U_APP_ONLINE_PWD' set to value ''.</msg>
+<status status="PASS" endtime="20200110 16:04:02.238" starttime="20200110 16:04:02.238"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_APP_OFFLINE_USER</arg>
+<arg>soffeeshu@tvu.com</arg>
+</arguments>
+<msg timestamp="20200110 16:04:02.239" level="INFO">Environment variable 'U_APP_OFFLINE_USER' set to value 'soffeeshu@tvu.com'.</msg>
+<status status="PASS" endtime="20200110 16:04:02.239" starttime="20200110 16:04:02.239"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_APP_OFFLINE_PWD</arg>
+<arg>123456</arg>
+</arguments>
+<msg timestamp="20200110 16:04:02.240" level="INFO">Environment variable 'U_APP_OFFLINE_PWD' set to value '123456'.</msg>
+<status status="PASS" endtime="20200110 16:04:02.240" starttime="20200110 16:04:02.240"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>U_APP_OFFLINE_Rname</arg>
+<arg>v3500_linuxR</arg>
+</arguments>
+<msg timestamp="20200110 16:04:02.241" level="INFO">Environment variable 'U_APP_OFFLINE_Rname' set to value 'v3500_linuxR'.</msg>
+<status status="PASS" endtime="20200110 16:04:02.241" starttime="20200110 16:04:02.240">
